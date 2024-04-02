@@ -5,7 +5,7 @@
 
 <div class="min-h-screen flex flex-col">
 	<div
-		class="z-50 px-[7vw] py-[2vh] backdrop-blur-[50px] fixed left-0 w-full border-b-[0.5px] border-[#5664803d]"
+		class="z-50 px-[7vw] py-[2vh] backdrop-blur-[10px] fixed left-0 w-full border-b-[0.5px] border-[#5664803d]"
 	>
 		<Header />
 	</div>

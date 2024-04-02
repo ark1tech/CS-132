@@ -24,7 +24,7 @@
 	<nav class="">
 		<ul class="flex-row justify-between font-light text-sm gap-[2.6rem] lg:flex hidden">
 			<li><a href="#overview" on:click={handleAnchorClick}> Overview </a></li>
-			<li><a href="/">Collection</a></li>
+			<li><a href="#collection" on:click={handleAnchorClick}> Collection </a></li>
 			<li><a href="/">Exploration</a></li>
 			<li><a href="/">Modelling</a></li>
 			<li><a href="/">Results</a></li>

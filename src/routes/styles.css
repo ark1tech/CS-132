@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Workbench&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -87,7 +89,10 @@ html {
 
 body {
 	background-color: rgb(21, 24, 29);
-	background-image: radial-gradient(circle at top, rgb(24, 29, 37) 0%, rgb(14, 14, 16) 40%);
+	background-image: url('$lib/images/grain.svg'), radial-gradient(circle at top, rgb(24, 29, 37) 0%, rgb(14, 14, 16) 39%);
+	background-repeat: repeat, no-repeat;
+	background-blend-mode:overlay , normal;
+	background-size: 35%, 100%;
 }
 
 ::-webkit-scrollbar {
@@ -119,8 +124,8 @@ a {
 } 
 
 h1 {
-	font-family: 'SF Pro';
-	font-weight: 500;	
+	font-family: 'Roboto';
+	font-weight: 450;
 	font-size: 4.5rem;
     line-height: 1;
 }

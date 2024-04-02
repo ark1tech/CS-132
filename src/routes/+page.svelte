@@ -1,6 +1,79 @@
 <script>
 	import Button from './Button.svelte';
 	import reddit from '$lib/images/Reddit.webp';
+	import { CodeBlock } from 'svhighlight';
+	import 'highlight.js/styles/github-dark.css';
+
+	let code = `
+import praw
+import csv
+import time
+from datetime import datetime, timedelta
+
+def main():
+	reddit = praw.Reddit(
+			user_agent = True, 
+			client_id = "-", 
+			client_secret = "-", 
+			username = "-",
+			password = "-"
+		)
+	
+	# SCRAPE 
+	subreddit = reddit.subreddit("AntiworkPH")
+
+	count = 0 
+	with open('reddit_submissions.csv', 'w', newline='') as file:
+		writer = csv.writer(file)
+		writer.writerow([
+			"title", 
+			"content", 
+			"upvotes_count",
+			"comments_count", 
+			"upvote_ratio",
+			"is_text",
+			"flair",
+			"url",
+			"time",
+			"id"
+		])
+		for submission in subreddit.stream.submissions():
+			time.sleep(1.1)
+
+			if submission.hidden:
+				print(f"❌ Skipped (Hidden) ~ https://www.reddit.com/{submission.permalink}")
+				continue
+			if (not submission.is_self) and len(submission.selftext) <= 200:
+				print(f"❌ Skipped (High-Context) ~ https://www.reddit.com/{submission.permalink}")
+				continue
+			if submission.link_flair_text == "Meme 🔥":
+				print(f"❌ Skipped (Meme) ~ https://www.reddit.com/{submission.permalink}")
+				continue
+			if datetime.fromtimestamp(submission.created_utc) >= datetime.now() - timedelta(days=7):
+				print(f"❌ Skipped (Date {datetime.fromtimestamp(submission.created_utc)}) ~ https://www.reddit.com/{submission.permalink}")
+				continue
+
+			print(f"[{count}] 🤖 Scraping ~ https://www.reddit.com/{submission.permalink}")
+			writer.writerow([
+				f"{submission.title}", 
+				f"{submission.selftext}", 
+				f"{submission.score}", 
+				f"{submission.num_comments}", 
+				f"{submission.upvote_ratio}", 
+				f"{submission.is_self}",  
+				f"{submission.link_flair_text}",
+				f"https://www.reddit.com/{submission.permalink}",
+				f"{datetime.fromtimestamp(submission.created_utc)}",
+				f"{submission.id}"
+			])
+
+			count += 1
+			if count == 3000: 
+				break
+
+if __name__ == "__main__":
+	main()`;
+
 	const down_arrow = `<svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="19"
@@ -25,8 +98,10 @@
 
 <section class="h-auto pt-[3rem] w-full flex flex-col items-center gap-[2rem]">
 	<div class="w-fit">
-		<h1 class="bg-gradient-to-tr from-[#565656] to-[#ffffff] text-transparent bg-clip-text">
-			<span class="font-[100] text-inherit">ANTI</span>WORK
+		<h1
+			class="drop-shadow-[0_0_5px_#19346a] bg-gradient-to-tr from-[#594bc3] to-[#383eff] text-transparent bg-clip-text"
+		>
+			<span class="font-[300] text-inherit">r/</span>AntiworkPH
 		</h1>
 	</div>
 	<div class="w-1/2">
@@ -38,7 +113,7 @@
 			aliquet enim tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
 		</p>
 	</div>
-	<Button icon={down_arrow} label={'Learn more'} href={"#overview"}/>
+	<Button icon={down_arrow} label={'Learn more'} href={'#overview'} />
 	<img src={reddit} alt="reddit" class="w-[100%] h-auto gradient-mask-b-0" />
 </section>
 
@@ -75,6 +150,15 @@
 			aliquet enim tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
 		</p>
 	</div>
+</section>
+
+<section id="collection" class="h-auto pt-[3rem] w-full flex flex-col items-center gap-[2rem]">
+	<div class="w-fit">
+		<h1 class="bg-gradient-to-tr from-[#565656] to-[#ffffff] text-transparent bg-clip-text">
+			<span class="font-[100] text-inherit">DATA</span>COLLECTION
+		</h1>
+	</div>
+	<CodeBlock language="python" {code} background ="bg-transparent"showHeader={true} showLineNumbers={true} codeTextClasses ="text-xs text-white" dimensions ="w-[70%]" lineNumberTextClasses="text-[#565656] text-xs" />
 </section>
 
 <style>

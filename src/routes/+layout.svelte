@@ -3,51 +3,18 @@
 	import './styles.css';
 </script>
 
-<div class="app">
-	<Header />
-
-	<main>
+<div class="min-h-screen flex flex-col">
+	<div
+		class="px-[7rem] py-[1.5rem] backdrop-blur-md fixed left-0 w-full border-b-[0.5px] border-[#5664803d]"
+	>
+		<Header />
+	</div>
+	<main class="px-[7rem] py-[10vh] mt-[1.5rem]">
 		<slot />
 	</main>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+	<footer></footer>
 </div>
 
 <style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
 </style>

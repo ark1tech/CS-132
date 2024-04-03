@@ -1,6 +1,9 @@
 <script>
 	import Button from './Button.svelte';
 	import reddit from '$lib/images/Reddit.webp';
+	import reddit2 from '$lib/images/reddit2.webp';
+	import antiwork from '$lib/images/antiwork.webp';
+
 	import { CodeBlock } from 'svhighlight';
 	import 'highlight.js/styles/github-dark.css';
 
@@ -97,7 +100,16 @@ if __name__ == "__main__":
 </svelte:head>
 
 <section class="h-auto pt-[3rem] flex flex-col items-center gap-[2rem]">
-	<div class="w-fit">
+	<div class="w-full flex flex-col items-center gap-[1rem]">
+		<div class="w-fit">
+			<a
+				class="font-bold font-['JetBrains_Mono'] text-center text-gray-500 text-xs"
+				href="https://dcs.upd.edu.ph/academics/undergraduate-program/"
+				target="_blank"
+			>
+				A CS 132 DATA SCIENCE PORTFOLIO:
+			</a>
+		</div>
 		<h1 class="bg-gradient-to-tr from-[#565656] to-[#ffffff] text-transparent bg-clip-text">
 			<span class="font-[100] text-inherit">ANTI</span>WORK
 		</h1>
@@ -108,14 +120,23 @@ if __name__ == "__main__":
 		</h1> -->
 	</div>
 	<p class="font-light text-center">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel. Nulla
-		pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum est. Odio
-		facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla aliquet enim
-		tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
+		Our project delves into the pervasive issue of labor exploitation in the Philippines through an
+		innovative analysis of data sourced from the subreddit
+		<span class="inline-flex flex-row items-baseline gap-[0.3rem] ml-[0.2rem]">
+			<img
+				src={antiwork}
+				alt="r/AntiworkPH Logo"
+				class="h-[0.8rem] w-auto rounded-full relative bottom-0"
+			/>
+			<a href="https://www.reddit.com/r/AntiworkPH/" class="inline_url" target="_blank">
+				r/AntiworkPH</a
+			>
+		</span>. By harnessing machine learning techniques, we aim to uncover nuanced patterns and
+		themes within this online community's discourse, shedding light on the multifaceted dimensions
+		of anti-work sentiments and labor struggles.
 	</p>
 	<Button icon={down_arrow} label={'Learn more'} href={'#overview'} />
-	<img src={reddit} alt="reddit" class="w-full h-auto gradient-mask-b-0" />
+	<img src={reddit2} alt="reddit2" class="w-full h-auto gradient-mask-b-0" />
 </section>
 
 <section id="overview" class="min-h-[100vh] pt-[3rem] w-full flex flex-col items-center gap-[2rem]">

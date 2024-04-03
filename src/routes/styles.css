@@ -89,10 +89,13 @@ html {
 
 body {
 	background-color: rgb(21, 24, 29);
-	background-image: url('$lib/images/grain.svg'), radial-gradient(circle closest-corner at top, rgb(24, 29, 37) 0%, rgb(15, 15, 21) 65%, rgb(14, 14, 16) 85%);
-	background-repeat: repeat, no-repeat;
-	background-blend-mode:overlay , normal;
-	background-size: 35%, 100%;
+	background-image: 
+		url('$lib/images/grain.svg'),
+		radial-gradient(circle closest-corner at top, 
+			rgb(24, 29, 37) 0%, rgb(15, 15, 21) 65%, rgb(14, 14, 16) 85%);
+	background-repeat: repeat, no-repeat, no-repeat;
+	background-blend-mode:overlay , normal, normal;
+	background-size: 35%, 100%, 100%;
 }
 
 ::-webkit-scrollbar {
@@ -116,7 +119,6 @@ body {
 @media (min-width: 0) {
     p {
 		font-family: 'Inter Variable';
-		color: rgb(182, 182, 182);
 		font-size: 0.7rem;
 		width: 80%;
 	} 
@@ -146,7 +148,6 @@ body {
 @media (min-width: 350px) {
     p {
 		font-family: 'Inter Variable';
-		color: rgb(182, 182, 182);
 		font-size: 0.8rem;
 		width: 80%;
 	} 
@@ -176,9 +177,8 @@ body {
 @media (min-width: 500px) {
     p {
 		font-family: 'Inter Variable';
-		color: rgb(182, 182, 182);
 		font-size: 0.9rem;
-		width: 50%;
+		width: 60%;
 	} 
 	
 	a {
@@ -203,3 +203,14 @@ body {
 	}
 }
 
+p, .inline_url {
+	color: rgb(165, 165, 165);
+}
+
+.inline_url {
+	font-weight: 500;
+}
+
+.inline_url:hover{
+	color: rgb(226, 226, 226);
+}

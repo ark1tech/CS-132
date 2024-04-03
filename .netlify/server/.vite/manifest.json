@@ -52,6 +52,14 @@
     "file": "_app/immutable/assets/Reddit.CMn5GrPN.webp",
     "src": "src/lib/images/Reddit.webp"
   },
+  "src/lib/images/Reddit2.webp": {
+    "file": "_app/immutable/assets/Reddit2.DXCuTfPO.webp",
+    "src": "src/lib/images/Reddit2.webp"
+  },
+  "src/lib/images/antiwork.webp": {
+    "file": "_app/immutable/assets/antiwork.CF_qkN3T.webp",
+    "src": "src/lib/images/antiwork.webp"
+  },
   "src/routes/+layout.svelte": {
     "file": "entries/pages/_layout.svelte.js",
     "name": "entries/pages/_layout.svelte",
@@ -61,7 +69,7 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.CXGrgdlj.css"
+      "_app/immutable/assets/_layout.g7nJb2q7.css"
     ],
     "assets": [
       "_app/immutable/assets/Logo.BGD9fciM.svg"
@@ -81,8 +89,12 @@
     "imports": [
       "_ssr.js"
     ],
+    "css": [
+      "_app/immutable/assets/_page.DjpZ9fYx.css"
+    ],
     "assets": [
-      "_app/immutable/assets/Reddit.CMn5GrPN.webp"
+      "_app/immutable/assets/Reddit2.DXCuTfPO.webp",
+      "_app/immutable/assets/antiwork.CF_qkN3T.webp"
     ]
   }
 }

@@ -1,7 +1,7 @@
 <script>
 	import Button from './Button.svelte';
 	import reddit from '$lib/images/Reddit.webp';
-	import reddit2 from '$lib/images/reddit2.webp';
+	import reddit2 from '$lib/images/Reddit2.webp';
 	import antiwork from '$lib/images/antiwork.webp';
 
 	import { CodeBlock } from 'svhighlight';

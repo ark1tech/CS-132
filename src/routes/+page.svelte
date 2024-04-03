@@ -96,69 +96,76 @@ if __name__ == "__main__":
 	<meta name="description" content="CS 132 Pocari" />
 </svelte:head>
 
-<section class="h-auto pt-[3rem] w-full flex flex-col items-center gap-[2rem]">
+<section class="h-auto pt-[3rem] flex flex-col items-center gap-[2rem]">
 	<div class="w-fit">
-		<h1
-			class="drop-shadow-[0_0_5px_#19346a] bg-gradient-to-tr from-[#594bc3] to-[#383eff] text-transparent bg-clip-text"
+		<h1 class="bg-gradient-to-tr from-[#565656] to-[#ffffff] text-transparent bg-clip-text">
+			<span class="font-[100] text-inherit">ANTI</span>WORK
+		</h1>
+		<!-- <h1
+			class="bg-gradient-to-tr from-[#172a4d] to-[#2f3ccb] brightness-200 drop-shadow-[0_0_7px_#19346a] text-transparent bg-clip-text"
 		>
-			<span class="font-[300] text-inherit">r/</span>AntiworkPH
-		</h1>
+			<span class="font-[100] text-inherit">r/</span>AntiworkPH
+		</h1> -->
 	</div>
-	<div class="w-1/2">
-		<p class="font-light text-center">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel.
-			Nulla pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum
-			est. Odio facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla
-			aliquet enim tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
-		</p>
-	</div>
+	<p class="font-light text-center">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+		labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel. Nulla
+		pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum est. Odio
+		facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla aliquet enim
+		tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
+	</p>
 	<Button icon={down_arrow} label={'Learn more'} href={'#overview'} />
-	<img src={reddit} alt="reddit" class="w-[100%] h-auto gradient-mask-b-0" />
+	<img src={reddit} alt="reddit" class="w-full h-auto gradient-mask-b-0" />
 </section>
 
-<section id="overview" class="h-auto pt-[3rem] w-full flex flex-col items-center gap-[2rem]">
+<section id="overview" class="min-h-[100vh] pt-[3rem] w-full flex flex-col items-center gap-[2rem]">
 	<div class="w-fit">
-		<h1 class="bg-gradient-to-tr from-[#565656] to-[#ffffff] text-transparent bg-clip-text">
+		<h2 class="bg-gradient-to-tr from-[#565656] to-[#ffffff] text-transparent bg-clip-text">
 			<span class="font-[100] text-inherit">OVER</span>VIEW
-		</h1>
+		</h2>
 	</div>
-	<div class="w-1/2">
-		<p class="font-light text-center">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel.
-			Nulla pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum
-			est. Odio facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla
-			aliquet enim tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
-		</p>
-	</div>
-	<div class="w-1/2">
-		<p class="font-light text-center">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel.
-			Nulla pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum
-			est. Odio facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla
-			aliquet enim tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
-		</p>
-	</div>
-	<div class="w-1/2">
-		<p class="font-light text-center">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel.
-			Nulla pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum
-			est. Odio facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla
-			aliquet enim tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
-		</p>
-	</div>
+	<p class="font-light text-center">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+		labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel. Nulla
+		pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum est. Odio
+		facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla aliquet enim
+		tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
+	</p>
+	<p class="font-light text-center">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+		labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel. Nulla
+		pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum est. Odio
+		facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla aliquet enim
+		tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
+	</p>
+	<p class="font-light text-center">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+		labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel. Nulla
+		pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum est. Odio
+		facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla aliquet enim
+		tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
+	</p>
 </section>
 
-<section id="collection" class="h-auto pt-[3rem] w-full flex flex-col items-center gap-[2rem]">
+<section
+	id="collection"
+	class="min-h-[100vh] pt-[3rem] w-full flex flex-col items-center gap-[2rem]"
+>
 	<div class="w-fit">
-		<h1 class="bg-gradient-to-tr from-[#565656] to-[#ffffff] text-transparent bg-clip-text">
+		<h2 class="bg-gradient-to-tr from-[#565656] to-[#ffffff] text-transparent bg-clip-text">
 			<span class="font-[100] text-inherit">DATA</span>COLLECTION
-		</h1>
+		</h2>
 	</div>
-	<CodeBlock language="python" {code} background ="bg-transparent"showHeader={true} showLineNumbers={true} codeTextClasses ="text-xs text-white" dimensions ="w-[70%]" lineNumberTextClasses="text-[#565656] text-xs" />
+	<CodeBlock
+		language="python"
+		{code}
+		background="bg-transparent"
+		showHeader={true}
+		showLineNumbers={true}
+		codeTextClasses="text-xs text-white"
+		dimensions="w-full"
+		lineNumberTextClasses="text-[#565656] text-xs"
+	/>
 </section>
 
 <style>

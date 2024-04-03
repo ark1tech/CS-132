@@ -89,7 +89,7 @@ html {
 
 body {
 	background-color: rgb(21, 24, 29);
-	background-image: url('$lib/images/grain.svg'), radial-gradient(circle at top, rgb(24, 29, 37) 0%, rgb(14, 14, 16) 39%);
+	background-image: url('$lib/images/grain.svg'), radial-gradient(circle closest-corner at top, rgb(24, 29, 37) 0%, rgb(15, 15, 21) 65%, rgb(14, 14, 16) 85%);
 	background-repeat: repeat, no-repeat;
 	background-blend-mode:overlay , normal;
 	background-size: 35%, 100%;
@@ -113,19 +113,93 @@ body {
 	background: rgba(0,0,0,0);
 }
 
-p {
-	font-family: 'Inter Variable';
-	color: rgb(182, 182, 182);
-} 
-
-a {
-	font-family: 'Inter Variable';
-	color: rgb(226, 226, 226);
-} 
-
-h1 {
-	font-family: 'Roboto';
-	font-weight: 450;
-	font-size: 4.5rem;
-    line-height: 1;
+@media (min-width: 0) {
+    p {
+		font-family: 'Inter Variable';
+		color: rgb(182, 182, 182);
+		font-size: 0.7rem;
+		width: 80%;
+	} 
+	
+	a {
+		font-family: 'Inter Variable';
+		color: rgb(226, 226, 226);
+		font-size: 0.7rem;
+	} 
+	
+	
+	h1 {
+		font-family: 'Roboto';
+		font-weight: 450;
+		font-size: 2.5rem;
+		line-height: 1;
+	}
+	
+	h2 {
+		font-family: 'Roboto';
+		font-weight: 450;
+		font-size: 1.5rem;
+		line-height: 1;
+	}
 }
+
+@media (min-width: 350px) {
+    p {
+		font-family: 'Inter Variable';
+		color: rgb(182, 182, 182);
+		font-size: 0.8rem;
+		width: 80%;
+	} 
+	
+	a {
+		font-family: 'Inter Variable';
+		color: rgb(226, 226, 226);
+		font-size: 0.8rem;
+	} 
+	
+	
+	h1 {
+		font-family: 'Roboto';
+		font-weight: 450;
+		font-size: 3.5rem;
+		line-height: 1;
+	}
+	
+	h2 {
+		font-family: 'Roboto';
+		font-weight: 450;
+		font-size: 2rem;
+		line-height: 1;
+	}
+}
+
+@media (min-width: 500px) {
+    p {
+		font-family: 'Inter Variable';
+		color: rgb(182, 182, 182);
+		font-size: 0.9rem;
+		width: 50%;
+	} 
+	
+	a {
+		font-family: 'Inter Variable';
+		color: rgb(226, 226, 226);
+		font-size: 0.9rem;
+	} 
+	
+	
+	h1 {
+		font-family: 'Roboto';
+		font-weight: 450;
+		font-size: 4.5rem;
+		line-height: 1;
+	}
+	
+	h2 {
+		font-family: 'Roboto';
+		font-weight: 450;
+		font-size: 4rem;
+		line-height: 1;
+	}
+}
+

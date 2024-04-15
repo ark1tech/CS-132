@@ -1,6 +1,6 @@
 <script>
 	import Button from './Button.svelte';
-	import Reddit from '$lib/images/reddit.webp';
+	import Reddit from '$lib/images/reddit_bg.webp';
 	import antiwork from '$lib/images/antiwork.webp';
 	import AOS from 'aos';
 	import 'aos/dist/aos.css';

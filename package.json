@@ -36,6 +36,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"aos": "^2.3.4",
 		"highlight.js": "^11.9.0",
 		"svhighlight": "^0.7.1",
 		"tailwind-gradient-mask-image": "^1.2.0"

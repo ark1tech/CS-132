@@ -16,12 +16,12 @@
 </script>
 
 <div
-	class="w-fit border border-[#24478c] shadow-[0_0_5px_0_#19346a] rounded-lg overflow-clip
+	class="w-fit border border-[#c9896a] shadow-[0_0_5px_0_#ffab81] rounded-lg overflow-clip
 "
 >
 	<a
 		class=" text-white flex flex-row items-center py-2 px-[0.9rem] gap-[0.6rem]
-			bg-[#091742] shadow-[inset_0_-8px_20px_#19346a]
+			bg-[#ff6d24] shadow-[inset_0_-5px_10px_#ffab81]
 			"
 		on:click={handleAnchorClick}
 		{href}
@@ -30,4 +30,4 @@
 		{label}
 	</a>
 </div>
-<div class="border-[#19346a]"></div>
+<div class="border-[#ffab81]"></div>

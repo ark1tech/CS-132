@@ -1,10 +1,36 @@
 <script>
 	import Button from './Button.svelte';
-	import reddit2 from '$lib/images/Reddit2.webp';
+	import Reddit from '$lib/images/reddit.webp';
 	import antiwork from '$lib/images/antiwork.webp';
+	import AOS from 'aos';
+	import 'aos/dist/aos.css';
+	import { onMount } from 'svelte';
 
-	import { CodeBlock } from 'svhighlight';
-	import 'highlight.js/styles/github-dark.css';
+	// import { CodeBlock } from 'svhighlight';
+	// import 'highlight.js/styles/github-dark.css';
+
+	onMount(() => {
+		AOS.init({
+			// Global settings:
+			disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+			startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+			initClassName: 'aos-init', // class applied after initialization
+			animatedClassName: 'aos-animate', // class applied on animation
+			useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+			disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+			debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+			throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+			// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+			offset: 120, // offset (in px) from the original trigger point
+			delay: 0, // values from 0 to 3000, with step 50ms
+			duration: 400, // values from 0 to 3000, with step 50ms
+			easing: 'ease', // default easing for AOS animations
+			once: false, // whether animation should happen only once - while scrolling down
+			mirror: true, // whether elements should animate out while scrolling past them
+			anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+		});
+	});
 
 	const down_arrow = `<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -22,136 +48,70 @@
 			/><path d="M8 15l4 4" />
 		</svg>`;
 
+	const up_right_arrow = `<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>`;
+
 	const caution = `<?xml version="1.0" encoding="utf-8"?>
 		<svg width="17px" height="17px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path d="M12 7V13M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="rgb(165, 165, 165)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-		<circle cx="12" cy="16.5" r="0.9" fill="rgb(165, 165, 165)"/>
+		<path d="M12 7V13M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#4A5464" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<circle cx="12" cy="16.5" r="0.9" fill="#4A5464"/>
 		</svg>`;
 </script>
 
 <svelte:head>
 	<title>pocarí</title>
 	<meta name="description" content="CS 132 Pocari" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </svelte:head>
 
-<section class="h-auto pt-[3rem] flex flex-col items-center gap-[2rem]">
-	<div class="w-full flex flex-col items-center gap-[1rem]">
-		<div
-			class="w-fit flex flex-row gap-[5px] border-[#5664803d] border py-2 px-4 mb-2 rounded-full items-center"
-		>
-			{@html caution}
-			<p class="w-fit text-center">Website work in progress</p>
+<section class="w-full min-h-[100dvh] flex flex-col items-center relative gap-4 justify-start">
+	<div class="absolute z-0 gradient-mask-t-70 w-screen h-full">
+		<div class="absolute z-0 gradient-mask-b-70 w-screen h-full">
+			<div class="w-full h-full bg-[url('$lib/images/grid.svg')] bg-repeat"></div>
 		</div>
-		<div class="w-fit">
-			<a
-				class="font-bold font-['JetBrains_Mono'] text-center text-gray-500 text-xs"
-				href="https://dcs.upd.edu.ph/academics/undergraduate-program/"
-				target="_blank"
-			>
-				A CS 132 DATA SCIENCE PORTFOLIO:
-			</a>
-		</div>
-		<h1 class="bg-gradient-to-tr from-[#565656] to-[#ffffff] text-transparent bg-clip-text">
-			<span class="font-[100] text-inherit">ANTI</span>WORK
-		</h1>
-		<!-- <h1
-			class="bg-gradient-to-tr from-[#172a4d] to-[#2f3ccb] brightness-200 drop-shadow-[0_0_7px_#19346a] text-transparent bg-clip-text"
-		>
-			<span class="font-[100] text-inherit">r/</span>AntiworkPH
-		</h1> -->
 	</div>
-	<p class="font-light text-center">
-		Our project delves into the pervasive issue of labor exploitation in the Philippines through an
-		innovative analysis of data sourced from the subreddit
-		<span class="inline-flex flex-row items-baseline gap-[0.3rem] ml-[0.2rem]">
-			<img
-				src={antiwork}
-				alt="r/AntiworkPH Logo"
-				class="h-[0.8rem] w-auto rounded-full relative bottom-0"
-			/>
-			<a href="https://www.reddit.com/r/AntiworkPH/" class="inline_url" target="_blank">
-				r/AntiworkPH</a
-			>
-		</span>. By harnessing machine learning techniques, we aim to uncover nuanced patterns and
-		themes within this online community's discourse, shedding light on the multifaceted dimensions
-		of anti-work sentiments and labor struggles.
-	</p>
-	<Button icon={down_arrow} label={'Learn more'} href={'#overview'} />
-	<img src={reddit2} alt="reddit2" class="w-full h-auto gradient-mask-b-0" />
+	<div class="relative z-1 pt-[10rem] w-full flex flex-col items-center gap-[1rem]">
+		<div class="flex flex-row gap-[0.5rem] items-center justify-center">
+			{@html caution}
+			<p class="font-['JetBrains_Mono'] text-sm w-fit">Website still work in progress</p>
+		</div>
+		<h1 class="text-[#0E0F11]">Antiwork</h1>
+		<p class="text-center">
+			Our data science project delves into the pervasive issue of labor exploitation in the
+			Philippines through an analysis of data sourced from the subreddit r/AntiworkPH, shedding
+			light on the multifaceted dimensions of anti-work sentiments and labor struggles.
+		</p>
+		<Button label="Learn more" href="" icon={down_arrow} />
+	</div>
+	<div class="w-full h-full">
+		<div class="w-full h-full gradient-mask-b-0">
+			<img data-aos="fade-in" data-aos-duration="700" alt="" src={Reddit} class="h-auto w-full relative z-1" />
+		</div>
+	</div>
 </section>
 
-<section
-	id="overview"
-	class="min-h-[100dvh] pt-[3rem] w-full flex flex-col items-center gap-[2rem]"
->
-	<div class="w-fit">
-		<h2 class="bg-gradient-to-tr from-[#565656] to-[#ffffff] text-transparent bg-clip-text">
-			<span class="font-[100] text-inherit">OVER</span>VIEW
-		</h2>
+<section id="overview" class="w-full min-h-[100dvh] flex flex-col items-center gap-4 justify-start">
+	<div class=" w-full flex flex-col items-start gap-[1rem]">
+		<h2 class="text-[#0E0F11]" data-aos="fade-in" data-aos-duration="700">Overview</h2>
+		<p>
+			Our data science project delves into the pervasive issue of labor exploitation in the
+			Philippines through an analysis of data sourced from the subreddit r/AntiworkPH, shedding
+			light on the multifaceted dimensions of anti-work sentiments and labor struggles.
+		</p>
 	</div>
-	<p class="font-light text-center">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel. Nulla
-		pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum est. Odio
-		facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla aliquet enim
-		tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
-	</p>
-	<p class="font-light text-center">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel. Nulla
-		pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum est. Odio
-		facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla aliquet enim
-		tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
-	</p>
-	<p class="font-light text-center">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel. Nulla
-		pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum est. Odio
-		facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla aliquet enim
-		tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
-	</p>
 </section>
 
 <section
 	id="collection"
-	class="min-h-[100dvh] pt-[3rem] w-full flex flex-col items-center gap-[2rem]"
+	class="w-full min-h-[100dvh] flex flex-col items-center gap-4 justify-start"
 >
-	<div class="w-fit">
-		<h2 class="bg-gradient-to-tr from-[#565656] to-[#ffffff] text-transparent bg-clip-text">
-			<span class="font-[100] text-inherit">DATA</span>COLLECTION
-		</h2>
+	<div class="pt-[10rem] w-full flex flex-col items-start gap-[1rem]">
+		<h2 class="text-[#0E0F11]" data-aos="fade-in" data-aos-duration="700">Data Collection</h2>
+		<p>
+			Using Python Reddit API Wrapper (PRAW), we were able to mine the submissions under
+			r/AntiworkPH.
+		</p>
+		<Button label="View our dataset" href="" icon={up_right_arrow} />
 	</div>
-	<p class="font-light text-center">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel. Nulla
-		pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum est. Odio
-		facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla aliquet enim
-		tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
-	</p>
-	<p class="font-light text-center">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel. Nulla
-		pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum est. Odio
-		facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla aliquet enim
-		tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
-	</p>
-	<p class="font-light text-center">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis leo vel. Nulla
-		pharetra diam sit amet nisl suscipit. Diam sit amet nisl suscipit adipiscing bibendum est. Odio
-		facilisis mauris sit amet massa. Vel facilisis volutpat est velit. Tristique nulla aliquet enim
-		tortor at auctor. Morbi tristique senectus et netus et malesuada fames ac.
-	</p>
-	<!-- <CodeBlock
-		language="python"
-		{code}
-		background="bg-transparent"
-		showHeader={true}
-		showLineNumbers={true}
-		codeTextClasses="text-xs text-white"
-		dimensions="w-full"
-		lineNumberTextClasses="text-[#565656] text-xs"
-	/> -->
 </section>
 
 <style>

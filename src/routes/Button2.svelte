@@ -12,18 +12,18 @@
 			top: anchor.offsetTop - 50,
 			behavior: 'smooth'
 		});
+		// on:click={handleAnchorClick}
 	}
 </script>
 
 <div
-	class="w-fit border border-[#c9896a] shadow-[0_0_5px_0_#ffab81] rounded-lg overflow-clip
+	class="w-fit border border-[#ff5e01] shadow-[0_0_5px_0_#ffab81] rounded-lg overflow-clip
 "
 >
 	<a
-		class=" text-white flex flex-row items-center py-2 px-[0.9rem] gap-[0.6rem]
-			bg-[#ff5e01] shadow-[inset_0_-5px_10px_#ffab81]
+		class=" text-[#ff5e01] flex flex-row items-center py-2 px-[0.9rem] gap-[0.6rem]
 			"
-		on:click={handleAnchorClick}
+		target="_blank"
 		{href}
 	>
 		{@html icon}

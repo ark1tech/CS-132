@@ -150,29 +150,29 @@ body {
 }
 
 p, li, ol{
-	font-family: 'Inter Variable';
+	font-family: 'Inter Variable', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	color: #4A5464;
 } 
 
 a {
 	font-weight: 400;
-	font-family: 'Inter Variable';
+	font-family: 'Inter Variable', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } 
 
 h1 {
-	font-family: 'Public Sans';
+	font-family: 'Public Sans', Arial, Helvetica, sans-serif;
 	font-weight: 600;
 	letter-spacing: -0.025em;
 }
 
 h2 {
-	font-family: 'Public Sans';
+	font-family: 'Public Sans', Arial, Helvetica, sans-serif;
 	font-weight: 500;
 	letter-spacing: -0.025em;
 }
 
 h3 {
-	font-family: 'Public Sans';
+	font-family: 'Public Sans', Arial, Helvetica, sans-serif;
 	font-weight: 400;
 	color: #0E0F11;
 	font-size: 3rem;
@@ -180,14 +180,14 @@ h3 {
 }
 
 h5 {
-	font-family: 'Public Sans';
+	font-family: 'Public Sans', Arial, Helvetica, sans-serif;
 	font-weight: 400;
 	font-size: 1rem;
 	color: #4A5464;
 }
 
 .code {
-	font-family: 'JetBrains Mono';
+	font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
 	font-weight: 500;
 	color: rgb(240, 117, 29);
 }

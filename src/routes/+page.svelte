@@ -181,7 +181,7 @@
 						<span class ="font-[500]">1. Mining Limit</span> &ndash; PRAW only allows us to collect up to 1000 submissions for each request. This means that we don't have much control on the data we get as it will always return relatively the same 1000.
 					</p>
 					<p class = "w-full ml-[0.5rem]">
-						</span><span class ="font-[500]">2. No Time Customizations</span> &ndash; We can't filter submissions based on specfici posting times and time intervals. This is quite unfortunate as it would be difficult to minimize the time bias. 
+						</span><span class ="font-[500]">2. No Time Customizations</span> &ndash; We can't filter submissions based on specfic posting times and time intervals. This is quite unfortunate as it would be difficult to minimize the time bias. 
 					</p>
 				`}
 			/>
@@ -195,13 +195,13 @@
 						<span class ="font-[500]">1.</span> To sample the subreddit, we want to scrape 1000 submissions per category. The categories are: Hot, New, Rising, Controversial, and Top. Since we will analyze engagement of submissions later on, New is out. Upon scraping, we found out that Rising is a subset of Hot and Top, and that would left us with Hot, Top, and Controversial. For Top, we picked All Time as it would give us submissions older than last year, i.e. April 2023. 
 					</p>
 					<p class = "w-full ml-[1rem]">
-						<span class ="font-[500]">•</span> We opted not to use the search function since the objective of this project is to find those relevant keywords themselves. 
+						<span class ="font-[500]">•</span> We opted not to use the search function since one of the objectives of our project is to find those relevant keywords themselves. 
 					</p>
 					<p class = "w-full ml-[0.5rem]">
 						<span class ="font-[500]">2.</span> To avoid duplicates, we want to use the <span class="code font-bold">Save</span> function and mark the submission we've already scraped.
 					</p>
 					<p class = "w-full ml-[0.5rem]">
-						<span class ="font-[500]">3.</span> To save time, we want to skip non-text-only submissions that have less than 10 upvotes since transcripting them may be counterproductive.
+						<span class ="font-[500]">3.</span> To save time, we want to skip non-text-only submissions that have less than 10 upvotes since transcribing them may be counterproductive.
 					</p>
 					<p class = "w-full ml-[0.5rem]">
 						<span class ="font-[500]">4.</span> Then as much as possible, we need to minimize time bias. Hence, we won't scrape submissions that are 10 days old or younger as they may have yet to peak in engagements. 
@@ -209,10 +209,10 @@
 				`}
 			/>
 			<div class="flex flex-col items-center mt-[2rem]">
-				<p class="text-center">That gives us...</p>
+				<p class="text-center">Executing the gameplan gives us...</p>
 				<h3 class ="text-center leading-tight lg:leading-normal my-[1rem] lg:my-0">2467 scraped submissions!</h3>
 			</div>
-			<div class = "w-full">
+			<div class = "lg:w-[69%] w-full">
 				<BarChartStacked {data} {options}/>
 			</div>
 		</div>

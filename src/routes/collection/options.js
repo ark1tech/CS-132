@@ -23,9 +23,9 @@ export default {
             option: 2
         },
         scale: {
-            Hot: "#e8b582",
-            Top: "#bf7e3d",
-            Controversial: "#a6611c"
+            Hot: "#ff9e7a",
+            Top: "#e0815c",
+            Controversial: "#db6537"
         }
     }, 
     bars: {

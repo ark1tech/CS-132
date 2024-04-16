@@ -89,7 +89,7 @@
 		<Button label="Learn more" href="" icon={down_arrow} />
 	</div>
 	<div class="w-full h-full mt-[2rem]">
-		<div class="w-full h-full gradient-mask-b-100 drop-shadow-xl">
+		<div class="w-full h-full gradient-mask-b-40 drop-shadow-xl">
 			<img
 				data-aos="fade-in"
 				data-aos-duration="700"
@@ -103,7 +103,7 @@
 
 <section
 	id="overview"
-	class="pt-[8rem] w-full min-h-[100dvh] flex flex-col items-center gap-4 justify-start"
+	class="pt-[1rem] w-full min-h-[100dvh] flex flex-col items-center gap-4 justify-start"
 >
 	<div class="w-full flex flex-col items-center gap-[1rem]">
 		<h2 class="text-[#0E0F11] my-[2rem]" data-aos="fade-in" data-aos-duration="700">Overview</h2>
@@ -161,7 +161,7 @@
 						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Content (None if video or image)</p>
 						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Upvotes Count</p>
 						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Comments Count</p>
-						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Upvote Ratio (Upvote	s:downvotes)</p>
+						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Upvote Ratio (Upvotes:downvotes)</p>
 						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Flair</p>
 						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Permalink</p>
 						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Submission ID</p>
@@ -209,7 +209,7 @@
 				`}
 			/>
 			<div class="flex flex-col items-center mt-[2rem]">
-				<p class="text-center">Executing the gameplan gives us...</p>
+				<p class="text-center">Executing the gameplan gave us...</p>
 				<h3 class ="text-center leading-tight lg:leading-normal my-[1rem] lg:my-0">2467 scraped submissions!</h3>
 			</div>
 			<div class = "lg:w-[69%] w-full">
@@ -224,7 +224,7 @@
 			/>
 			<Button label="View dataset" href="" icon={up_right_arrow} />
 		</div>
-		<p class="w-full text-center">But now comes the hard part&ndash;cleaning the data.</p>
+		<p class="w-full text-center">But now comes the hard part&mdash;cleaning the data.</p>
 	</div>
 </section>
 

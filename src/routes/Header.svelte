@@ -14,7 +14,7 @@
 	}
 </script>
 
-<div class="z-10 flex flex-col items-center px-[7dvw] py-[0.5dvh] fixed left-0 w-full bg-[#ffffff] backdrop-blur-xl border-b-[0.7px] border-[#0d121c3d]">
+<div class="z-10 flex flex-col items-center px-[7dvw]  fixed left-0 w-full bg-[#ffffff] backdrop-blur-xl border-b-[0.7px] border-[#0d121c3d]">
 	<!-- border-b-[0.5px] border-[#5664803d] -->
 	<header class="flex flex-row justify-between items-center min-w-full max-w-[1500px] px-[3dvw] py-[2dvh]">
 		<div class="flex-none">

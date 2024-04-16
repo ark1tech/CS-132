@@ -16,16 +16,16 @@ export default {
     },
     height: '400px',
     legend: {
-        alignement: 'center',
+        alignment: 'center',
     },
     color : {
         pairing : {
             option: 2
         },
         scale: {
-            Hot: "#ff9e7a",
-            Top: "#e0815c",
-            Controversial: "#db6537"
+            2022: "#de6f57",
+            2023: "#ff9b70",
+            2024: "#e35619"
         }
     }, 
     bars: {

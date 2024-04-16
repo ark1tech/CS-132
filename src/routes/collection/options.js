@@ -1,7 +1,4 @@
 export default {
-    style: {
-        "border-radius": "9999px",
-    },
     title: 'Distribution of data',
     animations: true,
     axes: {
@@ -31,7 +28,6 @@ export default {
     bars: {
         width: 50,
         maxWidth: 100,
-        spacingFactor: -100,
     },
     theme : "g10"
   }

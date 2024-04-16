@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte';
 	import Button from './Button.svelte';
 	import Button2 from './Button2.svelte';
 	import TextCard from './TextCard.svelte';
@@ -6,7 +7,10 @@
 	import antiwork from '$lib/images/antiwork.webp';
 	import AOS from 'aos';
 	import 'aos/dist/aos.css';
-	import { onMount } from 'svelte';
+	import '@carbon/charts-svelte/styles.css';
+	import { BarChartStacked } from '@carbon/charts-svelte';
+	import options from './collection/options.js'
+	import data from './collection/data.js'
 
 	// import { CodeBlock } from 'svhighlight';
 	// import 'highlight.js/styles/github-dark.css';
@@ -101,8 +105,24 @@
 	id="overview"
 	class="pt-[8rem] w-full min-h-[100dvh] flex flex-col items-center gap-4 justify-start"
 >
-	<div class=" w-full flex flex-col items-center gap-[1rem]">
-		<h2 class="text-[#0E0F11]" data-aos="fade-in" data-aos-duration="700">Overview</h2>
+	<div class="w-full flex flex-col items-center gap-[1rem]">
+		<h2 class="text-[#0E0F11] my-[2rem]" data-aos="fade-in" data-aos-duration="700">Overview</h2>
+		<p data-aos="fade-in" data-aos-duration="700" class="text-center">
+			Our data science project delves into the pervasive issue of labor exploitation in the
+			Philippines through an analysis of data sourced from the subreddit r/AntiworkPH, shedding
+			light on the multifaceted dimensions of anti-work sentiments and labor struggles.
+		</p>
+	</div>
+	<div class="w-full flex flex-col items-center gap-[1rem]">
+		<h2 class="text-[#0E0F11] my-[2rem]" data-aos="fade-in" data-aos-duration="700">Background</h2>
+		<p data-aos="fade-in" data-aos-duration="700" class="text-center">
+			Our data science project delves into the pervasive issue of labor exploitation in the
+			Philippines through an analysis of data sourced from the subreddit r/AntiworkPH, shedding
+			light on the multifaceted dimensions of anti-work sentiments and labor struggles.
+		</p>
+	</div>
+	<div class="w-full flex flex-col items-center gap-[1rem]">
+		<h2 class="text-[#0E0F11] my-[2rem]" data-aos="fade-in" data-aos-duration="700">Hypothesis</h2>
 		<p data-aos="fade-in" data-aos-duration="700" class="text-center">
 			Our data science project delves into the pervasive issue of labor exploitation in the
 			Philippines through an analysis of data sourced from the subreddit r/AntiworkPH, shedding
@@ -125,8 +145,8 @@
 			<div class="z-0 h-full w-full bg-[url('$lib/images/hex.svg')] bg-repeat"></div>
 		</div>
 	</div>
-	<div class="relative z-1 w-full flex flex-col items-center gap-[2rem]">
-		<h2 class="text-[#0E0F11]" data-aos="fade-in" data-aos-duration="700">Data Collection</h2>
+	<div class="relative z-1 lg:w-[80%] w-full flex flex-col items-center gap-[2rem]">
+		<h2 class="text-[#0E0F11] my-[2rem]" data-aos="fade-in" data-aos-duration="700">Data Collection</h2>
 		<div class="flex flex-col w-full justify-between gap-[1.5rem] items-center">
 			<TextCard
 				title="DESCRIBING THE DATA"
@@ -136,12 +156,12 @@
 					</p>
 					<div class ="w-full flex flex-row flex-wrap gap-4 my-4">
 						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Timestamp</p>
-						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Content Type (Text, Video, Image)</p>
+						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Content Type (Text, video, image)</p>
 						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Title</p>
-						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Content</p>
+						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Content (None if video or image)</p>
 						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Upvotes Count</p>
 						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Comments Count</p>
-						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Upvote Ratio (Upvotes: Downvotes)</p>
+						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Upvote Ratio (Upvote	s:downvotes)</p>
 						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Flair</p>
 						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Permalink</p>
 						<p class ="py-1 px-4 bg-[#ffe2c9af] w-fit rounded-full code">Submission ID</p>
@@ -158,10 +178,10 @@
 						In using PRAW, there are a couple of limitations to note: 
 					</p>
 					<p class = "w-full ml-[0.5rem]">
-						<span class ="font-[500]">Mining Limit</span> &ndash; PRAW only allows us to collect up to 1000 submissions at a time.
+						<span class ="font-[500]">1. Mining Limit</span> &ndash; PRAW only allows us to collect up to 1000 submissions for each request. This means that we don't have much control on the data we get as it will always return relatively the same 1000.
 					</p>
 					<p class = "w-full ml-[0.5rem]">
-						</span><span class ="font-[500]">No Time Customizations</span> &ndash; We can't filter submissions based on posting times. This is quite unfortunate as it would be difficult to eliminate the time bias.
+						</span><span class ="font-[500]">2. No Time Customizations</span> &ndash; We can't filter submissions based on specfici posting times and time intervals. This is quite unfortunate as it would be difficult to minimize the time bias. 
 					</p>
 				`}
 			/>
@@ -172,23 +192,31 @@
 						Now, here's the gameplan:
 					</p>
 					<p class = "w-full ml-[0.5rem]">
-						<span class ="font-[500]">1.</span> To sample the subreddit, we want to scrape 1000 submissions per category. The categories are: Hot, New, Rising, and Top. Since we will analyze engagement of submissions later on, New and Rising (posts that are about to gain traction) are out. Hence, we're left with Top (all time) and Hot.
+						<span class ="font-[500]">1.</span> To sample the subreddit, we want to scrape 1000 submissions per category. The categories are: Hot, New, Rising, Controversial, and Top. Since we will analyze engagement of submissions later on, New is out. Upon scraping, we found out that Rising is a subset of Hot and Top, and that would left us with Hot, Top, and Controversial. For Top, we picked All Time as it would give us submissions older than last year, i.e. April 2023. 
+					</p>
+					<p class = "w-full ml-[1rem]">
+						<span class ="font-[500]">•</span> We opted not to use the search function since the objective of this project is to find those relevant keywords themselves. 
 					</p>
 					<p class = "w-full ml-[0.5rem]">
-						<span class ="font-[500]">2.</span> To avoid duplicates, we want to use the <span class="code font-bold">Save</span> function and mark the submission we've already scraped. 
+						<span class ="font-[500]">2.</span> To avoid duplicates, we want to use the <span class="code font-bold">Save</span> function and mark the submission we've already scraped.
 					</p>
 					<p class = "w-full ml-[0.5rem]">
-						<span class ="font-[500]">3.</span> To save time, we want to skip non-text-only submissions that have less than 10 upvotes. 
+						<span class ="font-[500]">3.</span> To save time, we want to skip non-text-only submissions that have less than 10 upvotes since transcripting them may be counterproductive.
+					</p>
+					<p class = "w-full ml-[0.5rem]">
+						<span class ="font-[500]">4.</span> Then as much as possible, we need to minimize time bias. Hence, we won't scrape submissions that are 10 days old or younger as they may have yet to peak in engagements. 
 					</p>
 				`}
 			/>
 			<div class="flex flex-col items-center mt-[2rem]">
 				<p class="text-center">That gives us...</p>
-				<h3>1875 scraped submissions!</h3>
-				<p class="text-center w-full">1000 from All Time New category · 875 from Hot category</p>
+				<h3 class ="text-center leading-tight lg:leading-normal my-[1rem] lg:my-0">2467 scraped submissions!</h3>
+			</div>
+			<div class = "w-full">
+				<BarChartStacked {data} {options}/>
 			</div>
 		</div>
-		<div class="flex sm:flex-row flex-col sm:gap-[1rem] gap-[0.3rem] items-center">
+		<div class="w-full flex sm:flex-row flex-col sm:gap-[1rem] gap-[0.3rem] items-center justify-center">
 			<Button2
 				label="View scraper GitHub repo"
 				href="https://github.com/ark1tech/CS132-Preprocessing"
@@ -210,14 +238,14 @@
 			</div>
 		</div>
 		<footer
-			class="relative z-1 w-full h-full py-[2rem] flex lg:flex-row flex-col items-center justify-evenly gap-5 border-t-[0.7px] border-[#0d121c3d]"
+			class="relative z-1 w-full h-full py-[2rem] flex md:flex-row flex-col items-center justify-evenly gap-5 border-t-[0.7px] border-[#0d121c3d]"
 		>
 			<div class="flex flex-col gap-2 items-center z-2">
 				<!-- <p class="text-sm w-full text-center"></p> -->
 				<div class="flex flex-col gap-1">
 					<h5 class="w-full text-center">Seth Eliserio</h5>
-					<a class="w-full text-center font-normal text-[#4A5464]" href="/" target="__blank"
-						>@seth</a
+					<a class="w-full text-center font-normal text-[#4A5464]" href="https://www.linkedin.com/in/seth-eliserio-655b28225/" target="__blank"
+						>@setheliserio</a
 					>
 				</div>
 			</div>
@@ -237,7 +265,7 @@
 				<div class="flex flex-col gap-1">
 					<h5 class="w-full text-center">Annika Domondon</h5>
 					<a class="w-full text-center font-normal text-[#4A5464]" href="/" target="__blank"
-						>@annika</a
+						>@maridapottedcat</a
 					>
 				</div>
 			</div>

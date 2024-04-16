@@ -24,13 +24,13 @@
 		</div>
 		<nav class=" text-[#505050]">
 			<ul class="flex-row justify-between font-light text-sm gap-[2.3rem] lg:flex hidden">
-				<li><a href="#overview" on:click={handleAnchorClick}> Overview </a></li>
-				<li><a href="#collection" on:click={handleAnchorClick}> Collection </a></li>
-				<li><a href="/">Exploration</a></li>
-				<li><a href="/">Modelling</a></li>
-				<li><a href="/">Results</a></li>
-				<li><a href="/">Conclusion</a></li>
-				<li><a href="/">About Us</a></li>
+				<li><a href="#overview" on:click={handleAnchorClick} class = "hover:font-bold duration-300 ease-in-out transition-all"> Overview </a></li>
+				<li><a href="#collection" on:click={handleAnchorClick} class = "hover:font-bold duration-300 ease-in-out transition-all"> Collection </a></li>
+				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">Exploration</a></li>
+				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">Modelling</a></li>
+				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">Results</a></li>
+				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">Conclusion</a></li>
+				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">About Us</a></li>
 			</ul>
 			<div class="lg:hidden block">
 				{@html hamburger_menu}

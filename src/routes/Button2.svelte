@@ -21,7 +21,7 @@
 "
 >
 	<a
-		class=" text-[#ff5e01] flex flex-row items-center py-2 px-[0.9rem] gap-[0.6rem]
+		class=" text-[#ff5e01] hover:text-white hover:bg-[#ff5e01] transition-all ease-in-out duration-300  flex flex-row items-center py-2 px-[0.9rem] gap-[0.6rem]
 			"
 		target="_blank"
 		{href}

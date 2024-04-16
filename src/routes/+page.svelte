@@ -212,7 +212,7 @@
 				<p class="text-center">Executing the gameplan gave us...</p>
 				<h3 class ="text-center leading-tight lg:leading-normal my-[1rem] lg:my-0">2467 scraped submissions!</h3>
 			</div>
-			<div class = "lg:w-[69%] w-full">
+			<div class = "lg:w-[80%] w-full border-t border-b border-white backdrop-blur-lg bg-[#ffffff29] rounded-lg py-5 px-10">
 				<BarChartStacked {data} {options}/>
 			</div>
 		</div>
@@ -222,7 +222,7 @@
 				href="https://github.com/ark1tech/CS132-Preprocessing"
 				icon={up_right_arrow}
 			/>
-			<Button label="View dataset" href="" icon={up_right_arrow} />
+			<Button label="View dataset" href="https://docs.google.com/spreadsheets/d/1lmhzWPGKuykna-nOAT6i9ry_-330GrGRh_M5wN73qEE/edit?usp=sharing" icon={up_right_arrow} />
 		</div>
 		<p class="w-full text-center">But now comes the hard part&mdash;cleaning the data.</p>
 	</div>

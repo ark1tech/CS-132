@@ -12,7 +12,6 @@
 		"test:unit": "vitest"
 	},
 	"devDependencies": {
-		"@carbon/charts-svelte": "^1.15.6",
 		"@fontsource/fira-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@playwright/test": "^1.28.1",
@@ -24,9 +23,6 @@
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/eslint": "^8.56.0",
 		"autoprefixer": "^10.4.19",
-		"d3": "^7.9.0",
-		"d3-cloud": "^1.2.7",
-		"d3-sankey": "^0.12.3",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
@@ -40,7 +36,11 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@carbon/charts-svelte": "^1.15.6",
 		"aos": "^2.3.4",
+		"d3": "^7.9.0",
+		"d3-cloud": "^1.2.7",
+		"d3-sankey": "^0.12.3",
 		"highlight.js": "^11.9.0",
 		"svhighlight": "^0.7.1",
 		"tailwind-gradient-mask-image": "^1.2.0"

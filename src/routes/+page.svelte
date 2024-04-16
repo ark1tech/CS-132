@@ -168,11 +168,11 @@
 			<div class="z-0 h-full w-full bg-[url('$lib/images/hex.svg')] bg-repeat"></div>
 		</div>
 	</div>
-	<img src={Line} alt ="l" class="w-[60%] h-auto"/>
+	<img src={Line} alt ="l" class="lg:w-[60%] w-full h-auto"/>
 	<div class="relative z-1 lg:w-[80%] w-full flex flex-col items-center gap-[2rem]">
 		<div class="flex flex-col w-full h-full items-center gap-[0.8rem] my-[2rem]">
 			<h4 class="sub">PART I</h4>
-			<h2 class="text-[#0E0F11]" data-aos="fade-in" data-aos-duration="700">Data Collection</h2>
+			<h2 class="text-[#0E0F11] text-center" data-aos="fade-in" data-aos-duration="700">Data Collection</h2>
 		</div>
 		<div class="flex flex-col w-full justify-between gap-[1.5rem] items-center">
 			<TextCard

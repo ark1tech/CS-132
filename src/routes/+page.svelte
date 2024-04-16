@@ -4,13 +4,13 @@
 	import Button2 from './Button2.svelte';
 	import TextCard from './TextCard.svelte';
 	import Reddit from '$lib/images/reddit_bg.webp';
-	import antiwork from '$lib/images/antiwork.webp';
+	import Line from '$lib/images/line.svg';
 	import AOS from 'aos';
 	import 'aos/dist/aos.css';
 	import '@carbon/charts-svelte/styles.css';
 	import { BarChartStacked } from '@carbon/charts-svelte';
-	import options from './collection/options.js'
-	import data from './collection/data.js'
+	import options from './collection/options.js';
+	import data from './collection/data.js';
 
 	// import { CodeBlock } from 'svhighlight';
 	// import 'highlight.js/styles/github-dark.css';
@@ -70,6 +70,9 @@
 </svelte:head>
 
 <section class="w-full min-h-[100dvh] flex flex-col items-center relative gap-4 justify-start">
+	<!-- <div class="absolute z-1 w-full h-full border">
+		<div class="relative left-[5rem] top-[5rem] w-auto h-[20%] bg-[url('$lib/images/BalloonBG.svg')] bg-no-repeat"></div>
+	</div> -->
 	<div class="absolute z-0 gradient-mask-t-70 w-screen h-full">
 		<div class="absolute z-0 gradient-mask-b-70 w-screen h-full">
 			<div class="w-full h-full bg-[url('$lib/images/grid.svg')] bg-repeat"></div>
@@ -80,11 +83,11 @@
 			{@html caution}
 			<p class="font-['JetBrains_Mono'] text-sm w-fit">Website still work in progress</p>
 		</div>
-		<h1 class="text-[#0E0F11]">Antiwork</h1>
+		<h1 class="text-[#0E0F11] text-center">Work till it works</h1>
 		<p class="text-center">
-			Our data science project delves into the pervasive issue of labor exploitation in the
-			Philippines through an analysis of data sourced from the subreddit r/AntiworkPH, shedding
-			light on the multifaceted dimensions of anti-work sentiments and labor struggles.
+			Our project delves into the pervasive issue of labor struggle in the Philippines through an
+			analysis of data sourced from the subreddit r/AntiworkPH using Natural Language Processing
+			techniques.
 		</p>
 		<Button label="Learn more" href="" icon={down_arrow} />
 	</div>
@@ -103,31 +106,51 @@
 
 <section
 	id="overview"
-	class="pt-[1rem] w-full min-h-[100dvh] flex flex-col items-center gap-4 justify-start"
+	class="pt-[1rem] w-full min-h-[100dvh] flex flex-col items-center gap-[2rem] justify-start"
 >
-	<div class="w-full flex flex-col items-center gap-[1rem]">
-		<h2 class="text-[#0E0F11] my-[2rem]" data-aos="fade-in" data-aos-duration="700">Overview</h2>
-		<p data-aos="fade-in" data-aos-duration="700" class="text-center">
-			Our data science project delves into the pervasive issue of labor exploitation in the
-			Philippines through an analysis of data sourced from the subreddit r/AntiworkPH, shedding
-			light on the multifaceted dimensions of anti-work sentiments and labor struggles.
+	<!-- <div class="absolute left-[-22rem] z-0 gradient-mask-t-50 w-[50rem] h-full">
+		<div class="z-0 gradient-mask-b-50 w-full h-full">
+			<div class="w-full h-full lg:bg-[url('$lib/images/left.png')] bg-no-repeat"></div>
+		</div>
+	</div>
+	<div class="absolute right-[-24rem] z-0 gradient-mask-t-50 w-[50rem] h-full">
+		<div class="z-0 gradient-mask-b-50 w-full h-full">
+			<div class="w-full h-full lg:bg-[url('$lib/images/right.png')] bg-no-repeat"></div>
+		</div>
+	</div> -->
+	<div class="w-full flex flex-col items-center gap-[1.5rem]">
+		<h4 class="text-center lg:w-[950px] w-full flex-wrap text-pretty">
+			Everyone needs a source of income to live comfortably, <br /> and for most Filipinos&mdash;it's
+			more than just about making ends meet.
+		</h4>
+		<p class="text-center">Background with references</p>
+	</div>
+	<div class="w-full flex flex-col items-center gap-[1.5rem] mt-[2rem]">
+		<h4 class="text-center lg:w-[950px] w-full flex-wrap text-pretty">
+			There's so much data on the Internet, and here's what we can do
+		</h4>
+		<p class="text-center">
+			r/AntiworkPH provides workers a platform to vent their frustrations and, consequently, shed
+			light on the current situation of the Philippine labor market.
+		</p>
+		<p class="text-center">
+			As such, we seek to unravel which topics have plagued the Philippine workforce since the
+			subreddit started. Through this, our group aims to bring awareness and hopefully provide a
+			more realistic view of the Philippine labor environment.
 		</p>
 	</div>
-	<div class="w-full flex flex-col items-center gap-[1rem]">
-		<h2 class="text-[#0E0F11] my-[2rem]" data-aos="fade-in" data-aos-duration="700">Background</h2>
-		<p data-aos="fade-in" data-aos-duration="700" class="text-center">
-			Our data science project delves into the pervasive issue of labor exploitation in the
-			Philippines through an analysis of data sourced from the subreddit r/AntiworkPH, shedding
-			light on the multifaceted dimensions of anti-work sentiments and labor struggles.
-		</p>
+	<div class="w-full flex flex-col items-center gap-[1.5rem] mt-[2rem]">
+		<h4 class="text-center lg:w-[950px] w-full flex-wrap text-pretty">
+			Then... what are the prevalent topics about labor struggle submitted on r/AntiworkPH?
+		</h4>
+		<p class="text-center">Null Hypothesis</p>
+		<p class="text-center">Alternative Hypothesis</p>
 	</div>
-	<div class="w-full flex flex-col items-center gap-[1rem]">
-		<h2 class="text-[#0E0F11] my-[2rem]" data-aos="fade-in" data-aos-duration="700">Hypothesis</h2>
-		<p data-aos="fade-in" data-aos-duration="700" class="text-center">
-			Our data science project delves into the pervasive issue of labor exploitation in the
-			Philippines through an analysis of data sourced from the subreddit r/AntiworkPH, shedding
-			light on the multifaceted dimensions of anti-work sentiments and labor struggles.
-		</p>
+	<div class="w-full flex flex-col items-center gap-[1.5rem] mt-[2rem]">
+		<h4 class="text-center lg:w-[950px] w-full flex-wrap text-pretty">
+			So this is what we're going to do
+		</h4>
+		<p class="text-center">Action Plan</p>
 	</div>
 </section>
 
@@ -145,8 +168,12 @@
 			<div class="z-0 h-full w-full bg-[url('$lib/images/hex.svg')] bg-repeat"></div>
 		</div>
 	</div>
+	<img src={Line} alt ="l" class="w-[60%] h-auto"/>
 	<div class="relative z-1 lg:w-[80%] w-full flex flex-col items-center gap-[2rem]">
-		<h2 class="text-[#0E0F11] my-[2rem]" data-aos="fade-in" data-aos-duration="700">Data Collection</h2>
+		<div class="flex flex-col w-full h-full items-center gap-[0.8rem] my-[2rem]">
+			<h4 class="sub">PART I</h4>
+			<h2 class="text-[#0E0F11]" data-aos="fade-in" data-aos-duration="700">Data Collection</h2>
+		</div>
 		<div class="flex flex-col w-full justify-between gap-[1.5rem] items-center">
 			<TextCard
 				title="DESCRIBING THE DATA"
@@ -210,19 +237,29 @@
 			/>
 			<div class="flex flex-col items-center mt-[2rem]">
 				<p class="text-center">Executing the gameplan gave us...</p>
-				<h3 class ="text-center leading-tight lg:leading-normal my-[1rem] lg:my-0">2467 scraped submissions!</h3>
+				<h3 class="text-center leading-tight lg:leading-normal my-[1rem] lg:my-0">
+					2467 scraped submissions!
+				</h3>
 			</div>
-			<div class = "lg:w-[80%] w-full border-t border-b border-white backdrop-blur-lg bg-[#ffffff29] rounded-lg py-5 px-10">
-				<BarChartStacked {data} {options}/>
+			<div
+				class="lg:w-[80%] w-full border-t border-b border-white backdrop-blur-lg bg-[#ffffff29] rounded-lg py-5 px-10"
+			>
+				<BarChartStacked {data} {options} />
 			</div>
 		</div>
-		<div class="w-full flex sm:flex-row flex-col sm:gap-[1rem] gap-[0.3rem] items-center justify-center">
+		<div
+			class="w-full flex sm:flex-row flex-col sm:gap-[1rem] gap-[0.3rem] items-center justify-center"
+		>
 			<Button2
 				label="View scraper GitHub repo"
 				href="https://github.com/ark1tech/CS132-Preprocessing"
 				icon={up_right_arrow}
 			/>
-			<Button label="View dataset" href="https://docs.google.com/spreadsheets/d/1lmhzWPGKuykna-nOAT6i9ry_-330GrGRh_M5wN73qEE/edit?usp=sharing" icon={up_right_arrow} />
+			<Button
+				label="View dataset"
+				href="https://docs.google.com/spreadsheets/d/1lmhzWPGKuykna-nOAT6i9ry_-330GrGRh_M5wN73qEE/edit?usp=sharing"
+				icon={up_right_arrow}
+			/>
 		</div>
 		<p class="w-full text-center">But now comes the hard part&mdash;cleaning the data.</p>
 	</div>
@@ -244,8 +281,10 @@
 				<!-- <p class="text-sm w-full text-center"></p> -->
 				<div class="flex flex-col gap-1">
 					<h5 class="w-full text-center">Seth Eliserio</h5>
-					<a class="w-full text-center font-normal text-[#4A5464]" href="https://www.linkedin.com/in/seth-eliserio-655b28225/" target="__blank"
-						>@setheliserio</a
+					<a
+						class="w-full text-center font-normal text-[#4A5464]"
+						href="https://www.linkedin.com/in/seth-eliserio-655b28225/"
+						target="__blank">@setheliserio</a
 					>
 				</div>
 			</div>

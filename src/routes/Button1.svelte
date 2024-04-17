@@ -24,6 +24,7 @@
 		class=" text-white flex flex-row items-center py-2 px-[0.9rem] gap-[0.6rem]
 			bg-[#ff5e01] shadow-[inset_0_-5px_10px_#ffab81]
 			"
+		on:click={handleAnchorClick}
 		{target}
 		{href}
 	>

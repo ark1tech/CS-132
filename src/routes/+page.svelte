@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import Button from './Button.svelte';
+	import Button1 from './Button1.svelte';
 	import Button2 from './Button2.svelte';
 	import TextCard from './TextCard.svelte';
 	import Reddit from '$lib/images/reddit_bg.webp';
@@ -81,14 +82,14 @@
 	<div class="relative z-1 pt-[10rem] w-full flex flex-col items-center gap-[1.5rem]">
 		<div class="flex flex-row gap-[0.5rem] items-center justify-center">
 			{@html caution}
-			<p class="font-['JetBrains_Mono'] text-sm w-fit">Website still work in progress</p>
+			<p class="font-['JetBrains_Mono'] text-sm w-fit">Project still in progress</p>
 		</div>
-		<h1 class="text-[#0E0F11] text-center">Work till it works</h1>
+		<h1 class="text-[#0E0F11] text-center">Work till it may work</h1>
 		<p class="text-center">
-			Our project delves into the issue of labor struggles in the Philippines through exploratory
+			This is a data science project that delves into the issue of labor struggles in the Philippines through exploratory
 			analysis and Natural Language Processing of data sourced from the subreddit r/AntiworkPH.
 		</p>
-		<Button label="Learn more" href="" icon={down_arrow} />
+		<Button1 label="Learn more" href="#overview" icon={down_arrow} target="_self" />
 	</div>
 	<div class="w-full h-full mt-[2rem]">
 		<div class="w-full h-full gradient-mask-b-40 drop-shadow-xl">
@@ -194,15 +195,14 @@
 			Then... what are the prevalent topics about labor struggle submitted on r/AntiworkPH?
 		</h4>
 		<div class="w-full flex flex-col gap-[1rem]">
-			<p class="text-left">Null Hypothesis</p>
-			<p class="text-left">Alternative Hypothesis</p>
+			<p class="text-left"><span class ="font-[500]">Null Hypothesis</span> &ndash; The topics are </p> 
+			<p class="text-left"><span class ="font-[500]">Alternative Hypothesis</span> &ndash; The topics are</p>
 		</div>
 	</div>
 	<div class="w-full flex flex-col items-center">
-		<h4 class="text-left w-full flex-wrap text-pretty mb-[1rem]">The action plan</h4>
+		<h4 class="text-left w-full flex-wrap text-pretty mb-[1rem]"><span class ="text-[#ff5e01]">What now?</span></h4>
 		<p class="text-left w-full">
-			Collect various reddit posts under the subreddit with the appropriate flairs, classify based
-			on the post's main topic, and tally these posts under their respective categories.
+			Collect various subreddit submissions, classify each submission to its topic extracted by Latent Dirichlet Allocation, and analyze the relationships of these topic to various metadata given by Reddit. 
 		</p>
 	</div>
 </section>
@@ -225,7 +225,7 @@
 	<div class="relative z-1 lg:w-[80%] w-full flex flex-col items-center gap-[2rem]">
 		<div class="flex flex-col w-full h-full items-center gap-[0.8rem] my-[2rem]">
 			<h4 class="sub">PART I</h4>
-			<h2 class="text-[#0E0F11] text-center" data-aos="fade-in" data-aos-duration="700">
+			<h2 class="text-[#0E0F11] text-center">
 				Data Collection
 			</h2>
 		</div>

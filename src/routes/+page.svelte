@@ -107,7 +107,7 @@
 
 <section
 	id="overview"
-	class="pt-[4rem] lg:w-[80%] w-full min-h-[100dvh] flex flex-col items-center gap-[2rem] justify-center"
+	class="pt-[4rem] lg:w-[80%] w-full min-h-[100dvh] flex flex-col items-center gap-[3rem] justify-center"
 >
 	<!-- <div class="absolute left-[-22rem] z-0 gradient-mask-t-50 w-[50rem] h-full">
 		<div class="z-0 gradient-mask-b-50 w-full h-full">
@@ -193,7 +193,7 @@
 	</div>
 	<div class="w-full flex flex-col items-start">
 		<h4 class="text-left w-full flex-wrap text-pretty mb-[1rem]">
-			Then... what are the prevalent topics about labor struggle submitted on r/AntiworkPH?
+			Then&mdash;what are the prevalent topics about labor struggle submitted on r/AntiworkPH?
 		</h4>
 		<div class="w-full flex flex-col gap-[1rem]">
 			<p class="text-left">
@@ -210,30 +210,30 @@
 		</h4>
 		<div class="w-full flex lg:flex-row flex-col gap-3">
 			<div
-				class="w-full bg-gradient-to-t  from-[#ffa09df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
+				class="w-full bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
 			>
 				<p
-					class="text-left w-full font-[400] h-full text-white bg-gradient-to-tr from-[#ff5a01f6] to-[#ff9741f6] p-[2rem] rounded-md"
+					class="text-left w-full font-[400] h-full bg-gradient-to-tr from-[#ffede7] p-[2rem] rounded-md"
 				>
 					<span class="text-3xl">1</span><br /><br />
 					Collect various submissions on r/AntiworkPH.
 				</p> 
 			</div>
 			<div
-				class="w-full bg-gradient-to-t from-[#ffa09df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
+				class="w-full bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
 			>
 				<p
-					class="text-left w-full font-[400] h-full text-white bg-gradient-to-tr from-[#ff5a01f6] to-[#ff9741f6]  p-[2rem] rounded-md"
+					class="text-left w-full font-[400] h-full  bg-gradient-to-tr from-[#ffede7] p-[2rem] rounded-md"
 				>
 					<span class="text-3xl">2</span><br /><br />
 					Classify each submission to its topic extracted by Latent Dirichlet Allocation.
 				</p>
 			</div>
 			<div
-				class="w-full bg-gradient-to-t  from-[#ffa09df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
+				class="w-full bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
 			>
 				<p
-					class="text-left w-full font-[400] h-full text-white bg-gradient-to-tr from-[#ff5a01f6] to-[#ff9741f6]  p-[2rem] rounded-md"
+					class="text-left w-full font-[400] h-full bg-gradient-to-tr from-[#ffede7]  p-[2rem] rounded-md"
 				>
 					<span class="text-3xl">3</span><br /><br />
 					Analyze the relationships of these topic to various metadata given by Reddit.

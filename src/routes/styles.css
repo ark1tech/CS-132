@@ -42,12 +42,12 @@ body {
 	}
 
     p {
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 		width: 100%;
 	} 
 	
 	a {
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 	} 
 	
 	
@@ -72,11 +72,11 @@ body {
 
 @media (min-width: 350px) {
     p {
-		font-size: 0.9rem;
+		font-size: 0.95rem;
 	} 
 	
 	a {
-		font-size: 0.9rem;
+		font-size: 0.95rem;
 	} 
 	
 	
@@ -110,14 +110,6 @@ body {
 		background-blend-mode:overlay, normal;
 		background-size: 35%, 100%;
 	}
-
-    p {
-		font-size: 0.9rem;
-	} 
-	
-	a {
-		font-size: 0.9rem;
-	} 
 	
 	
 	h1 {

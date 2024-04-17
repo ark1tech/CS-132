@@ -85,9 +85,10 @@
 			<p class="font-['JetBrains_Mono'] text-sm w-fit">Project still in progress</p>
 		</div>
 		<h1 class="text-[#0E0F11] text-center">Work till it may work</h1>
-		<p class="text-center">
-			This is a data science project that delves into the issue of labor struggles in the Philippines through exploratory
-			analysis and Natural Language Processing of data sourced from the subreddit r/AntiworkPH.
+		<p class="text-center w-[75%]">
+			This is a data science project that delves into the issue of labor struggles in the
+			Philippines through exploratory analysis and Natural Language Processing of data sourced from
+			the subreddit r/AntiworkPH.
 		</p>
 		<Button1 label="Learn more" href="#overview" icon={down_arrow} target="_self" />
 	</div>
@@ -191,19 +192,54 @@
 		</div>
 	</div>
 	<div class="w-full flex flex-col items-start">
-		<h4 class="text-left lg:w-[950px] w-full flex-wrap text-pretty mb-[1rem]">
+		<h4 class="text-left w-full flex-wrap text-pretty mb-[1rem]">
 			Then... what are the prevalent topics about labor struggle submitted on r/AntiworkPH?
 		</h4>
 		<div class="w-full flex flex-col gap-[1rem]">
-			<p class="text-left"><span class ="font-[500]">Null Hypothesis</span> &ndash; The topics are </p> 
-			<p class="text-left"><span class ="font-[500]">Alternative Hypothesis</span> &ndash; The topics are</p>
+			<p class="text-left">
+				<span class="font-[500]">Null Hypothesis</span> &ndash; The topics are
+			</p>
+			<p class="text-left">
+				<span class="font-[500]">Alternative Hypothesis</span> &ndash; The topics are
+			</p>
 		</div>
 	</div>
 	<div class="w-full flex flex-col items-center">
-		<h4 class="text-left w-full flex-wrap text-pretty mb-[1rem]"><span class ="text-[#ff5e01]">What now?</span></h4>
-		<p class="text-left w-full">
-			Collect various subreddit submissions, classify each submission to its topic extracted by Latent Dirichlet Allocation, and analyze the relationships of these topic to various metadata given by Reddit. 
-		</p>
+		<h4 class="text-left w-full flex-wrap text-pretty mb-[1rem]">
+			<span class="text-[#ff5e01]">What now?</span>
+		</h4>
+		<div class="w-full flex lg:flex-row flex-col gap-3">
+			<div
+				class="w-full bg-gradient-to-t  from-[#ffa09df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
+			>
+				<p
+					class="text-left w-full font-[400] h-full text-white bg-gradient-to-tr from-[#ff5a01f6] to-[#ff9741f6] p-[2rem] rounded-md"
+				>
+					<span class="text-3xl">1</span><br /><br />
+					Collect various submissions on r/AntiworkPH.
+				</p> 
+			</div>
+			<div
+				class="w-full bg-gradient-to-t from-[#ffa09df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
+			>
+				<p
+					class="text-left w-full font-[400] h-full text-white bg-gradient-to-tr from-[#ff5a01f6] to-[#ff9741f6]  p-[2rem] rounded-md"
+				>
+					<span class="text-3xl">2</span><br /><br />
+					Classify each submission to its topic extracted by Latent Dirichlet Allocation.
+				</p>
+			</div>
+			<div
+				class="w-full bg-gradient-to-t  from-[#ffa09df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
+			>
+				<p
+					class="text-left w-full font-[400] h-full text-white bg-gradient-to-tr from-[#ff5a01f6] to-[#ff9741f6]  p-[2rem] rounded-md"
+				>
+					<span class="text-3xl">3</span><br /><br />
+					Analyze the relationships of these topic to various metadata given by Reddit.
+				</p>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -225,9 +261,7 @@
 	<div class="relative z-1 lg:w-[80%] w-full flex flex-col items-center gap-[2rem]">
 		<div class="flex flex-col w-full h-full items-center gap-[0.8rem] my-[2rem]">
 			<h4 class="sub">PART I</h4>
-			<h2 class="text-[#0E0F11] text-center">
-				Data Collection
-			</h2>
+			<h2 class="text-[#0E0F11] text-center">Data Collection</h2>
 		</div>
 		<div class="flex flex-col w-full justify-between gap-[1.5rem] items-center">
 			<TextCard

@@ -27,7 +27,7 @@ export default {
     }, 
     bars: {
         width: 50,
-        maxWidth: 100,
+        maxWidth: 50,
     },
     theme : "g10"
   }

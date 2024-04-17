@@ -46,7 +46,7 @@ body {
 		width: 100%;
 	} 
 	
-	a {
+	a, li {
 		font-size: 0.8rem;
 	} 
 	
@@ -71,11 +71,7 @@ body {
 }
 
 @media (min-width: 350px) {
-    p {
-		font-size: 0.95rem;
-	} 
-	
-	a {
+    p, li, a {
 		font-size: 0.95rem;
 	} 
 	
@@ -139,6 +135,11 @@ body {
 		font-weight: 350;
 		width: 100%;
 	} 
+
+	li {
+		font-size: 1.1rem;
+		font-weight: 350;
+	}
 
 	a {
 		font-size: 0.9rem;

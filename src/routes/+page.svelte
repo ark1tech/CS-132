@@ -6,6 +6,9 @@
 	import TextCard from './TextCard.svelte';
 	import Reddit from '$lib/images/reddit_bg.webp';
 	import Line from '$lib/images/line.svg';
+	import Collect from '$lib/images/Archive.svg';
+	import Analyze from '$lib/images/Analyze.svg';
+	import Category from '$lib/images/Category.svg';
 	import AOS from 'aos';
 	import 'aos/dist/aos.css';
 	import '@carbon/charts-svelte/styles.css';
@@ -84,7 +87,7 @@
 			{@html caution}
 			<p class="font-['JetBrains_Mono'] text-sm w-fit">Project still in progress</p>
 		</div>
-		<h1 class="text-[#0E0F11] text-center">Work till it may work</h1>
+		<h1 class="text-[#0E0F11] text-center">Work till it works</h1>
 		<p class="text-center w-[75%]">
 			This is a data science project that delves into the issue of labor struggles in the
 			Philippines through exploratory analysis and Natural Language Processing of data sourced from
@@ -130,7 +133,7 @@
 				In December 2023, the Philippines logged an unemployment rate of 3.1%, a decrease of 617,000
 				unemployed individuals from the previous year<sup
 					><a
-						class="text-[#ff9752] text-xs"
+						class="text-[#ff9752] text-xs hover:text-[#ff423c] ease-out transition-all duration-500"
 						target="_blank"
 						href="https://neda.gov.ph/unemployment-lowest-in-almost-two-decades-generating-high-quality-jobs-crucial/#:~:text=According%20to%20the%20Philippine%20Statistics,decrease%20of%20617%2C000%20unemployed%20individuals "
 						>[1]</a
@@ -144,7 +147,7 @@
 				other region. In comparison, the required minimum to feed a family of five is ₱1188 per day
 				according to the IBON foundation<sup
 					><a
-						class="text-[#ff9752] text-xs"
+						class="text-[#ff9752] text-xs hover:text-[#ff423c] ease-out transition-all duration-500"
 						target="_blank"
 						href="https://www.philstar.com/headlines/2024/01/02/2322987/labor-group-says-2023-wage-hike-not-enough-workers-daily-expenses"
 						>[2]</a
@@ -156,7 +159,7 @@
 				to pursue employment outside the country, as the number of Overseas Filipino Workers reaches
 				its peak in 55 years<sup
 					><a
-						class="text-[#ff9752] text-xs"
+						class="text-[#ff9752] text-xs hover:text-[#ff423c] ease-out transition-all duration-500"
 						target="_blank"
 						href="https://www.philstar.com/headlines/2024/04/12/2347168/historic-2023-ofw-deployment-moves-philippines-labor-migration-forward-pandemic"
 						>[3]</a
@@ -195,13 +198,21 @@
 		<h4 class="text-left w-full flex-wrap text-pretty mb-[1rem]">
 			Then&mdash;what are the prevalent topics about labor struggle submitted on r/AntiworkPH?
 		</h4>
-		<div class="w-full flex flex-col gap-[1rem]">
-			<p class="text-left">
-				<span class="font-[500]">Null Hypothesis</span> &ndash; The topics are
-			</p>
-			<p class="text-left">
-				<span class="font-[500]">Alternative Hypothesis</span> &ndash; The topics are
-			</p>
+		<div class="w-full flex lg:flex-row flex-col gap-3">
+			<div class="w-full p-[2rem] flex flex-col gap-3">
+				<p class="font-[500]">Hypothesis</p>
+				<p class="text-left">
+					The prevalent topics among the subreddit users centered around labor struggles in the
+					Philippines.
+				</p>
+			</div>
+			<div class="w-full p-[2rem] flex flex-col gap-3">
+				<p class="font-[500]">Null Hypothesis</p>
+				<p class="text-left">
+					The prevalent topics among the subreddit users did not center around labor struggles in
+					the Philippines.
+				</p>
+			</div>
 		</div>
 	</div>
 	<div class="w-full flex flex-col items-center">
@@ -210,34 +221,34 @@
 		</h4>
 		<div class="w-full flex lg:flex-row flex-col gap-3">
 			<div
-				class="w-full bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
+				class="w-full hover:bg-[#ffa78a] duration-300 transition-all ease-in-out bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
 			>
-				<p
-					class="text-left w-full font-[400] h-full bg-gradient-to-tr from-[#ffede7] p-[2rem] rounded-md"
+				<div
+					class="text-left w-full flex flex-col gap-3 font-[400] h-full bg-gradient-to-tr from-[#ffede7]  p-[2rem] rounded-md"
 				>
-					<span class="text-3xl">1</span><br /><br />
-					Collect various submissions on r/AntiworkPH.
-				</p> 
+					<img src={Collect} alt="" class="w-fit" />
+					<p>Collect various submissions on r/AntiworkPH.</p>
+				</div>
 			</div>
 			<div
-				class="w-full bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
+				class="w-full hover:bg-[#ffa78a] duration-300 transition-all ease-in-out bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
 			>
-				<p
-					class="text-left w-full font-[400] h-full  bg-gradient-to-tr from-[#ffede7] p-[2rem] rounded-md"
+				<div
+					class="text-left w-full flex flex-col gap-3 font-[400] h-full bg-gradient-to-tr from-[#ffede7] p-[2rem] rounded-md"
 				>
-					<span class="text-3xl">2</span><br /><br />
-					Classify each submission to its topic extracted by Latent Dirichlet Allocation.
-				</p>
+					<img src={Category} alt="" class="w-fit" />
+					<p>Classify each submission to its topic extracted by Latent Dirichlet Allocation.</p>
+				</div>
 			</div>
 			<div
-				class="w-full bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
+				class="w-full hover:bg-[#ffa78a] duration-300 transition-all ease-in-out bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
 			>
-				<p
-					class="text-left w-full font-[400] h-full bg-gradient-to-tr from-[#ffede7]  p-[2rem] rounded-md"
+				<div
+					class="text-left w-full flex flex-col gap-3 font-[400] h-full bg-gradient-to-tr from-[#ffede7] p-[2rem] rounded-md"
 				>
-					<span class="text-3xl">3</span><br /><br />
-					Analyze the relationships of these topic to various metadata given by Reddit.
-				</p>
+					<img src={Analyze} alt="" class="w-fit" />
+					<p>Analyze the relationships of these topic to various metadata given by Reddit.</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -293,12 +304,18 @@
 					<p class ="w-full"> 
 						In using PRAW, there are a couple of limitations to note: 
 					</p>
-					<p class = "w-full ml-[0.5rem]">
-						<span class ="font-[500]">1. Mining Limit</span> &ndash; PRAW only allows us to collect up to 1000 submissions for each request. This means that we don't have much control on the data we get as it will always return relatively the same 1000.
-					</p>
-					<p class = "w-full ml-[0.5rem]">
-						</span><span class ="font-[500]">2. No Time Customizations</span> &ndash; We can't filter submissions based on specfic posting times and time intervals. This is quite unfortunate as it would be difficult to minimize the time bias. 
-					</p>
+					<div class ="flex flex-row gap-[0.2rem]">
+						<p class ="font-[500] w-fit">1.</p> 
+						<p class = "w-full pl-[0.5rem] ">
+							<span class ="font-[500]">Mining Limit</span> &ndash; PRAW only allows us to collect up to 1000 submissions for each request. This means that we don't have much control on the data we get as it will always return relatively the same 1000.
+						</p>
+					</div>
+					<div class ="flex flex-row gap-[0.2rem]">
+						<p class ="font-[500] w-fit">2.</p> 
+						<p class = "w-full pl-[0.5rem] ">
+						</span><span class ="font-[500]">No Time Customizations</span> &ndash; We can't filter submissions based on specfic posting times and time intervals. This is quite unfortunate as it would be difficult to minimize the time bias. 
+						</p>
+					</div>
 				`}
 			/>
 			<TextCard
@@ -307,24 +324,42 @@
 					<p class ="w-full"> 
 						Now, here's the gameplan:
 					</p>
-					<p class = "w-full ml-[0.5rem]">
-						<span class ="font-[500]">1.</span> To sample the subreddit, we want to scrape 1000 submissions per category. The categories are: Hot, New, Rising, Controversial, and Top. Since we will analyze engagement of submissions later on, New is out. Upon scraping, we found out that Rising is a subset of Hot and Top, and that would left us with Hot, Top, and Controversial. For Top, we picked All Time as it would give us submissions older than last year, i.e. April 2023. 
-					</p>
-					<p class = "w-full ml-[1rem]">
-						<span class ="font-[500]">•</span> We opted not to use the search function since one of the objectives of our project is to find those relevant keywords themselves. 
-					</p>
-					<p class = "w-full ml-[0.5rem]">
-						<span class ="font-[500]">2.</span> To avoid duplicates, we want to use the <span class="code font-bold">Save</span> function and mark the submission we've already scraped.
-					</p>
-					<p class = "w-full ml-[0.5rem]">
-						<span class ="font-[500]">3.</span> To save time, we want to skip non-text-only submissions that have less than 10 upvotes since transcribing them may be counterproductive.
-					</p>
-					<p class = "w-full ml-[0.5rem]">
-						<span class ="font-[500]">4.</span> Then as much as possible, we need to minimize time bias. Hence, we won't scrape submissions that are 10 days old or younger as they may have yet to peak in engagements. 
-					</p>
-					<p class = "w-full ml-[0.5rem]">
-						<span class ="font-[500]">5.</span> Lastly, we want to conduct our initial data preprocessing. Using Pandas and Interactive Python Notebook, we will check for duplicates and empty values. 
-					</p>
+					<div class ="flex flex-row gap-[0.2rem]">
+						<p class ="font-[500] w-fit">1.</p> 
+						<p class = "w-full pl-[0.5rem] ">
+							To sample the subreddit, we want to scrape 1000 submissions per category. The categories are: Hot, New, Rising, Controversial, and Top. Since we will analyze engagement of submissions later on, New is out. Upon scraping, we found out that Rising is a subset of Hot and Top, and that would left us with Hot, Top, and Controversial. For Top, we picked All Time as it would give us submissions older than last year, i.e. April 2023. 
+						</p>
+					</div>
+					<div class ="flex flex-row gap-[0.2rem]">
+						<p class ="font-[500] w-fit pl-[1rem]">•</p> 
+						<p class = "w-full pl-[0.5rem] ">
+							We opted not to use the search function since one of the objectives of our project is to find those relevant keywords themselves. 
+						</p>
+					</div>
+					<div class ="flex flex-row gap-[0.2rem]">
+						<p class ="font-[500] w-fit">2.</p> 
+						<p class = "w-full pl-[0.5rem] ">
+							To avoid duplicates, we want to use the <span class="code font-bold">Save</span> function and mark the submission we've already scraped.
+						</p>
+					</div>
+					<div class ="flex flex-row gap-[0.2rem]">
+						<p class ="font-[500] w-fit">3.</p> 
+						<p class = "w-full pl-[0.5rem] ">
+							To save time, we want to skip non-text-only submissions that have less than 10 upvotes since transcribing them may be counterproductive.
+						</p>
+					</div>
+					<div class ="flex flex-row gap-[0.2rem]">
+						<p class ="font-[500] w-fit">4.</p> 
+						<p class = "w-full pl-[0.5rem] ">
+							Then as much as possible, we need to minimize time bias. Hence, we won't scrape submissions that are 10 days old or younger as they may have yet to peak in engagements. 
+						</p>
+					</div>
+					<div class ="flex flex-row gap-[0.2rem]">
+						<p class ="font-[500] w-fit">5.</p> 
+						<p class = "w-full pl-[0.5rem] ">
+							Lastly, we want to conduct our initial data preprocessing. Using Pandas and Interactive Python Notebook, we will check for duplicates and empty values. 
+						</p>
+					</div>
 				`}
 			/>
 			<div class="flex flex-col items-center mt-[2rem]">

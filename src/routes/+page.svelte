@@ -158,7 +158,7 @@
 					><a
 						class="text-[#ff9752] text-xs"
 						target="_blank"
-						href="https://www.philstar.com/headlines/2024/01/02/2322987/labor-group-says-2023-wage-hike-not-enough-workers-daily-expenses"
+						href="https://www.philstar.com/headlines/2024/04/12/2347168/historic-2023-ofw-deployment-moves-philippines-labor-migration-forward-pandemic"
 						>[3]</a
 					></sup
 				>. That is not to say that local workers lack in their share of labor exploitation.

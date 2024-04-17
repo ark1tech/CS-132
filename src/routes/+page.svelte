@@ -289,7 +289,7 @@
 						<span class ="font-[500]">4.</span> Then as much as possible, we need to minimize time bias. Hence, we won't scrape submissions that are 10 days old or younger as they may have yet to peak in engagements. 
 					</p>
 					<p class = "w-full ml-[0.5rem]">
-						<span class ="font-[500]">5.</span> Lastly, we want to conduct our initial data preprocessing. Using Pandas, we will check for duplicates and empty values. 
+						<span class ="font-[500]">5.</span> Lastly, we want to conduct our initial data preprocessing. Using Pandas and Interactive Python Notebook, we will check for duplicates and empty values. 
 					</p>
 				`}
 			/>

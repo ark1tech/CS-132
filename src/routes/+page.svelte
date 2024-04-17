@@ -49,7 +49,7 @@
 			viewBox="0 0 24 24"
 			fill="none"
 			stroke="currentColor"
-			stroke-width="2"
+			stroke-width="2.2"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 			class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-down"
@@ -227,7 +227,7 @@
 					class="text-left w-full flex flex-col gap-3 font-[400] h-full bg-gradient-to-tr from-[#ffede7]  p-[2rem] rounded-md"
 				>
 					<img src={Collect} alt="" class="w-fit" />
-					<p>Collect various submissions on r/AntiworkPH.</p>
+					<p><span class ="font-[500]">Collect</span> various submissions on r/AntiworkPH.</p>
 				</div>
 			</div>
 			<div
@@ -237,7 +237,7 @@
 					class="text-left w-full flex flex-col gap-3 font-[400] h-full bg-gradient-to-tr from-[#ffede7] p-[2rem] rounded-md"
 				>
 					<img src={Category} alt="" class="w-fit" />
-					<p>Classify each submission to its topic extracted by Latent Dirichlet Allocation.</p>
+					<p><span class ="font-[500]">Classify</span> each submission to its topic extracted by Latent Dirichlet Allocation.</p>
 				</div>
 			</div>
 			<div
@@ -247,7 +247,7 @@
 					class="text-left w-full flex flex-col gap-3 font-[400] h-full bg-gradient-to-tr from-[#ffede7] p-[2rem] rounded-md"
 				>
 					<img src={Analyze} alt="" class="w-fit" />
-					<p>Analyze the relationships of these topic to various metadata given by Reddit.</p>
+					<p><span class ="font-[500]">Analyze</span> the relationships of these topic to various metadata given by Reddit.</p>
 				</div>
 			</div>
 		</div>
@@ -378,7 +378,7 @@
 			class="w-full flex sm:flex-row flex-col sm:gap-[1rem] gap-[0.3rem] items-center justify-center"
 		>
 			<Button2
-				label="View scraper GitHub repo"
+				label="View code on GitHub"
 				href="https://github.com/ark1tech/CS132-Preprocessing"
 				icon={up_right_arrow}
 			/>

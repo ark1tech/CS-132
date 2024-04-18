@@ -224,10 +224,10 @@
 				class="w-full hover:bg-[#ffa78a] duration-300 transition-all ease-in-out bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg"
 			>
 				<div
-					class="text-left w-full flex flex-col gap-3 font-[400] h-full bg-gradient-to-tr from-[#ffede7]  p-[2rem] rounded-md"
+					class="text-left w-full flex flex-col gap-3 font-[400] h-full bg-gradient-to-tr from-[#ffede7] p-[2rem] rounded-md"
 				>
 					<img src={Collect} alt="" class="w-fit" />
-					<p><span class ="font-[500]">Collect</span> various submissions on r/AntiworkPH.</p>
+					<p><span class="font-[500]">Collect</span> various submissions on r/AntiworkPH.</p>
 				</div>
 			</div>
 			<div
@@ -237,7 +237,10 @@
 					class="text-left w-full flex flex-col gap-3 font-[400] h-full bg-gradient-to-tr from-[#ffede7] p-[2rem] rounded-md"
 				>
 					<img src={Category} alt="" class="w-fit" />
-					<p><span class ="font-[500]">Classify</span> each submission to its topic extracted by Latent Dirichlet Allocation.</p>
+					<p>
+						<span class="font-[500]">Classify</span> each submission to its topic extracted by Latent
+						Dirichlet Allocation.
+					</p>
 				</div>
 			</div>
 			<div
@@ -247,7 +250,10 @@
 					class="text-left w-full flex flex-col gap-3 font-[400] h-full bg-gradient-to-tr from-[#ffede7] p-[2rem] rounded-md"
 				>
 					<img src={Analyze} alt="" class="w-fit" />
-					<p><span class ="font-[500]">Analyze</span> the relationships of these topic to various metadata given by Reddit.</p>
+					<p>
+						<span class="font-[500]">Analyze</span> the relationships of these topic to various metadata
+						given by Reddit.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -354,10 +360,24 @@
 							Then as much as possible, we need to minimize time bias. Hence, we won't scrape submissions that are 10 days old or younger as they may have yet to peak in engagements. 
 						</p>
 					</div>
+				`}
+			/>
+			<div class="flex flex-col items-center my-[2rem]">
+				<p class="text-center">Executing the gameplan gave us...</p>
+				<h3 class="text-center leading-tight lg:leading-normal my-[1rem] lg:my-0">
+					2467 scraped submissions!
+				</h3>
+				<p class="w-full text-center">But now comes the hard part&mdash;cleaning the data.</p>
+			</div>
+		</div>
+		<div class="flex flex-col w-full justify-between gap-[1.5rem] items-center">
+				<TextCard
+				title="Cleaning the Data"
+				desc={`
 					<div class ="flex flex-row gap-[0.2rem]">
-						<p class ="font-[500] w-fit">5.</p> 
+						<p class ="font-[500] w-fit">1.</p> 
 						<p class = "w-full pl-[0.5rem] ">
-							Lastly, we want to conduct our <span class="underline underline-offset-2">initial data preprocessing</span>. Using Pandas, RegEx, and BeautifulSoup4 on Jupyter Notebook, we want to:
+							We want to conduct our initial data preprocessing. Using Pandas, RegEx, and BeautifulSoup4 on Jupyter Notebook, we want to:
 						</p>
 					</div>
 					<div class ="flex flex-row gap-[0.2rem]">
@@ -369,28 +389,41 @@
 					<div class ="flex flex-row gap-[0.2rem]">
 						<p class ="font-[500] w-fit pl-[1rem]">•</p> 
 						<p class = "w-full pl-[0.5rem] ">
-							Remove URLs (as it may only confuse our ML model later on)
+							Remove URLs (as it may only confuse our ML model later on).
 						</p>
 					</div>
 					<div class ="flex flex-row gap-[0.2rem]">
 						<p class ="font-[500] w-fit pl-[1rem]">•</p> 
 						<p class = "w-full pl-[0.5rem] ">
-							Contextualize Filipino slangs and text abbreviations such as converting "BTW" to "By the way" and "Charot" to "Just kidding"
+							Contextualize Filipino slangs and text abbreviations such as converting "BTW" to "By the way" and "Charot" to "Just kidding".
 						</p>
 					</div>
+					<div class ="flex flex-row gap-[0.2rem]">
+						<p class ="font-[500] w-fit">2.</p> 
+						<p class = "w-full pl-[0.5rem] ">
+							We then want to manually transcribe the image and video content. We start by shortlisting the 100 most engaged submissions from each category to save time as effort to value ratio may be low.
+						</p>
+					</div>
+					<div class ="flex flex-row gap-[0.2rem]">
+						<p class ="font-[500] w-fit">3.</p> 
+						<p class = "w-full pl-[0.5rem] ">
+							Lastly, we want to translate the final content to English using the Google Translator API. To minimize contents lost in translation, we manually verify the 1000 most engaged submissions.
+						</p>
+					</div>
+					
 				`}
 			/>
-			<div class="flex flex-col items-center mt-[2rem]">
-				<p class="text-center">Executing the gameplan gave us...</p>
-				<h3 class="text-center leading-tight lg:leading-normal my-[1rem] lg:my-0">
-					2467 scraped submissions!
-				</h3>
-			</div>
-			<div
-				class="lg:w-[80%] w-full border-t border-b border-white backdrop-blur-lg bg-[#ffffff29] rounded-lg py-5 px-10"
-			>
-				<BarChartStacked {data} {options} />
-			</div>
+		</div>
+		<div class="flex flex-col items-center mt-[2rem]">
+			<p class="text-center">We then finally get...</p>
+			<h3 class="text-center leading-tight lg:leading-normal my-[1rem] lg:my-0">
+				2467 preprocessed submissions
+			</h3>
+		</div>
+		<div
+			class="lg:w-[80%] w-full border-t border-b border-white backdrop-blur-lg bg-[#ffffff29] rounded-lg py-5 px-10"
+		>
+			<BarChartStacked {data} {options} />
 		</div>
 		<div
 			class="w-full flex sm:flex-row flex-col sm:gap-[1rem] gap-[0.3rem] items-center justify-center"
@@ -406,11 +439,111 @@
 				icon={up_right_arrow}
 			/>
 		</div>
-		<p class="w-full text-center">But now comes the hard part&mdash;cleaning the data.</p>
 	</div>
 </section>
 
-<section class="w-full mt-[10rem] flex flex-col items-center relative gap-4 justify-start">
+<div class="w-full h-full gradient-mask-b-0">
+	<section
+		id="exploration"
+		class="relative pt-[4rem] w-full h-fit flex flex-col items-center gap-4 justify-start"
+	>
+		<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
+			<div class="h-full w-full gradient-mask-b-80">
+				<div class="z-1 h-full w-full"></div>
+			</div>
+		</div>
+		<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
+			<div class="h-full w-full gradient-mask-b-80">
+				<div class="z-0 h-full w-full bg-[url('$lib/images/hex.svg')] bg-repeat"></div>
+			</div>
+		</div>
+		<img src={Line} alt="l" class="lg:w-[60%] w-full h-auto" />
+		<div class="relative z-1 lg:w-[80%] w-full flex flex-col items-center gap-[2rem]">
+			<div class="flex flex-col w-full h-full items-center gap-[0.8rem] my-[2rem]">
+				<h4 class="sub">PART II</h4>
+				<h2 class="text-[#0E0F11] text-center">Data Exploration</h2>
+			</div>
+			<div class="flex flex-row gap-[0.5rem] items-center justify-center">
+				{@html caution}
+				<p class="font-['JetBrains_Mono'] text-sm w-fit">To be done</p>
+			</div>
+		</div>
+	</section>
+
+	<section
+		id="modelling"
+		class="relative pt-[4rem] w-full h-fit flex flex-col items-center gap-4 justify-start"
+	>
+		<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
+			<div class="h-full w-full gradient-mask-b-80">
+				<div class="z-1 h-full w-full"></div>
+			</div>
+		</div>
+		<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
+			<div class="h-full w-full gradient-mask-b-80">
+				<div class="z-0 h-full w-full bg-[url('$lib/images/hex.svg')] bg-repeat"></div>
+			</div>
+		</div>
+		<img src={Line} alt="l" class="lg:w-[60%] w-full h-auto" />
+		<div class="relative z-1 lg:w-[80%] w-full flex flex-col items-center gap-[2rem]">
+			<div class="flex flex-col w-full h-full items-center gap-[0.8rem] my-[2rem]">
+				<h4 class="sub">PART III</h4>
+				<h2 class="text-[#0E0F11] text-center">Modelling</h2>
+			</div>
+		</div>
+	</section>
+
+	<section
+		id="results"
+		class="relative pt-[4rem] w-full h-fit flex flex-col items-center gap-4 justify-start"
+	>
+		<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
+			<div class="h-full w-full gradient-mask-b-80">
+				<div class="z-1 h-full w-full"></div>
+			</div>
+		</div>
+		<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
+			<div class="h-full w-full gradient-mask-b-80">
+				<div class="z-0 h-full w-full bg-[url('$lib/images/hex.svg')] bg-repeat"></div>
+			</div>
+		</div>
+		<img src={Line} alt="l" class="lg:w-[60%] w-full h-auto" />
+		<div class="relative z-1 lg:w-[80%] w-full flex flex-col items-center gap-[2rem]">
+			<div class="flex flex-col w-full h-full items-center gap-[0.8rem] my-[2rem]">
+				<h4 class="sub">PART IV</h4>
+				<h2 class="text-[#0E0F11] text-center">Results</h2>
+			</div>
+		</div>
+	</section>
+
+	<section
+		id="conclusion"
+		class="relative pt-[4rem] w-full h-fit flex flex-col items-center gap-4 justify-start"
+	>
+		<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
+			<div class="h-full w-full gradient-mask-b-80">
+				<div class="z-1 h-full w-full"></div>
+			</div>
+		</div>
+		<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
+			<div class="h-full w-full gradient-mask-b-80">
+				<div class="z-0 h-full w-full bg-[url('$lib/images/hex.svg')] bg-repeat"></div>
+			</div>
+		</div>
+		<img src={Line} alt="l" class="lg:w-[60%] w-full h-auto" />
+		<div class="relative z-1 lg:w-[80%] w-full flex flex-col items-center gap-[2rem]">
+			<div class="flex flex-col w-full h-full items-center gap-[0.8rem] my-[2rem]">
+				<h4 class="sub">PART V</h4>
+				<h2 class="text-[#0E0F11] text-center">Conclusion</h2>
+			</div>
+		</div>
+	</section>
+</div>
+
+<section
+	id="aboutus"
+	class="w-full mt-[10rem] flex flex-col items-center relative gap-4 justify-start"
+>
 	<div class="relative w-screen h-full bg-[#ffffff]">
 		<div class="absolute z-0 gradient-mask-l-30 w-full h-full">
 			<div class="h-full w-full gradient-mask-r-30">

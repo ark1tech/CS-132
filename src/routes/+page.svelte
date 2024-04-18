@@ -276,7 +276,7 @@
 		</div>
 		<div class="flex flex-col w-full justify-between gap-[1.5rem] items-center">
 			<TextCard
-				title="DESCRIBING THE DATA"
+				title="Describing the Data"
 				desc={`
 					<p class ="w-full"> 
 						We want to gather the data we need using Python Reddit API Wrapper (PRAW). According to its documentation, we can access any subreddit, its list of submissions, and useful metadata for each submission. For this project, we specifically gathered the following metadata:
@@ -299,7 +299,7 @@
 				`}
 			/>
 			<TextCard
-				title="SCRAPING THE DATA: LIMITATIONS"
+				title="Scraping the Data: Limitations"
 				desc={`
 					<p class ="w-full"> 
 						In using PRAW, there are a couple of limitations to note: 
@@ -319,7 +319,7 @@
 				`}
 			/>
 			<TextCard
-				title="SCRAPING THE DATA: THE GAMEPLAN"
+				title="Scraping the Data: The Gameplan"
 				desc={`
 					<p class ="w-full"> 
 						Now, here's the gameplan:
@@ -357,7 +357,25 @@
 					<div class ="flex flex-row gap-[0.2rem]">
 						<p class ="font-[500] w-fit">5.</p> 
 						<p class = "w-full pl-[0.5rem] ">
-							Lastly, we want to conduct our initial data preprocessing. Using Pandas and Interactive Python Notebook, we will check for duplicates and empty values. 
+							Lastly, we want to conduct our <span class="underline underline-offset-2">initial data preprocessing</span>. Using Pandas, RegEx, and BeautifulSoup4 on Jupyter Notebook, we want to:
+						</p>
+					</div>
+					<div class ="flex flex-row gap-[0.2rem]">
+						<p class ="font-[500] w-fit pl-[1rem]">•</p> 
+						<p class = "w-full pl-[0.5rem] ">
+							Convert the <span class ="code">Content</span> to plaintext as it is retrieved as markdown. This also includes replacing newlines and NaNs with a single whitespace. 
+						</p>
+					</div>
+					<div class ="flex flex-row gap-[0.2rem]">
+						<p class ="font-[500] w-fit pl-[1rem]">•</p> 
+						<p class = "w-full pl-[0.5rem] ">
+							Remove URLs (as it may only confuse our ML model later on)
+						</p>
+					</div>
+					<div class ="flex flex-row gap-[0.2rem]">
+						<p class ="font-[500] w-fit pl-[1rem]">•</p> 
+						<p class = "w-full pl-[0.5rem] ">
+							Contextualize Filipino slangs and text abbreviations such as converting "BTW" to "By the way" and "Charot" to "Just kidding"
 						</p>
 					</div>
 				`}

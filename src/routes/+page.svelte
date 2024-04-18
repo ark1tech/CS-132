@@ -88,8 +88,8 @@
 			<p class="font-['JetBrains_Mono'] text-sm w-fit">Project still in progress</p>
 		</div>
 		<h1 class="text-[#0E0F11] text-center">Work till it works</h1>
-		<p class="text-center w-[75%]">
-			This is a data science project that delves into the issue of labor struggles in the
+		<p class="text-center w-[60%]">
+			A data science project that delves into the issue of labor struggles in the
 			Philippines through exploratory analysis and Natural Language Processing of data sourced from
 			the subreddit r/AntiworkPH.
 		</p>
@@ -371,7 +371,7 @@
 			</div>
 		</div>
 		<div class="flex flex-col w-full justify-between gap-[1.5rem] items-center">
-				<TextCard
+			<TextCard
 				title="Cleaning the Data"
 				desc={`
 					<div class ="flex flex-row gap-[0.2rem]">
@@ -407,7 +407,7 @@
 					<div class ="flex flex-row gap-[0.2rem]">
 						<p class ="font-[500] w-fit">3.</p> 
 						<p class = "w-full pl-[0.5rem] ">
-							Lastly, we want to translate the final content to English using the Google Translator API. To minimize contents lost in translation, we manually verify the 1000 most engaged submissions.
+							Lastly, we want to translate the final content to English using the Google Translator API and remove punctuations and stop words using Natural Language Toolkit (NLTK).
 						</p>
 					</div>
 					

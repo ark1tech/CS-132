@@ -87,12 +87,14 @@
 			{@html caution}
 			<p class="font-['JetBrains_Mono'] text-sm w-fit opacity-30">Project still in progress</p>
 		</div>
-		<h1 class="text-[#0E0F11] lg:w-[60%] text-center ">Through the lens of Filipino workers</h1>
+		<h1 class="text-[#0E0F11] lg:w-[60%] text-center">Through the lens of Filipino workers</h1>
 		<p class="text-center lg:w-[60%]">
 			A data science project that delves into the issue of labor struggles in the Philippines
 			through exploratory analysis and natural language processing (NLP) of data sourced from the
-			subreddit 
-			<a href="https://www.reddit.com/r/AntiworkPH/" target="_blank" class ="inline_a">r/AntiworkPH</a>.
+			subreddit
+			<a href="https://www.reddit.com/r/AntiworkPH/" target="_blank" class="inline_a"
+				>r/AntiworkPH</a
+			>.
 		</p>
 		<Button1 label="Learn more" href="#overview" icon={down_arrow} target="_self" />
 	</div>
@@ -125,8 +127,10 @@
 		</h4>
 		<div class="w-full flex flex-col gap-[1rem]">
 			<p class="text-left text-pretty w-full">
-				In December 2023, the Philippines logged an <span class = "font-[500]">unemployment rate of 3.1%, a decrease of 617,000
-				unemployed individuals from the previous year</span><sup
+				In December 2023, the Philippines logged an <span class="font-[500]"
+					>unemployment rate of 3.1%, a decrease of 617,000 unemployed individuals from the previous
+					year</span
+				><sup
 					><a
 						class="text-[#de7030] text-xs hover:text-[#ff4747] ease-out transition-all duration-500"
 						target="_blank"
@@ -165,11 +169,12 @@
 			</p>
 			<p class="text-left text-pretty w-full">
 				Under the 17 Sustainable Development Goals (SDG) established by the United Nations General
-				Assembly, specifically SDG 8, there is a need to <span class = "font-[500]">“protect labor rights and promote safe and
-				secure working environments for all workers, including migrant workers, in particular women
-				migrants, and those in precarious employment.”</span> For the country to achieve this goal, the
-				issues faced by the Philippine workforce must first be properly recognized and addressed
-				before eventually focusing on resolving them.
+				Assembly, specifically SDG 8, there is a need to <span class="font-[500]"
+					>“protect labor rights and promote safe and secure working environments for all workers,
+					including migrant workers, in particular women migrants, and those in precarious
+					employment.”</span
+				> For the country to achieve this goal, the issues faced by the Philippine workforce must first
+				be properly recognized and addressed before eventually focusing on resolving them.
 			</p>
 		</div>
 	</div>
@@ -179,13 +184,13 @@
 		</h4>
 		<div class="w-full flex flex-col gap-[1rem]">
 			<p class="text-left w-full">
-				The subreddit r/AntiworkPH provides workers a platform to vent their frustrations and, consequently, shed
-				light on the current situation of the Philippine labor market.
+				The subreddit r/AntiworkPH provides workers a platform to vent their frustrations and,
+				consequently, shed light on the current situation of the Philippine labor market.
 			</p>
 			<p class="text-left w-full">
 				As such, we seek to unravel which topics have plagued the Philippine workforce since the
-				subreddit started on 2022. Through this, our group aims to bring awareness and hopefully provide a
-				more realistic view of the Philippine labor environment.
+				subreddit started on 2022. Through this, our group aims to bring awareness and hopefully
+				provide a more realistic view of the Philippine labor environment.
 			</p>
 		</div>
 	</div>
@@ -194,14 +199,14 @@
 			Then&mdash;what are the prevalent topics about labor struggles submitted on r/AntiworkPH?
 		</h4>
 		<div class="w-full flex lg:flex-row flex-col justify-between gap-6">
-			<div class="w-full p-[2rem] flex flex-col gap-3 ">
+			<div class="w-full p-[2rem] flex flex-col gap-3">
 				<p class="font-[500]">Hypothesis</p>
 				<p class="text-left">
 					The prevalent topics among the subreddit users centered around labor struggles in the
 					Philippines.
 				</p>
 			</div>
-			<div class="w-full p-[2rem] flex flex-col gap-3 ">
+			<div class="w-full p-[2rem] flex flex-col gap-3">
 				<p class="font-[500]">Null Hypothesis</p>
 				<p class="text-left">
 					The prevalent topics among the subreddit users did not center around labor struggles in
@@ -243,7 +248,10 @@
 					class="text-left w-full flex flex-col gap-3 font-[400] h-full bg-gradient-to-tr from-[#ffede7] p-[2rem] rounded-md"
 				>
 					<img src={Collect} alt="" class="w-fit" />
-					<p><span class="font-[500]">Collect</span> various submissions on r/AntiworkPH using a Reddit API.</p>
+					<p>
+						<span class="font-[500]">Collect</span> various submissions on r/AntiworkPH using a Reddit
+						API.
+					</p>
 				</div>
 			</div>
 			<div
@@ -254,7 +262,7 @@
 				>
 					<img src={Category} alt="" class="w-fit" />
 					<p>
-						<span class="font-[500]">Extract</span> relevant topics using natural language processing. 
+						<span class="font-[500]">Extract</span> relevant topics using natural language processing.
 					</p>
 				</div>
 			</div>
@@ -266,7 +274,8 @@
 				>
 					<img src={Analyze} alt="" class="w-fit" />
 					<p>
-						<span class="font-[500]">Analyze</span> the relationships of these topics to various Reddit metadata.
+						<span class="font-[500]">Analyze</span> the relationships of these topics to various Reddit
+						metadata.
 					</p>
 				</div>
 			</div>
@@ -411,9 +420,7 @@
 			/>
 			<div class="flex flex-col items-center my-[2rem]">
 				<p class="text-center">Executing the gameplan gave us...</p>
-				<h3 class="text-center my-[1rem]">
-					2467 scraped submissions!
-				</h3>
+				<h3 class="text-center my-[1rem]">2467 scraped submissions!</h3>
 				<p class="w-full text-center">But now comes the hard part&mdash;cleaning the data.</p>
 			</div>
 		</div>
@@ -438,7 +445,7 @@
 					<div class ="flex flex-row gap-[0.2rem]">
 						<p class ="font-[500] w-fit pl-[1rem]">•</p> 
 						<p class = "w-full pl-[0.5rem] ">
-							Remove URLs, duplicates, and submissions with empty cells except <span class ="code">Content</span> (to be transcribed later on) and <span class ="code">Flair</span>.
+							Remove URLs, duplicates, emojis, and submissions with empty cells except <span class ="code">Content</span> (to be transcribed later on) and <span class ="code">Flair</span>.
 						</p>
 					</div>
 					<div class ="flex flex-row gap-[0.2rem]">
@@ -481,9 +488,7 @@
 		</div>
 		<div class="flex flex-col items-center mt-[2rem]">
 			<p class="text-center">We then finally get...</p>
-			<h3 class="text-center my-[1rem] lg:my-0">
-				2467 preprocessed submissions
-			</h3>
+			<h3 class="text-center my-[1rem] lg:my-0">2467 preprocessed submissions</h3>
 		</div>
 		<div
 			class="lg:w-[80%] w-full border-t border-b border-white backdrop-blur-lg bg-[#ffffff29] rounded-lg py-5 px-10"
@@ -545,38 +550,43 @@
 			</div>
 		</div>
 		<footer
-			class="relative z-1 w-full h-full py-[2rem] flex md:flex-row flex-col items-center justify-evenly gap-5 border-t-[0.7px] border-[#0d121c3d]"
+			class="relative z-1 w-full h-full py-[2rem] border-t-[0.7px] border-[#0d121c3d] flex flex-col items-center gap-5"
 		>
-			<div class="flex flex-col gap-2 items-center z-2">
-				<!-- <p class="text-sm w-full text-center"></p> -->
-				<div class="flex flex-col gap-1">
-					<h5 class="w-full text-center">Seth Eliserio</h5>
-					<a
-						class="w-full text-center font-normal text-[#4A5464]"
-						href="https://www.linkedin.com/in/seth-eliserio-655b28225/"
-						target="__blank">@setheliserio</a
-					>
+			<div class="w-full flex md:flex-row flex-col items-center justify-evenly gap-5">
+				<div class="w-[10%] flex flex-col gap-2 items-center z-2">
+					<div class="flex flex-col">
+						<h5 class="w-full text-center">Seth Eliserio</h5>
+						<a
+							class="w-full text-center font-normal text-[#acacac] hover:text-[#6a6868] transition-all ease-in-out"
+							href="https://www.linkedin.com/in/seth-eliserio-655b28225/"
+							target="__blank">@setheliserio</a
+						>
+					</div>
+				</div>
+				<div class="w-[10%] flex flex-col gap-2 items-center z-2">
+					<div class="flex flex-col">
+						<h5 class="w-full text-center">Arki Mañago</h5>
+						<a
+							class="w-full text-center font-normal text-[#acacac] hover:text-[#6a6868] transition-all ease-in-out"
+							href="https://www.linkedin.com/in/ark1tech"
+							target="__blank">@ark1tech</a
+						>
+					</div>
+				</div>
+				<div class="w-[10%] flex flex-col gap-2 items-center z-2">
+					<!-- <p class="text-sm w-full text-center"></p> -->
+					<div class="flex flex-col">
+						<h5 class="w-full text-center">Annika Domondon</h5>
+						<a
+							class="w-full text-center font-normal text-[#acacac] hover:text-[#6a6868] transition-all ease-in-out"
+							href="/"
+							target="__blank">@maridapottedcat</a
+						>
+					</div>
 				</div>
 			</div>
-			<div class="flex flex-col gap-2 items-center">
-				<!-- <p class="text-sm w-full"></p> -->
-				<div class="flex flex-col gap-1">
-					<h5 class="w-full text-center">Arki Mañago</h5>
-					<a
-						class="w-full text-center font-normal text-[#4A5464]"
-						href="https://www.linkedin.com/in/ark1tech"
-						target="__blank">@ark1tech</a
-					>
-				</div>
-			</div>
-			<div class="flex flex-col gap-2 items-center">
-				<!-- <p class="text-sm w-full text-center"></p> -->
-				<div class="flex flex-col gap-1">
-					<h5 class="w-full text-center">Annika Domondon</h5>
-					<a class="w-full text-center font-normal text-[#4A5464]" href="/" target="__blank"
-						>@maridapottedcat</a
-					>
-				</div>
+			<div class="w-full flex flex-col items-center">
+				<p class="w-fit text-center text-[0.8rem] text-[#acacac]">WFW SUMMER</p>
 			</div>
 		</footer>
 	</div>

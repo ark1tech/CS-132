@@ -513,6 +513,7 @@
 				label="View dataset"
 				href="https://docs.google.com/spreadsheets/d/1lmhzWPGKuykna-nOAT6i9ry_-330GrGRh_M5wN73qEE/edit?usp=sharing"
 				icon={up_right_arrow}
+				target={"blank_"}
 			/>
 		</div>
 	</div>

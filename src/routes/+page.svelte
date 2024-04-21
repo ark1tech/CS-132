@@ -491,9 +491,9 @@
 		<div class="flex flex-col items-center mt-[2rem]">
 			<p class="text-center">We then finally get...</p>
 			<h3 class="text-center my-[1rem]">2541 preprocessed submissions</h3>
-			<div class="flex flex-row gap-[0.5rem] items-center justify-center">
+			<div class="flex sm:flex-row flex-col gap-[0.5rem] items-center justify-center">
 				{@html caution}
-				<p class="font-['JetBrains_Mono'] text-sm w-fit opacity-50">We're still in the process of transcribing media content</p>
+				<p class="font-['JetBrains_Mono'] text-sm w-fit opacity-50 text-center">We're still in the process of transcribing media content</p>
 			</div>
 		</div>
 		<div

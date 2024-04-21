@@ -73,7 +73,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </svelte:head>
 
-<section class="w-full min-h-[100dvh] flex flex-col items-center relative gap-4 justify-start">
+<section class="w-full min-h-[100dvh] flex flex-col items-center relative gap-4 sm:justify-start justify-center">
 	<!-- <div class="absolute z-1 w-full h-full border">
 		<div class="relative left-[5rem] top-[5rem] w-auto h-[20%] bg-[url('$lib/images/BalloonBG.svg')] bg-no-repeat"></div>
 	</div> -->
@@ -82,7 +82,7 @@
 			<div class="w-full h-full bg-[url('$lib/images/grid.svg')] bg-repeat"></div>
 		</div>
 	</div>
-	<div class="relative z-1 pt-[7rem] w-full flex flex-col items-center gap-[1.5rem]">
+	<div class="relative z-1 sm:pt-[7rem] w-full flex flex-col items-center gap-[1.5rem]">
 		<div class="flex flex-row gap-[0.5rem] items-center justify-center">
 			{@html caution}
 			<p class="font-['JetBrains_Mono'] text-sm w-fit opacity-50">Project still in progress</p>
@@ -99,7 +99,7 @@
 		<Button1 label="Learn more" href="#overview" icon={down_arrow} target="_self" />
 	</div>
 	<div class="w-full h-full mt-[2rem]">
-		<div class="w-full h-full gradient-mask-b-50 drop-shadow-xl">
+		<div class="w-full h-full gradient-mask-b-50 drop-shadow-xl sm:block hidden">
 			<img alt="" src={Reddit} class="h-auto w-full relative z-1" />
 		</div>
 	</div>

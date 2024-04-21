@@ -340,7 +340,7 @@
 						</div>
 					</div>
 					<p class ="w-full"> 
-						To conduct our project, recall that we would only need text as data. That is why we kept track of the submission content type so that we may extract their transcripts. 
+						We kept track of the submission content type so that we may manually extract their transcripts. 
 					</p>
 				`}
 			/>

@@ -202,15 +202,13 @@
 			<div class="w-full p-[2rem] flex flex-col gap-3">
 				<p class="font-[500]">Hypothesis</p>
 				<p class="text-left">
-					The prevalent topics among the subreddit users centered around labor struggles in the
-					Philippines.
+					The prevalent topics among the subreddit users centered around unfair contracts and job offerings in the Philippines.
 				</p>
 			</div>
 			<div class="w-full p-[2rem] flex flex-col gap-3">
 				<p class="font-[500]">Null Hypothesis</p>
 				<p class="text-left">
-					The prevalent topics among the subreddit users did not center around labor struggles in
-					the Philippines.
+					The prevalent topics among the subreddit users did not center around unfair contracts and job offerings in the Philippines.
 				</p>
 			</div>
 		</div>
@@ -223,15 +221,13 @@
 			<div class="w-full p-[2rem] flex flex-col gap-3">
 				<p class="font-[500]">Hypothesis</p>
 				<p class="text-left">
-					The prevalent topics among the subreddit users centered around labor struggles in the
-					Philippines.
+					The topic with the most engagements based on upvotes and comments is the same as the most prevalent topic.
 				</p>
 			</div>
 			<div class="w-full p-[2rem] flex flex-col gap-3">
 				<p class="font-[500]">Null Hypothesis</p>
 				<p class="text-left">
-					The prevalent topics among the subreddit users did not center around labor struggles in
-					the Philippines.
+					The topic with the most engagements based on upvotes and comments is different from the most prevalent topic.
 				</p>
 			</div>
 		</div>
@@ -457,19 +453,25 @@
 					<div class ="flex flex-row gap-[0.2rem]">
 						<p class ="font-[500] w-fit pl-[1rem]">•</p> 
 						<p class = "w-full pl-[0.5rem] ">
-							Contextualize Filipino slangs and text abbreviations such as converting "BTW" to "By the way" or "Charot" to "Just kidding". However, it is to note that we can only cater a handful list of them (available on the GitHub repository).
+							Contextualize Filipino slangs, text abbreviations, and corporate jargons such as converting "WFH" to "Work from home" or "Charot" to "Just kidding". However, it is to note that we can only cater a handful list of them (available on the GitHub repository). This would also raise the possibility of incorrectly defining an acronym, but doing this may be more beneficial as it heavily contextualizes the text.
+						</p>
+					</div>
+					<div class ="flex flex-row gap-[0.2rem]">
+						<p class ="font-[500] w-fit pl-[1rem]">•</p> 
+						<p class = "w-full pl-[0.5rem] ">
+							Concatenate <span class ="code">Title</span> and <span class ="code">Content</span> of every submission into one cell under a new column <span class ="code">Title+Content</span>.
 						</p>
 					</div>
 					<div class ="flex flex-row gap-[0.2rem]">
 						<p class ="font-[500] w-fit">2.</p> 
 						<p class = "w-full pl-[0.5rem] ">
-							We then want to manually transcribe the image and video content. We start by shortlisting the 100 most engaged submissions from each category to save time as effort to value ratio may be low.
+							We then want to manually transcribe the image and video content. We shortlist the 100 most engaged submissions from each category to save time as effort to value ratio may be low.
 						</p>
 					</div>
 					<div class ="flex flex-row gap-[0.2rem]">
 						<p class ="font-[500] w-fit">3.</p> 
 						<p class = "w-full pl-[0.5rem] ">
-							Translate <span class ="code">Title</span> and <span class ="code">Content</span> to English using the
+							Translate <span class ="code">Title+Content</span> to English using the
 							<a class = "inline_a" href="https://cloud.google.com/translate/docs/reference/rest" target="_blank"> 
 								Google Translator API</a>.
 						</p>
@@ -477,9 +479,9 @@
 					<div class ="flex flex-row gap-[0.2rem]">
 						<p class ="font-[500] w-fit">4.</p> 
 						<p class = "w-full pl-[0.5rem] ">
-							Lastly, lemmatize <span class ="code">Title</span> and <span class ="code">Content</span> and remove their punctuations and stop words using 
+							Lastly, lemmatize <span class ="code">Title+Content</span> and remove their punctuations, numbers, and stop words using 
 							<a class = "inline_a" href="https://www.nltk.org" target="_blank"> 
-								Natural Language Toolkit (NLTK)</a>.
+								Natural Language Toolkit (NLTK)</a> and Pandas.
 						</p>
 					</div>
 					

@@ -30,7 +30,7 @@
 				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">Modelling</a></li>
 				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">Results</a></li>
 				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">Conclusion</a></li>
-				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">About Us</a></li>
+				<li><a href="#aboutus" on:click={handleAnchorClick} class = "hover:font-bold duration-300 ease-in-out transition-all">About Us</a></li>
 			</ul>
 			<div class="lg:hidden block">
 				{@html hamburger_menu}

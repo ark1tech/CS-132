@@ -61,7 +61,7 @@
 	const up_right_arrow = `<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>`;
 
 	const caution = `<?xml version="1.0" encoding="utf-8"?>
-		<svg width="17px" height="17px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.3">
+		<svg width="17px" height="17px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.5">
 		<path d="M12 7V13M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#4A5464" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 		<circle cx="12" cy="16.5" r="0.9" fill="#4A5464"/>
 		</svg>`;
@@ -85,7 +85,7 @@
 	<div class="relative z-1 pt-[7rem] w-full flex flex-col items-center gap-[1.5rem]">
 		<div class="flex flex-row gap-[0.5rem] items-center justify-center">
 			{@html caution}
-			<p class="font-['JetBrains_Mono'] text-sm w-fit opacity-30">Project still in progress</p>
+			<p class="font-['JetBrains_Mono'] text-sm w-fit opacity-50">Project still in progress</p>
 		</div>
 		<h1 class="text-[#0E0F11] lg:w-[60%] text-center">Through the lens of Filipino workers</h1>
 		<p class="text-center lg:w-[60%]">
@@ -416,7 +416,7 @@
 			/>
 			<div class="flex flex-col items-center my-[2rem]">
 				<p class="text-center">Executing the gameplan gave us...</p>
-				<h3 class="text-center my-[1rem]">2467 scraped submissions!</h3>
+				<h3 class="text-center my-[1rem]">2541 scraped submissions!</h3>
 				<p class="w-full text-center">But now comes the hard part&mdash;cleaning the data.</p>
 			</div>
 		</div>
@@ -490,7 +490,11 @@
 		</div>
 		<div class="flex flex-col items-center mt-[2rem]">
 			<p class="text-center">We then finally get...</p>
-			<h3 class="text-center my-[1rem] lg:my-0">2467 preprocessed submissions</h3>
+			<h3 class="text-center my-[1rem]">2541 preprocessed submissions</h3>
+			<div class="flex flex-row gap-[0.5rem] items-center justify-center">
+				{@html caution}
+				<p class="font-['JetBrains_Mono'] text-sm w-fit opacity-50">We're still in the process of transcribing media content</p>
+			</div>
 		</div>
 		<div
 			class="lg:w-[80%] w-full border-t border-b border-white backdrop-blur-lg bg-[#ffffff29] rounded-lg py-5 px-10"
@@ -586,9 +590,6 @@
 						>
 					</div>
 				</div>
-			</div>
-			<div class="w-full flex flex-col items-center">
-				<p class="w-fit text-center text-[0.8rem] text-[#acacac]">WFW SUMMER</p>
 			</div>
 		</footer>
 	</div>

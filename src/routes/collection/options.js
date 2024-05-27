@@ -4,15 +4,15 @@ export default {
     axes: {
       left: {
         mapsTo: 'value',
-        stacked: true
       },
       bottom: {
-        mapsTo: 'key',
+        mapsTo: 'group',
         scaleType: 'labels'
       }
     },
     height: '400px',
     legend: {
+        enabled: false,
         alignment: 'center',
     },
     color : {
@@ -20,8 +20,8 @@ export default {
             option: 2
         },
         scale: {
-            2022: "#de6f57",
-            2023: "#ff9b70",
+            2022: "#ff9b70",
+            2023: "#de6f57",
             2024: "#e35619"
         }
     }, 

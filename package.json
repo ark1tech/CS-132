@@ -42,6 +42,7 @@
 		"d3-cloud": "^1.2.7",
 		"d3-sankey": "^0.12.3",
 		"highlight.js": "^11.9.0",
+		"katex": "^0.16.10",
 		"svhighlight": "^0.7.1",
 		"tailwind-gradient-mask-image": "^1.2.0"
 	}

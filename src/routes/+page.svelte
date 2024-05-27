@@ -137,8 +137,8 @@
 	class="relative pt-[4rem] w-full h-fit flex flex-col items-center gap-4 justify-start"
 >
 	<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
-		<div class="h-full w-full gradient-mask-b-80">
-			<div class="z-1 h-full w-full"></div>
+		<div class="datacollect2 h-full w-full gradient-mask-b-80">
+			<div class="z-1 h-full w-full "></div>
 		</div>
 	</div>
 	<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
@@ -171,36 +171,45 @@
 		<footer
 			class="relative z-1 w-full h-full py-[2rem] border-t-[0.7px] border-[#0d121c3d] flex flex-col items-center gap-5"
 		>
-			<div class="w-full flex md:flex-row flex-col items-center justify-evenly gap-5">
-				<div class="w-[10%] flex flex-col gap-2 items-center z-2">
-					<div class="flex flex-col">
+			<div class="w-full flex md:flex-row flex-col items-center justify-evenly gap-5 px-[4rem]">
+				<div class="flex-grow flex flex-col gap-2 items-center z-2 px-[1.5rem]">
+					<div class="flex flex-col items-center justify-center">
 						<h5 class="w-full text-center">Seth Eliserio</h5>
 						<a
 							class="w-full text-center font-normal text-[#acacac] hover:text-[#6a6868] transition-all ease-in-out"
 							href="https://www.linkedin.com/in/seth-eliserio-655b28225/"
 							target="__blank">@setheliserio</a
 						>
+						<p class='text-sm text-justify mt-[1rem]'>
+							Hello! I am Annika, a BS Computer Science student, currently interested in the marriages of Computer Science to other subjects, mainly BioInformatics. I also enjoy writing and discussing stories and literary concepts.
+						</p>
 					</div>
 				</div>
-				<div class="w-[10%] flex flex-col gap-2 items-center z-2">
-					<div class="flex flex-col">
+				<div class="flex-grow flex flex-col gap-2 items-center z-2 px-[1.5rem]">
+					<div class="flex flex-col  items-center justify-center">
 						<h5 class="w-full text-center">Arki Mañago</h5>
 						<a
 							class="w-full text-center font-normal text-[#acacac] hover:text-[#6a6868] transition-all ease-in-out"
 							href="https://www.linkedin.com/in/ark1tech"
 							target="__blank">@ark1tech</a
 						>
+						<p class='text-sm text-justify mt-[1rem]'>
+							Hello! I am Annika, a BS Computer Science student, currently interested in the marriages of Computer Science to other subjects, mainly BioInformatics. I also enjoy writing and discussing stories and literary concepts.
+						</p>
 					</div>
 				</div>
-				<div class="w-[10%] flex flex-col gap-2 items-center z-2">
+				<div class="flex-grow flex flex-col gap-2 items-center z-2 px-[1.5rem]">
 					<!-- <p class="text-sm w-full text-center"></p> -->
-					<div class="flex flex-col">
+					<div class="flex flex-col items-center justify-center">
 						<h5 class="w-full text-center">Annika Domondon</h5>
 						<a
 							class="w-full text-center font-normal text-[#acacac] hover:text-[#6a6868] transition-all ease-in-out"
 							href="/"
 							target="__blank">@maridapottedcat</a
 						>
+						<p class='text-sm text-justify mt-[1rem]'>
+							Hello! I am Annika, a BS Computer Science student, currently interested in the marriages of Computer Science to other subjects, mainly BioInformatics. I also enjoy writing and discussing stories and literary concepts.
+						</p>
 					</div>
 				</div>
 			</div>

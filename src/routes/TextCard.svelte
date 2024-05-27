@@ -1,7 +1,6 @@
 <script>
 	export let title;
 	export let desc;
-	import Katex from "./Katex.svelte";
 </script>
 
 <div

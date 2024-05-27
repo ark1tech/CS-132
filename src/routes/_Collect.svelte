@@ -214,7 +214,7 @@
 </div>
 <div class="flex flex-col items-center mt-[2rem]">
     <p class="text-center">We then finally get...</p>
-    <h3 class="text-center my-[1rem]">1977 submissions!</h3>
+    <h3 class="text-center my-[1rem]">1976 preprocessed submissions!</h3>
     <!-- <div class="flex sm:flex-row flex-col gap-[0.5rem] items-center justify-center">
         {@html caution}
         <p class="font-['JetBrains_Mono'] text-sm w-fit opacity-50 text-center">

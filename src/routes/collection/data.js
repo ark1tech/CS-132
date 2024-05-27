@@ -5,7 +5,7 @@ export default [
     },
     {
         group: '2023',
-        value: 836
+        value: 835
     },
     {
         group: '2024',

@@ -1,7 +1,6 @@
 <script>
 	import TextCard from './TextCard.svelte';
     import Nutshell from '$lib/images/nutshell.png';
-
 </script>
 
 <div class="flex flex-col w-full justify-between gap-[1.5rem] items-center">
@@ -83,11 +82,11 @@
                 <p class='text-sm w-full text-right'>*The following plots are interactive so feel free to hover and play around!</p>
                 <p><span class='font-[500]'>Manually-tagged Topics</span></p>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~klienmaago/12.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~amihankatangkay/17.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 1.</span> Monthly frequency of Unfair and Non-Unfair.<p>
                 </div>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~klienmaago/10.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~amihankatangkay/19.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 2.</span> Cumulative frequency of Unfair and Non-Unfair.<p>
                 </div>
 
@@ -100,11 +99,11 @@
                 </p>
                 <p class='mt-[2rem]'><span class='font-[500]'>LDA Topics</span></p>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~klienmaago/22.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~amihankatangkay/21.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 3.</span> Monthly frequency of LDA Topics.<p>
                 </div>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~klienmaago/24.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~amihankatangkay/31.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 4.</span> Cumulative frequency of LDA Topics.<p>
                 </div>
                 <p>
@@ -202,11 +201,11 @@
                
                 <p><span class='font-[500]'>Manually-tagged Topics</span></p>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~klienmaago/26.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~amihankatangkay/33.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 5.</span> Monthly engagement of Unfair and Non-Unfair.<p>
                 </div>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~klienmaago/28.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~amihankatangkay/35.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 6.</span> Cumulative engagement of Unfair and Non-Unfair.<p>
                 </div>
                 <p>
@@ -214,11 +213,11 @@
                 </p>
                 <p class='mt-[2rem]'><span class='font-[500]'>LDA Topics</span></p>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~klienmaago/30.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~amihankatangkay/37.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 7.</span> Monthly engagement of LDA Topics.<p>
                 </div>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~klienmaago/32.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~amihankatangkay/39.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 8.</span> Cumulative engagement of LDA Topics.<p>
                 </div>
                 <p>
@@ -306,14 +305,11 @@
     </h3>
     <div class = 'flex flex-col gap-[1rem]'>
         <img class="rounded-lg shadow-lg w-full h-auto" src={Nutshell} alt="" />  
-        <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 9.</span> t-SNE Clustering of LDA-extracted topics in the subreddit r/AntiworkPH.<p>
+        <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 9.</span> t-SNE Clustering of LDA topics in the subreddit r/AntiworkPH.<p>
     </div>
     <p>
-        With the analysis and discussions done, we present the output plot of the LDA. Each color represents a topic cluster. These clusters are made up of points which each correspond to a post; the larger the radius of the point, the greater the engagements a post has accumulated. Topic 3, identified as Job Application and the focus of our hypothesis, lagged behind as third in both the number of posts and engagements.
-    </p>
-    <p>
-        The dataset was clustered into five (5) topics using LDA. In the resulting plot, each color represents a topic cluster. These clusters are made up of points which each correspond to a post; the larger the radius of the point, the greater the engagements a post has accumulated. Topic 3, identified as Job Application and the focus of our hypothesis, lagged behind as third in both the number of posts and engagements. This leads us to believe that our hypothesis for the first research question—that posts on the subreddit would center around topics on unfair job offers or contracts—appears to be false.
+        With the analysis and discussions done, we present the output plot of the LDA seen in Figure 9. Each color represents a topic cluster, which are made up of points that each correspond to a post; the larger the radius of the point, the greater the engagement a post has accumulated. The focus of our hypothesis, which is about posts on unfair job offers and contracts, is reflected in Topic 3 identified as Job Application, which lagged behind as third in both the number of posts and engagements among other topics.
     </p>
 </div>
 
-<!-- <iframe title=" " class="rounded-lg" width="900" height="500" frameborder="0" scrolling="no" src="//plotly.com/~klienmaago/1.embed?autosize=true&link=false"></iframe> -->
+<!-- <iframe title=" " class="rounded-lg" width="900" height="500" frameborder="0" scrolling="no" src="//plotly.com/~amihankatangkay/1.embed?autosize=true&link=false"></iframe> -->

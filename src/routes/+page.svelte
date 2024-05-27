@@ -176,11 +176,20 @@
 			</div>
 		</div>
 		<footer
-			class="relative z-1 w-full h-full py-[2rem] border-t-[0.7px] border-[#0d121c3d] flex flex-col items-center gap-5"
+			class="relative z-1 w-full h-full py-[7rem] border-t-[0.7px] border-[#0d121c3d] flex flex-col items-center gap-5"
 		>
 			<div class="w-full flex md:flex-row flex-col items-center justify-evenly gap-5 px-[4rem]">
-				<div class="flex-grow flex flex-col gap-2 items-center z-2 px-[1.5rem]">
+				<div class="w-[30%] flex flex-col gap-2 items-center z-2 px-[1.5rem]">
 					<div class="flex flex-col items-center justify-center">
+						<pre class="flex justify-center text-[#4A5464]">
+	            _ |\_
+		   	    \` ..\
+		  __,.-" =__Y=
+		."        )
+_    /   ,    \/\_
+((____|    )_-\ \_-`
+`-----'`-----` `--`
+						</pre>
 						<h5 class="w-full text-center">Seth Eliserio</h5>
 						<a
 							class="w-full text-center font-normal text-[#acacac] hover:text-[#6a6868] transition-all ease-in-out"
@@ -188,12 +197,18 @@
 							target="__blank">@setheliserio</a
 						>
 						<p class='text-sm text-justify mt-[1rem]'>
-							Hello! I am Annika, a BS Computer Science student, currently interested in the marriages of Computer Science to other subjects, mainly BioInformatics. I also enjoy writing and discussing stories and literary concepts.
+							I am Eli, a BS Computer Science student, and my main field of interest is automata theory. I also enjoy exploring finance and some Taylor Swift on the side.
 						</p>
 					</div>
 				</div>
-				<div class="flex-grow flex flex-col gap-2 items-center z-2 px-[1.5rem]">
+				<div class="w-[30%] flex flex-col gap-2 items-center z-2 px-[1.5rem]">
 					<div class="flex flex-col  items-center justify-center">
+						<pre class="flex justify-center text-[#4A5464]">
+		|\      _,,,---,,_
+ZZZzz /,`.-'`'    -.  ;-;;,_
+     |,4-  ) )-,_. ,\ (  `'-'
+    '---''(_/--'  `-'\_) 
+						</pre>
 						<h5 class="w-full text-center">Arki Mañago</h5>
 						<a
 							class="w-full text-center font-normal text-[#acacac] hover:text-[#6a6868] transition-all ease-in-out"
@@ -201,13 +216,20 @@
 							target="__blank">@ark1tech</a
 						>
 						<p class='text-sm text-justify mt-[1rem]'>
-							Hello! I am Annika, a BS Computer Science student, currently interested in the marriages of Computer Science to other subjects, mainly BioInformatics. I also enjoy writing and discussing stories and literary concepts.
+							Hi, I'm Arki. I love putting beauty to the things I build. My passion lies in fusing my marketing and programming skills to craft projects that are both on-brand and on-target. On the side, I love jogging and appreciating flowers around UPD ‧₊˚❀༉‧₊˚.
 						</p>
 					</div>
 				</div>
-				<div class="flex-grow flex flex-col gap-2 items-center z-2 px-[1.5rem]">
+				<div class="w-[30%] flex flex-col gap-2 items-center z-2 px-[1.5rem]">
 					<!-- <p class="text-sm w-full text-center"></p> -->
 					<div class="flex flex-col items-center justify-center">
+						<pre class="flex justify-center text-[#4A5464]">
+	  	  _
+	  |\'/-..--.
+	  / _ _   ,  ;
+	 `~=`Y'~_&lt;._./
+	   &lt;`-....__.'  
+						</pre>
 						<h5 class="w-full text-center">Annika Domondon</h5>
 						<a
 							class="w-full text-center font-normal text-[#acacac] hover:text-[#6a6868] transition-all ease-in-out"

@@ -123,9 +123,9 @@ const options = {
   service_worker: false,
   templates: {
     app: ({ head, body, assets: assets2, nonce, env }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n",
-    error: ({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="%sveltekit.assets%/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		%sveltekit.head%\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + status + '</div>\n		<div style="display: contents">' + message + "</div>\n	</body>\n</html>\n"
+    error: ({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="%sveltekit.assets%/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		%sveltekit.head%\n	</head>\n	<body data-sveltekit-preload-data="hover" class ="m-[5rem]">\n		<div style="display: contents">' + status + '</div>\n		<div style="display: contents">' + message + "</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1pepmbb"
+  version_hash: "1t2m29l"
 };
 async function get_hooks() {
   return {};

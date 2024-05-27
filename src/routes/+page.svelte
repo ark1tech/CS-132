@@ -148,9 +148,16 @@
 	</div>
 	<img src={Line} alt="l" class="lg:w-[60%] w-full h-auto" />
 	<div class="relative z-1 lg:w-[80%] w-full flex flex-col items-center gap-[2rem]">
-		<div class="flex flex-col w-full h-full items-center gap-[0.8rem] my-[2rem]">
-			<h4 class="sub">PART II</h4>
-			<h2 class="text-[#0E0F11] text-center">Data Exploration</h2>
+		<div class="flex flex-col w-full h-full items-center gap-[2rem] my-[2rem]">
+			<div class="flex flex-col gap-[0.8rem] items-center w-full">
+				<h4 class="sub">PART II</h4>
+				<h2 class="text-[#0E0F11] text-center">Data Exploration</h2>
+			</div>
+			<p class='text-center'>
+				Now that our data has been processed, the next step would be to solve the research questions
+				posed at the start of the study. To do this, we would need to focus on how to define and
+				identify submissions, a.k.a. posts, on unfair contracts and job offerings as hypothesized.
+			</p>
 		</div>
 		<Explore/>
 	</div>

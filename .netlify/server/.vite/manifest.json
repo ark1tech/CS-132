@@ -45,20 +45,20 @@
     ]
   },
   "src/lib/images/Logo.svg": {
-    "file": "_app/immutable/assets/Logo.BGD9fciM.svg",
+    "file": "_app/immutable/assets/Logo.CMp_UEwa.svg",
     "src": "src/lib/images/Logo.svg"
   },
-  "src/lib/images/Reddit.webp": {
-    "file": "_app/immutable/assets/Reddit.CMn5GrPN.webp",
-    "src": "src/lib/images/Reddit.webp"
+  "src/lib/images/grid.svg": {
+    "file": "_app/immutable/assets/grid.DPexrixr.svg",
+    "src": "src/lib/images/grid.svg"
   },
-  "src/lib/images/Reddit2.webp": {
-    "file": "_app/immutable/assets/Reddit2.DXCuTfPO.webp",
-    "src": "src/lib/images/Reddit2.webp"
+  "src/lib/images/hex.svg": {
+    "file": "_app/immutable/assets/hex.D4-DZ3d4.svg",
+    "src": "src/lib/images/hex.svg"
   },
-  "src/lib/images/antiwork.webp": {
-    "file": "_app/immutable/assets/antiwork.CF_qkN3T.webp",
-    "src": "src/lib/images/antiwork.webp"
+  "src/lib/images/reddit_bg.webp": {
+    "file": "_app/immutable/assets/reddit_bg.DncP5ONG.webp",
+    "src": "src/lib/images/reddit_bg.webp"
   },
   "src/routes/+layout.svelte": {
     "file": "entries/pages/_layout.svelte.js",
@@ -69,10 +69,12 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.g7nJb2q7.css"
+      "_app/immutable/assets/_layout.B8ioNObN.css"
     ],
     "assets": [
-      "_app/immutable/assets/Logo.BGD9fciM.svg"
+      "_app/immutable/assets/Logo.CMp_UEwa.svg",
+      "_app/immutable/assets/grid.DPexrixr.svg",
+      "_app/immutable/assets/hex.D4-DZ3d4.svg"
     ]
   },
   "src/routes/+page.js": {
@@ -90,11 +92,10 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.DjpZ9fYx.css"
+      "_app/immutable/assets/_page.BNfD4LIC.css"
     ],
     "assets": [
-      "_app/immutable/assets/Reddit2.DXCuTfPO.webp",
-      "_app/immutable/assets/antiwork.CF_qkN3T.webp"
+      "_app/immutable/assets/reddit_bg.DncP5ONG.webp"
     ]
   }
 }

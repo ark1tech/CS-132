@@ -26,7 +26,7 @@
 			<ul class="flex-row justify-between font-light text-sm gap-[2.3rem] lg:flex hidden">
 				<li><a href="#overview" on:click={handleAnchorClick} class = "hover:font-bold duration-300 ease-in-out transition-all"> Overview </a></li>
 				<li><a href="#collection" on:click={handleAnchorClick} class = "hover:font-bold duration-300 ease-in-out transition-all"> Collection </a></li>
-				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">Exploration</a></li>
+				<li><a href="#exploration" on:click={handleAnchorClick} class = "hover:font-bold duration-300 ease-in-out transition-all">Exploration</a></li>
 				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">Modelling</a></li>
 				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">Results</a></li>
 				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">Conclusion</a></li>

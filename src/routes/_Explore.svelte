@@ -1,24 +1,15 @@
 <script>
-	import Button from './Button.svelte';
-	import Button2 from './Button2.svelte';
 	import TextCard from './TextCard.svelte';
-	import Katex from './Katex.svelte';
-	import '@carbon/charts-svelte/styles.css';
+    import Nutshell from '$lib/images/nutshell.png';
 
-	const up_right_arrow = `<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>`;
 </script>
 
 <div class="flex flex-col w-full justify-between gap-[1.5rem] items-center">
-	<p>
-		Now that our data has been processed, the next step would be to solve the research questions
-		posed at the start of the study. To do this, we would need to focus on how to define and
-		identify posts on unfair contracts and job offerings as hypothesized.
-	</p>
 	<TextCard
 		title="MANUAL TOPIC TAGGING"
 		desc={`
             <p>
-                Through manual tagging, we categorized the submissions into two topics: unfair contracts and job offerings and its complement. For ease, we refer to the former as <span class ="font-[500]">Unfair</span> and to the latter as <span class ="font-[500]">Non-unfair</span>. 
+                Through manual tagging, we categorized the submissions into two topics: unfair contracts and job offerings and its complement. For ease, we refer to the former as <span class ="font-[500]">Unfair</span> and to the latter as <span class ="font-[500]">Non-Unfair</span>. 
             </p>
             <p>
                 Each of the posts were searched for keywords that indicated discussions on job offerings and contracts, and if they were unfair or not. For example, in labelling posts about job offers, we performed a simple search for the keywords “job” and “offer/offers/offering/offerings” and checked if both exist in the submission. 
@@ -89,7 +80,7 @@
                 <p id="r1">
                     For the first research question, two sets of plots* were prepared to identify the prevalence of topics in the subreddit of interest by examining the monthly and cumulative frequency of posts through time. 
                 </p>
-                
+                <p class='text-sm w-full text-right'>*The following plots are interactive so feel free to hover and play around!</p>
                 <p><span class='font-[500]'>Manually-tagged Topics</span></p>
                 <div class = 'flex flex-col gap-[1rem]'>
                     <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//plotly.com/~klienmaago/12.embed?autosize=true&link=false"></iframe>
@@ -188,7 +179,7 @@
                 </div>
                 <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Table 1.</span> Contingency table of manually-tagged topics on their frequency.<p>
                 <p>
-                    For a test of significance at α = 0.05 and df = 1, we get X<sup>2</sup> = 1367.7814 and p-value of 2.1070e-299. As such, since we have a p-value less than our significance level, we therefore <span class='font-[500]'>fail to reject the null hypothesis</span>, believing that the prevalent topic in the subreddit is not centered around unfair contracts and job offers.
+                    For a test of significance at α = 0.05 and df = 1, we get <span class='font-[500]'> X<sup>2</sup> = 1367.7814 and p-value of 2.1070e-299</span>. As such, since we have a p-value less than our significance level, we therefore <span class='font-[500]'>fail to reject the null hypothesis</span>, believing that the prevalent topic in the subreddit is not centered around unfair contracts and job offers.
                 </p>
             `}
 	/>
@@ -266,7 +257,8 @@
                     Moving on to the testing of the hypothesis for the second research question, we used the same statistical tool. However, the topic of unfairness of job offers and contracts is now tested with the engagements of posts in the subreddit.
                 </p>
                 <p>
-                    The contingency table is seen in Table 2. The observed values were calculated on Python by taking the summed engagement of submissions under Unfair, and subtracting that value from the total number of posts for the Non-Unfair. Again, the expected values were each set to half the total number of posts since our goal is simply to get the distribution of each category.
+                    The contingency table is seen in Table 2. The observed values were calculated on Python by taking the summed engagement of submissions under Unfair, and subtracting that value from the total number of posts for the Non-Unfair. These values were then divided by the total number of posts per category as recorded earlier (166 for Unfair, 1810 for Not Unfair) to get the final values. The total engagements were then taken by adding the engagements by all posts and dividing that value by the number of posts. This value was then halved to get the expected value. 
+
                 </p>
                 <div class="relative overflow-hidden shadow-md rounded-lg">
                     <table class="table-fixed w-full text-left">
@@ -281,17 +273,17 @@
                             <tr class="py-5">
                                 <td class="py-5 border text-center  p-4"><span id="docs-internal-guid-3214d5de-7fff-d99b-098b-13adba5dc6f1"><span style="font-size: 11pt; font-family: &quot;Inter&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;">Observed Engagements</span></span>
                                 </td>
-                                <td class="py-5 border text-center  p-4"><span id="docs-internal-guid-4679175d-7fff-325e-4806-382e54f7cefd"><span style="font-size: 11pt; font-family: &quot;Inter&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;">8620</span></span>
+                                <td class="py-5 border text-center  p-4"><span id="docs-internal-guid-4679175d-7fff-325e-4806-382e54f7cefd"><span style="font-size: 11pt; font-family: &quot;Inter&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;">51.9277108433735</span></span>
                                 </td>
-                                <td class="py-5 border text-center  p-4"><span id="docs-internal-guid-af25a1de-7fff-4b9a-37c5-aaa4d852affa"><span style="font-size: 11pt; font-family: &quot;Inter&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;">137769.83000000002</span></span>
+                                <td class="py-5 border text-center  p-4"><span id="docs-internal-guid-af25a1de-7fff-4b9a-37c5-aaa4d852affa"><span style="font-size: 11pt; font-family: &quot;Inter&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;">76.11592817679559</span></span>
                                 </td>
                             </tr>
                             <tr class="py-5">
                                 <td class="py-5 border text-center  p-4"><span id="docs-internal-guid-a2056e8c-7fff-e4cf-33ec-b5f3e28fd9fc"><span style="font-size: 11pt; font-family: &quot;Inter&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;">Expected Engagements</span></span>
                                 </td>
-                                <td class="py-5 border text-center  p-4"><span id="docs-internal-guid-4679175d-7fff-325e-4806-382e54f7cefd"><span style="font-size: 11pt; font-family: &quot;Inter&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;">73194.91500000001</span></span>
+                                <td class="py-5 border text-center  p-4"><span id="docs-internal-guid-4679175d-7fff-325e-4806-382e54f7cefd"><span style="font-size: 11pt; font-family: &quot;Inter&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;">37.04196103238867</span></span>
                                 </td>
-                                <td class="py-5 border text-center  p-4"><span id="docs-internal-guid-04136002-7fff-6069-ec72-6767dbc6719f"><span style="font-size: 11pt; font-family: &quot;Inter&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;">73194.91500000001</span></span>
+                                <td class="py-5 border text-center  p-4"><span id="docs-internal-guid-04136002-7fff-6069-ec72-6767dbc6719f"><span style="font-size: 11pt; font-family: &quot;Inter&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;">37.04196103238867</span></span>
                                 </td>
                             </tr>
                         </tbody>
@@ -299,10 +291,29 @@
                 </div>
                 <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Table 2.</span> Contingency table of manually-tagged topics on their engagement.<p>
                 <p>
-                    For a test of significance at α = 0.05 and df = 1, we get X<sup>2</sup> = 1367.7814 and p-value of 2.1070e-299. As such, since we have a p-value less than our significance level, we therefore <span class='font-[500]'>fail to reject the null hypothesis</span>, believing that the prevalent topic in the subreddit is not centered around unfair contracts and job offers.
+                    For a test of significance at α = 0.05 and df = 1, we get <span class='font-[500]'>X<sup>2</sup> = 4.5693 and p-value of 0.0325</span>. The process for testing the distribution of engagements for both manually-labeled topics. was the same as with the first hypothesis test, this time answering the question “Did the posts under Unfair get the most engagements?”.
+                </p>
+                <p>
+                    At first glance, this does not seem to answer the research question directly. However, considering that there are only two topics introduced (i.e. unfair contracts and not), the answer to this question will still effectively address the original research question, albeit in a roundabout way.
+                </p>
+                <p>
+                    The test yields a p-value of 0.03, which is less than our significance level of 0.5. This tells us that posts under Unfair did not receive the most engagements. As such, we therefore <span class='font-[500]'>fail to reject the null hypothesis</span>.
                 </p>
             `}
 	/>
+    <h3 class="text-center mt-[2rem]">
+        In a nutshell...
+    </h3>
+    <div class = 'flex flex-col gap-[1rem]'>
+        <img class="rounded-lg shadow-lg w-full h-auto" src={Nutshell} alt="" />  
+        <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 9.</span> t-SNE Clustering of LDA-extracted topics in the subreddit r/AntiworkPH.<p>
+    </div>
+    <p>
+        With the analysis and discussions done, we present the output plot of the LDA. Each color represents a topic cluster. These clusters are made up of points which each correspond to a post; the larger the radius of the point, the greater the engagements a post has accumulated. Topic 3, identified as Job Application and the focus of our hypothesis, lagged behind as third in both the number of posts and engagements.
+    </p>
+    <p>
+        The dataset was clustered into five (5) topics using LDA. In the resulting plot, each color represents a topic cluster. These clusters are made up of points which each correspond to a post; the larger the radius of the point, the greater the engagements a post has accumulated. Topic 3, identified as Job Application and the focus of our hypothesis, lagged behind as third in both the number of posts and engagements. This leads us to believe that our hypothesis for the first research question—that posts on the subreddit would center around topics on unfair job offers or contracts—appears to be false.
+    </p>
 </div>
 
 <!-- <iframe title=" " class="rounded-lg" width="900" height="500" frameborder="0" scrolling="no" src="//plotly.com/~klienmaago/1.embed?autosize=true&link=false"></iframe> -->

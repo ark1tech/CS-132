@@ -178,7 +178,7 @@
                 </div>
                 <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Table 1.</span> Contingency table of manually-tagged topics on their frequency.<p>
                 <p>
-                    For a test of significance at α = 0.05 and df = 1, we get <span class='font-[500]'> X<sup>2</sup> = 1367.7814 and p-value of 2.1070e-299</span>. As such, since we have a p-value less than our significance level, we therefore <span class='font-[500]'>fail to reject the null hypothesis</span>, believing that the prevalent topic in the subreddit is not centered around unfair contracts and job offers.
+                    For a test of significance at α = 0.05 and df = 1, we get <span class='font-[500]'> X<sup>2</sup> = 1367.7814 and p-value of 2.1070e-299</span>. As such, since we have a p-value less than our significance level, we therefore <span class='font-[500]'> reject the null hypothesis</span>, believing that the prevalent topic in the subreddit is not centered around unfair contracts and job offers.
                 </p>
             `}
 	/>
@@ -296,7 +296,7 @@
                     At first glance, this does not seem to answer the research question directly. However, considering that there are only two topics introduced (i.e. unfair contracts and not), the answer to this question will still effectively address the original research question, albeit in a roundabout way.
                 </p>
                 <p>
-                    The test yields a p-value of 0.03, which is less than our significance level of 0.5. This tells us that posts under Unfair did not receive the most engagements. As such, we therefore <span class='font-[500]'>fail to reject the null hypothesis</span>.
+                    The test yields a p-value of 0.03, which is less than our significance level of 0.5. This tells us that posts under Unfair did not receive the most engagements. As such, we therefore <span class='font-[500]'>reject the null hypothesis</span>.
                 </p>
             `}
 	/>

@@ -1,5 +1,5 @@
 export default {
-    title: 'Distribution of data',
+    title: 'Distribution of data per year',
     animations: true,
     axes: {
       left: {

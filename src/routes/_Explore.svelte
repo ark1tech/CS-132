@@ -1,31 +1,34 @@
 <script>
 	import TextCard from './TextCard.svelte';
-    import Nutshell from '$lib/images/nutshell.png';
+	import Nutshell from '$lib/images/nutshell.png';
 </script>
 
 <div class="flex flex-col w-full justify-between gap-[1.5rem] items-center">
 	<TextCard
-		title="MANUAL TOPIC TAGGING"
+		title="Manual Topic Tagging"
 		desc={`
             <p>
                 Through manual tagging, we categorized the submissions into two topics: unfair contracts and job offerings and its complement. For ease, we refer to the former as <span class ="font-[500]">Unfair</span> and to the latter as <span class ="font-[500]">Non-Unfair</span>. 
             </p>
             <p>
-                Each of the posts were searched for keywords that indicated discussions on job offerings and contracts, and if they were unfair or not. For example, in labelling posts about job offers, we performed a simple search for the keywords “job” and “offer/offers/offering/offerings” and checked if both exist in the submission. 
+                Each of the posts were searched for keywords that indicated discussions on job offerings and contracts, and if they were unfair or not. 
             </p>
             <p>
-                Meanwhile, the method for processing unfair contracts is slightly more stringent; submissions containing the keyword “contract/s” were filtered, and the process was repeated for the words “unfair” and “unjust”. The remaining posts, thus, are submissions that talk about unfair contracts. However, manual re-checking was done for posts that solely contained the keyword “contract/s” to confirm if context was negative. 
+                For example, in labelling posts about job offers, we performed a simple search for the keywords “job” and “offer/offers/offering/offerings” to denote job offerings and "contract/s" to denote contracts, and checked if they exist in each submission. The filtered submissions were then filtered again by checking if they contain the words “unfair” or “unjust”, which would tag them as Unfair. 
             </p>
             <p>
-                The submissions are tagged under Unfair if they are either about unfair contracts or unfair job offerings.
+                For the remaining posts that don't contain the words "unfair" or "unjust", manual checking was done to determine if the context of the submission was indeed unfair. The submissions are tagged as Unfair if they are <span class ="font-[500]">either about unfair contracts or unfair job offerings</span>.
             </p>
         `}
 	/>
 	<TextCard
-		title="LDA TOPIC MODELING"
+		title="LDA Topic Modeling"
 		desc={`
             <p>
-                To further the investigation, we used Latent Dirichlet Allocation (LDA) topic modelling that categorizes the submissions into n topics through Bayesian probability. To do that, we first tokenized the submissions to 1-gram tokens with at least length of 3 characters. Then, we used term frequency-inverse document frequency (TF-IDF) to vectorize (ie. turn them into meaningful numbers) the tokens. Using TF-IDF reveals the relevance of tokens via frequency which will be quite helpful in topic modeling. The code for this process is also included in the given Github repository above.
+                To further the investigation, we used <span class ="font-[500]">Latent Dirichlet Allocation (LDA) topic modelling</span> that categorizes the submissions into n topics through Bayesian probability. LDA is an unsupervised machine learning algorithm and will be expounded more in the next section! We've only introduced it as early as now so we can digest how it expands our findings. 
+            </p>
+            <p>
+                To do that, we first tokenized the submissions to 1-gram tokens with at least length of 3 characters. Then, we used term frequency-inverse document frequency (TF-IDF) to vectorize (ie. turn them into meaningful numbers) the tokens. Using TF-IDF reveals the relevance of tokens via frequency which will be quite helpful in topic modeling. The code for this process is also included in the given GitHub repository above.
             </p>
             <p>
                 After numerous attempts in using LDA, we settled for 5 topics as it returned very sensible, if not the most, tokens that can be categorized into topics with little to no intersection. It is then to note that LDA only gives a list of words, and it's up to us how we would interpret and name the topic.
@@ -64,14 +67,20 @@
 
             `}
 	/>
-	<div class="flex flex-col items-center my-[2rem] relative">
-		<p class="text-center">Research Question #1</p>
-		<h3 class="text-center my-[1rem]">
-			What are the prevalent topics about labor struggles submitted on r/AntiworkPH?
-		</h3>
+	<div
+		class="w-full hover:bg-[#ffe2e2] duration-300 transition-all ease-in-out bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg my-[1rem]"
+	>
+		<div
+			class="w-full flex flex-col font-[400] h-full bg-gradient-to-tr from-[#ffede7] px-[2rem] py-[3rem] rounded-md"
+		>
+			<p class="text-center">Research Question #1</p>
+			<h3 class="text-center my-[1rem]">
+				What are the prevalent topics about labor struggles submitted on r/AntiworkPH?
+			</h3>
+		</div>
 	</div>
 	<TextCard
-		title="EXPLORATORY DATA ANALYSIS"
+		title="Exploratory Data Analysis"
 		desc={`
                 <p>
                     With such a large dataset, a picture may be hidden and left unseen without proper visualization. To delve deeper into the problem, we performed further analysis by constructing graphs to visualize the data better.
@@ -82,11 +91,11 @@
                 <p class='text-sm w-full text-right'>*The following plots are interactive so feel free to hover and play around!</p>
                 <p><span class='font-[500]'>Manually-tagged Topics</span></p>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly.com/~amihankatangkay/17.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly .com/~amihankatangkay/17.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 1.</span> Monthly frequency of Unfair and Non-Unfair.<p>
                 </div>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly.com/~amihankatangkay/19.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly .com/~amihankatangkay/19.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 2.</span> Cumulative frequency of Unfair and Non-Unfair.<p>
                 </div>
 
@@ -99,11 +108,11 @@
                 </p>
                 <p class='mt-[2rem]'><span class='font-[500]'>LDA Topics</span></p>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly.com/~amihankatangkay/21.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly .com/~amihankatangkay/21.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 3.</span> Monthly frequency of LDA Topics.<p>
                 </div>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly.com/~amihankatangkay/31.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly .com/~amihankatangkay/31.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 4.</span> Cumulative frequency of LDA Topics.<p>
                 </div>
                 <p>
@@ -117,29 +126,33 @@
                 </p>
             `}
 	/>
-    <div class="flex flex-col items-center my-[2rem] relative">
-		<h3 class="text-center my-[1rem]">
-			Recalling our hypothesis...
-		</h3>
-		<div class="w-full flex lg:flex-row flex-col justify-between gap-6">
-			<div class="w-full p-[2rem] pb-[0rem] flex flex-col gap-3">
-				<p class="font-[500]">Null Hypothesis</p>
-				<p class="text-left">
-					The prevalent topics among the subreddit users centered around unfair contracts and job
-					offerings in the Philippines.
-				</p>
-			</div>
-			<div class="w-full p-[2rem] pb-[0rem] flex flex-col gap-3">
-				<p class="font-[500]">Alternative Hypothesis</p>
-				<p class="text-left">
-					The prevalent topics among the subreddit users did not center around unfair contracts and
-					job offerings in the Philippines.
-				</p>
+	<div
+		class="w-full hover:bg-[#ffe3e1] duration-300 transition-all ease-in-out bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg my-[1rem]"
+	>
+		<div
+			class="w-full flex flex-col font-[400] h-full bg-gradient-to-tr from-[#ffede7] px-[2rem] py-[4rem] rounded-md"
+		>
+			<h3 class="text-center my-[1rem]">Recalling our hypothesis...</h3>
+			<div class="w-full flex lg:flex-row flex-col justify-between gap-6">
+				<div class="w-full p-[2rem] pb-[0rem] flex flex-col gap-3">
+					<p class="font-[500]">Null Hypothesis</p>
+					<p class="text-left">
+						The prevalent topics among the subreddit users centered around unfair contracts and job
+						offerings in the Philippines.
+					</p>
+				</div>
+				<div class="w-full p-[2rem] pb-[0rem] flex flex-col gap-3">
+					<p class="font-[500]">Alternative Hypothesis</p>
+					<p class="text-left">
+						The prevalent topics among the subreddit users did not center around unfair contracts
+						and job offerings in the Philippines.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
 	<TextCard
-		title="HYPOTHESIS TESTING"
+		title="Hypothesis Testing"
 		desc={`
                 <p>
                     To test our hypothesis for the first research question, we used the Chi-Square Goodness of Fit to test if the frequency distribution of the manually-tagged topics is significantly different from the expected.
@@ -178,21 +191,27 @@
                 </div>
                 <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Table 1.</span> Contingency table of manually-tagged topics on their frequency.<p>
                 <p>
-                    For a test of significance at α = 0.05 and df = 1, we get <span class='font-[500]'> X<sup>2</sup> = 1367.7814 and p-value of 2.1070e-299</span>. As such, since we have a p-value less than our significance level, we therefore <span class='font-[500]'> reject the null hypothesis</span>, believing that the prevalent topic in the subreddit is not centered around unfair contracts and job offers.
+                    For a test of significance at α = 0.05 and df = 1, we get <span class='font-[500]'> X<sup>2</sup> = 1367.7814 and p-value of 2.1070e-299</span>. As such, since we have a p-value less than our significance level, we therefore <span class='font-[500] text-[#ff5e01]'> reject the null hypothesis</span>, believing that the prevalent topic in the subreddit is not centered around unfair contracts and job offers.
                 </p>
             `}
 	/>
-	<div class="flex flex-col items-center my-[2rem] relative">
-		<p class="text-center">Research Question #2</p>
-		<h3 class="text-center my-[1rem]">
-			Which of these topics receive the most Reddit engagements?
-		</h3>
+	<div
+		class="w-full hover:bg-[#ffe2e2] duration-300 transition-all ease-in-out bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg my-[1rem]"
+	>
+		<div
+			class="w-full flex flex-col font-[400] h-full bg-gradient-to-tr from-[#ffede7] px-[2rem] py-[3rem] rounded-md"
+		>
+			<p class="text-center">Research Question #2</p>
+			<h3 class="text-center my-[1rem] text-pretty">
+				Which of these topics receive the most Reddit engagements?
+			</h3>
+		</div>
 	</div>
 	<TextCard
-		title="EXPLORATORY DATA ANALYSIS"
+		title="Exploratory Data Analysis"
 		desc={`
                <p>
-                    Similar to how the first research question was tackled, we also performed further analysis by constructing graphs. This time, however, engagement was used as a metric over the frequency of posts to address the second research question. Engagement was calculated by summing the number of upvotes and comments, then multiplying them to the upvote:downvote ratio for standardization.
+                    Similar to how the first research question was tackled, we also performed further analysis by constructing graphs. This time, however, engagement was used as a metric over the frequency of posts to address the second research question. Engagement was calculated by summing the number of upvotes and comments, then multiplying them to the upvote:downvote ratio that acts as the weight.
                 </p>
                 <p>
                     The two sets of plots prepared to examine the performance of posts by the number of engagements were measured in terms of monthly and cumulative values through time. As with the previous plots, the first set used data manually tagged on mentions of unfair job offerings and contracts while the second set makes use of the five topics identified by the LDA. 
@@ -201,11 +220,11 @@
                
                 <p><span class='font-[500]'>Manually-tagged Topics</span></p>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly.com/~amihankatangkay/33.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly .com/~amihankatangkay/33.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 5.</span> Monthly engagement of Unfair and Non-Unfair.<p>
                 </div>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly.com/~amihankatangkay/35.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly .com/~amihankatangkay/35.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 6.</span> Cumulative engagement of Unfair and Non-Unfair.<p>
                 </div>
                 <p>
@@ -213,11 +232,11 @@
                 </p>
                 <p class='mt-[2rem]'><span class='font-[500]'>LDA Topics</span></p>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly.com/~amihankatangkay/37.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly .com/~amihankatangkay/37.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 7.</span> Monthly engagement of LDA Topics.<p>
                 </div>
                 <div class = 'flex flex-col gap-[1rem]'>
-                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly.com/~amihankatangkay/39.embed?autosize=true&link=false"></iframe>
+                    <iframe title=" " class="rounded-lg w-full" width="700" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly .com/~amihankatangkay/39.embed?autosize=true&link=false"></iframe>
                     <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 8.</span> Cumulative engagement of LDA Topics.<p>
                 </div>
                 <p>
@@ -228,29 +247,33 @@
                 </p>
             `}
 	/>
-    <div class="flex flex-col items-center my-[2rem] relative">
-		<h3 class="text-center my-[1rem]">
-			Recalling our hypothesis...
-		</h3>
-		<div class="w-full flex lg:flex-row flex-col justify-between gap-6">
-			<div class="w-full p-[2rem] pb-[0rem] flex flex-col gap-3">
-				<p class="font-[500]">Null Hypothesis</p>
-				<p class="text-left">
-					The topic with the most engagements based on upvotes and comments is the same as the most
-					prevalent topic.
-				</p>
-			</div>
-			<div class="w-full p-[2rem] pb-[0rem] flex flex-col gap-3">
-				<p class="font-[500]">Alternative Hypothesis</p>
-				<p class="text-left">
-					The topic with the most engagements based on upvotes and comments is different from the
-					most prevalent topic.
-				</p>
+	<div
+		class="w-full hover:bg-[#ffe2e2] duration-300 transition-all ease-in-out bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg my-[1rem]"
+	>
+		<div
+			class="w-full flex flex-col font-[400] h-full bg-gradient-to-tr from-[#ffede7] px-[2rem] py-[3rem] rounded-md"
+		>
+			<h3 class="text-center my-[1rem]">Recalling our hypothesis...</h3>
+			<div class="w-full flex lg:flex-row flex-col justify-between gap-6">
+				<div class="w-full p-[2rem] pb-[0rem] flex flex-col gap-3">
+					<p class="font-[500]">Null Hypothesis</p>
+					<p class="text-left">
+						The topic with the most engagements based on upvotes and comments is the same as the
+						most prevalent topic.
+					</p>
+				</div>
+				<div class="w-full p-[2rem] pb-[0rem] flex flex-col gap-3">
+					<p class="font-[500]">Alternative Hypothesis</p>
+					<p class="text-left">
+						The topic with the most engagements based on upvotes and comments is different from the
+						most prevalent topic.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
 	<TextCard
-		title="HYPOTHESIS TESTING"
+		title="Hypothesis Testing"
 		desc={`
                 <p>
                     Moving on to the testing of the hypothesis for the second research question, we used the same statistical tool. However, the topic of unfairness of job offers and contracts is now tested with the engagements of posts in the subreddit.
@@ -296,20 +319,10 @@
                     At first glance, this does not seem to answer the research question directly. However, considering that there are only two topics introduced (i.e. unfair contracts and not), the answer to this question will still effectively address the original research question, albeit in a roundabout way.
                 </p>
                 <p>
-                    The test yields a p-value of 0.03, which is less than our significance level of 0.5. This tells us that posts under Unfair did not receive the most engagements. As such, we therefore <span class='font-[500]'>reject the null hypothesis</span>.
+                    The test yields a p-value of 0.03, which is less than our significance level of 0.5. This tells us that posts under Unfair did not receive the most engagements. As such, we therefore <span class='font-[500] text-[#ff5e01]'>reject the null hypothesis</span> and say that the topic with the most engagements based on upvotes and comments is different from the most prevalent topic.
                 </p>
             `}
 	/>
-    <h3 class="text-center mt-[2rem]">
-        In a nutshell...
-    </h3>
-    <div class = 'flex flex-col gap-[1rem]'>
-        <img class="rounded-lg shadow-lg w-full h-auto" src={Nutshell} alt="" />  
-        <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Figure 9.</span> t-SNE Clustering of LDA topics in the subreddit r/AntiworkPH.<p>
-    </div>
-    <p>
-        With the analysis and discussions done, we present the output plot of the LDA seen in Figure 9. Each color represents a topic cluster, which are made up of points that each correspond to a post; the larger the radius of the point, the greater the engagement a post has accumulated. The focus of our hypothesis, which is about posts on unfair job offers and contracts, is reflected in Topic 3 identified as Job Application, which lagged behind as third in both the number of posts and engagements among other topics.
-    </p>
 </div>
 
 <!-- <iframe title=" " class="rounded-lg" width="900" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly.com/~amihankatangkay/1.embed?autosize=true&link=false"></iframe> -->

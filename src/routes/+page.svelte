@@ -3,6 +3,9 @@
 	import Intro from './_Intro.svelte';
 	import Collecting from './_Collect.svelte';
 	import Explore from './_Explore.svelte';
+	import Model from './_Model.svelte';
+	import Results from './_Results.svelte';
+	import Conclude from './_Conclu.svelte';
 	import Reddit from '$lib/images/reddit_bg.webp';
 	import Line from '$lib/images/line.svg';
 	import '@carbon/charts-svelte/styles.css';
@@ -78,11 +81,11 @@
 			<div class="w-full h-full bg-[url('$lib/images/grid.svg')] bg-repeat"></div>
 		</div>
 	</div>
-	<div class="relative z-1 sm:pt-[7rem] w-full flex flex-col items-center gap-[1.5rem]">
-		<div class="flex flex-row gap-[0.5rem] items-center justify-center">
+	<div class="relative z-1 sm:pt-[10rem] w-full flex flex-col items-center gap-[1.5rem]">
+		<!-- <div class="flex flex-row gap-[0.5rem] items-center justify-center">
 			{@html caution}
 			<p class="font-['JetBrains_Mono'] text-sm w-fit opacity-50">Project still in progress</p>
-		</div>
+		</div> -->
 		<h1 class="text-[#0E0F11] lg:w-[60%] text-center">Through the lens of Filipino workers</h1>
 		<p class="text-center lg:w-[60%]">
 			A data science project that delves into the issue of labor struggles in the Philippines
@@ -164,6 +167,93 @@
 </section>
 
 <section
+	id="model"
+	class="relative pt-[4rem] w-full h-fit flex flex-col items-center gap-4 justify-start"
+>
+	<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
+		<div class="datacollect2 h-full w-full gradient-mask-b-80">
+			<div class="z-1 h-full w-full "></div>
+		</div>
+	</div>
+	<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
+		<div class="h-full w-full gradient-mask-b-80">
+			<div class="z-0 h-full w-full bg-[url('$lib/images/hex.svg')] bg-repeat"></div>
+		</div>
+	</div>
+	<img src={Line} alt="l" class="lg:w-[60%] w-full h-auto" />
+	<div class="relative z-1 lg:w-[80%] w-full flex flex-col items-center gap-[2rem]">
+		<div class="flex flex-col w-full h-full items-center gap-[2rem] my-[2rem]">
+			<div class="flex flex-col gap-[0.8rem] items-center w-full">
+				<h4 class="sub">PART III</h4>
+				<h2 class="text-[#0E0F11] text-center">Machine Learning Modeling</h2>
+			</div>
+			<p class='text-center'>
+				Lorem ipsum...
+			</p>
+		</div>
+		<Model/>
+	</div>
+</section>
+
+<section
+	id="result"
+	class="relative pt-[4rem] w-full h-fit flex flex-col items-center gap-4 justify-start"
+>
+	<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
+		<div class="datacollect2 h-full w-full gradient-mask-b-80">
+			<div class="z-1 h-full w-full "></div>
+		</div>
+	</div>
+	<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
+		<div class="h-full w-full gradient-mask-b-80">
+			<div class="z-0 h-full w-full bg-[url('$lib/images/hex.svg')] bg-repeat"></div>
+		</div>
+	</div>
+	<img src={Line} alt="l" class="lg:w-[60%] w-full h-auto" />
+	<div class="relative z-1 lg:w-[80%] w-full flex flex-col items-center gap-[2rem]">
+		<div class="flex flex-col w-full h-full items-center gap-[2rem] my-[2rem]">
+			<div class="flex flex-col gap-[0.8rem] items-center w-full">
+				<h4 class="sub">PART IV</h4>
+				<h2 class="text-[#0E0F11] text-center">Results</h2>
+			</div>
+			<p class='text-center'>
+				Lorem ipsum...
+			</p>
+		</div>
+		<Results/>
+	</div>
+</section>
+
+<section
+	id="conclude"
+	class="relative pt-[4rem] w-full h-fit flex flex-col items-center gap-4 justify-start"
+>
+	<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
+		<div class="datacollect2 h-full w-full gradient-mask-b-80">
+			<div class="z-1 h-full w-full "></div>
+		</div>
+	</div>
+	<div class="absolute z-1 w-screen h-full gradient-mask-t-80">
+		<div class="h-full w-full gradient-mask-b-80">
+			<div class="z-0 h-full w-full bg-[url('$lib/images/hex.svg')] bg-repeat"></div>
+		</div>
+	</div>
+	<img src={Line} alt="l" class="lg:w-[60%] w-full h-auto" />
+	<div class="relative z-1 lg:w-[80%] w-full flex flex-col items-center gap-[2rem]">
+		<div class="flex flex-col w-full h-full items-center gap-[2rem] my-[2rem]">
+			<div class="flex flex-col gap-[0.8rem] items-center w-full">
+				<h4 class="sub">PART V</h4>
+				<h2 class="text-[#0E0F11] text-center">Conclusion</h2>
+			</div>
+			<p class='text-center'>
+				Lorem ipsum...
+			</p>
+		</div>
+		<Conclude/>
+	</div>
+</section>
+
+<section
 	id="aboutus"
 	class="w-full mt-[10rem] flex flex-col items-center relative gap-4 justify-start"
 >
@@ -178,10 +268,10 @@
 		<footer
 			class="relative z-1 w-full h-full py-[7rem] border-t-[0.7px] border-[#0d121c3d] flex flex-col items-center gap-5"
 		>
-			<div class="w-full flex md:flex-row flex-col items-center justify-evenly gap-5 px-[4rem]">
-				<div class="w-[30%] flex flex-col gap-2 items-center z-2 px-[1.5rem]">
+			<div class="w-full flex md:flex-row flex-col items-start justify-evenly gap-5 px-[4rem]">
+				<div class="w-[30%] flex flex-col gap-2 items-center z-2 px-[1.5rem] ">
 					<div class="flex flex-col items-center justify-center">
-						<pre class="flex justify-center text-[#4A5464]">
+						<pre class="flex items-center justify-center text-[#4A5464] min-h-[25dvh]">
 	            _ |\_
 		   	    \` ..\
 		  __,.-" =__Y=
@@ -203,7 +293,7 @@ _    /   ,    \/\_
 				</div>
 				<div class="w-[30%] flex flex-col gap-2 items-center z-2 px-[1.5rem]">
 					<div class="flex flex-col  items-center justify-center">
-						<pre class="flex justify-center text-[#4A5464]">
+						<pre class="flex items-center justify-center text-[#4A5464] min-h-[25dvh]">
 		|\      _,,,---,,_
 ZZZzz /,`.-'`'    -.  ;-;;,_
      |,4-  ) )-,_. ,\ (  `'-'
@@ -223,7 +313,7 @@ ZZZzz /,`.-'`'    -.  ;-;;,_
 				<div class="w-[30%] flex flex-col gap-2 items-center z-2 px-[1.5rem]">
 					<!-- <p class="text-sm w-full text-center"></p> -->
 					<div class="flex flex-col items-center justify-center">
-						<pre class="flex justify-center text-[#4A5464]">
+						<pre class="flex items-center justify-center text-[#4A5464] min-h-[25dvh]">
 	  	  _
 	  |\'/-..--.
 	  / _ _   ,  ;

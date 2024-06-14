@@ -27,9 +27,9 @@
 				<li><a href="#overview" on:click={handleAnchorClick} class = "hover:font-bold duration-300 ease-in-out transition-all"> Overview </a></li>
 				<li><a href="#collection" on:click={handleAnchorClick} class = "hover:font-bold duration-300 ease-in-out transition-all"> Collection </a></li>
 				<li><a href="#exploration" on:click={handleAnchorClick} class = "hover:font-bold duration-300 ease-in-out transition-all">Exploration</a></li>
-				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">Modelling</a></li>
-				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">Results</a></li>
-				<li><a href="/" class = "hover:font-bold duration-300 ease-in-out transition-all">Conclusion</a></li>
+				<li><a href="#model" on:click={handleAnchorClick} class = "hover:font-bold duration-300 ease-in-out transition-all">Modeling</a></li>
+				<li><a href="#result" on:click={handleAnchorClick} class = "hover:font-bold duration-300 ease-in-out transition-all">Results</a></li>
+				<li><a href="#conclude" on:click={handleAnchorClick} class = "hover:font-bold duration-300 ease-in-out transition-all">Conclusion</a></li>
 				<li><a href="#aboutus" on:click={handleAnchorClick} class = "hover:font-bold duration-300 ease-in-out transition-all">About Us</a></li>
 			</ul>
 			<div class="lg:hidden block">

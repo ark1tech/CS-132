@@ -1,52 +1,51 @@
 <script>
-    import Button from './Button.svelte';
+	import Button from './Button.svelte';
 	import Button2 from './Button2.svelte';
 	import TextCard from './TextCard.svelte';
 	import { BarChartStacked } from '@carbon/charts-svelte';
 	import options from './collection/options.js';
 	import data from './collection/data.js';
 	import '@carbon/charts-svelte/styles.css';
-    
-	const up_right_arrow = `<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>`;
 
+	const up_right_arrow = `<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>`;
 </script>
 
 <div class="flex flex-col w-full justify-between gap-[1.5rem] items-center">
-    <TextCard
-        title="DESCRIBING THE DATA"
-        desc={`
+	<TextCard
+		title="Describing the Data"
+		desc={`
             <p class ="w-full"> 
                 We want to gather the data we need using <a href="https://praw.readthedocs.io/en/stable/" target="_blank" class ="inline_a">Python Reddit API Wrapper (PRAW)</a>. According to its documentation, we can access any subreddit, its list of submissions, and useful metadata for each submission. For this project, we specifically gathered the following metadata:
             </p>
             <div class = "w-full flex flex-col gap-8 py-4 pl-[1rem]">
                 <div class = "w-full flex flex-row gap-4">
                     <p class = "lg:w-[20%] w-[30%] font-['JetBrains_Mono']"> 
-                        String
+                        String:
                     </p>
                     <div class ="w-full flex flex-row flex-wrap gap-4">
-                        <p class ="py-1 px-4 bg-[#d1d4d7af] w-fit rounded-full code">Timestamp</p>
-                        <p class ="py-1 px-4 bg-[#d1d4d7af] w-fit rounded-full code">Content Type (Text, video, image)</p>
-                        <p class ="py-1 px-4 bg-[#d1d4d7af] w-fit rounded-full code">Title</p>
-                        <p class ="py-1 px-4 bg-[#d1d4d7af] w-fit rounded-full code">Content (Caption if media content)</p>
-                        <p class ="py-1 px-4 bg-[#d1d4d7af] w-fit rounded-full code">Flair</p>
-                        <p class ="py-1 px-4 bg-[#d1d4d7af] w-fit rounded-full code">Submission ID</p>
+                        <p class ="py-1 px-4 border-[#d1d4d7af] border-[1.5px] bg-[#e7e5e3af] hover:bg-[#d1d4d7af] transition-all w-fit rounded-full code">Timestamp</p>
+                        <p class ="py-1 px-4 border-[#d1d4d7af] border-[1.5px] bg-[#e7e5e3af] hover:bg-[#d1d4d7af] transition-all w-fit rounded-full code">Content Type <span class="font-[300]">(text, video, image)</span></p>
+                        <p class ="py-1 px-4 border-[#d1d4d7af] border-[1.5px] bg-[#e7e5e3af] hover:bg-[#d1d4d7af] transition-all w-fit rounded-full code">Title</p>
+                        <p class ="py-1 px-4 border-[#d1d4d7af] border-[1.5px] bg-[#e7e5e3af] hover:bg-[#d1d4d7af] transition-all w-fit rounded-full code">Content <span class="font-[300]">(caption if media)</span></p>
+                        <p class ="py-1 px-4 border-[#d1d4d7af] border-[1.5px] bg-[#e7e5e3af] hover:bg-[#d1d4d7af] transition-all w-fit rounded-full code">Flair</p>
+                        <p class ="py-1 px-4 border-[#d1d4d7af] border-[1.5px] bg-[#e7e5e3af] hover:bg-[#d1d4d7af] transition-all w-fit rounded-full code">Submission ID</p>
                     </div>	
                 </div>
                 <div class = "w-full flex flex-row gap-4">
                     <p class = "lg:w-[20%] w-[30%] font-['JetBrains_Mono']"> 
-                        Integer
+                        Integer:
                     </p>
                     <div class ="w-full flex flex-row flex-wrap gap-4">
-                        <p class ="py-1 px-4 bg-[#d1d4d7af] w-fit rounded-full code">Upvotes Count</p>
-                        <p class ="py-1 px-4 bg-[#d1d4d7af] w-fit rounded-full code">Comments Count</p>
+                        <p class ="py-1 px-4 border-[#d1d4d7af] border-[1.5px] bg-[#e7e5e3af] hover:bg-[#d1d4d7af] transition-all w-fit rounded-full code">Upvotes Count</p>
+                        <p class ="py-1 px-4 border-[#d1d4d7af] border-[1.5px] bg-[#e7e5e3af] hover:bg-[#d1d4d7af] transition-all w-fit rounded-full code">Comments Count</p>
                     </div>
                 </div>
                 <div class = "w-full flex flex-row gap-4">
                     <p class = "lg:w-[20%] w-[30%] font-['JetBrains_Mono']"> 
-                        Float
+                        Float:
                     </p>
                     <div class ="w-full flex flex-row flex-wrap gap-4">
-                        <p class ="py-1 px-4 bg-[#d1d4d7af] w-fit rounded-full code">Upvote:downvote Ratio</p>
+                        <p class ="py-1 px-4 border-[#d1d4d7af] border-[1.5px] bg-[#e7e5e3af] hover:bg-[#d1d4d7af] transition-all w-fit rounded-full code">Upvote:downvote Ratio</p>
                     </div>	
                 </div>
             </div>
@@ -54,10 +53,10 @@
                 We kept track of the submission content type so that we may manually extract their transcripts. 
             </p>
         `}
-    />
-    <TextCard
-        title="SCRAPING THE DATA: LIMITATIONS"
-        desc={`
+	/>
+	<TextCard
+		title="Scraping the Data: Limitations"
+		desc={`
             <p class ="w-full"> 
                 In using PRAW, there are a couple of limitations to note: 
             </p>
@@ -74,10 +73,10 @@
                 </p>
             </div>
         `}
-    />
-    <TextCard
-        title="SCRAPING THE DATA: THE GAMEPLAN"
-        desc={`
+	/>
+	<TextCard
+		title="Scraping the Data: The Gameplan"
+		desc={`
             <p class ="w-full"> 
                 Now, here's the plan:
             </p>
@@ -124,17 +123,23 @@
                 </p>
             </div>
         `}
-    />
-    <div class="flex flex-col items-center my-[2rem]">
-        <p class="text-center">Executing the gameplan gave us...</p>
-        <h3 class="text-center my-[1rem]">2541 scraped submissions</h3>
-        <p class="w-full text-center">But now comes the hard part&mdash;cleaning the data.</p>
-    </div>
+	/>
+	<div
+		class="w-full hover:bg-[#ffe2e2] duration-300 transition-all ease-in-out bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg my-[1rem]"
+	>
+		<div
+			class="w-full flex flex-col font-[400] h-full bg-gradient-to-tr from-[#ffede7] px-[2rem] py-[3rem] rounded-md"
+		>
+			<p class="text-center">Executing the gameplan gave us...</p>
+			<h3 class="text-center my-[1rem]">2541 scraped submissions</h3>
+			<p class="w-full text-center">But now comes the hard part&mdash;cleaning the data.</p>
+		</div>
+	</div>
 </div>
 <div class="flex flex-col w-full justify-between gap-[1.5rem] items-center">
-    <TextCard
-        title="CLEANING THE DATA"
-        desc={`
+	<TextCard
+		title="Cleaning the Data"
+		desc={`
             <div class ="flex flex-row gap-[0.2rem]">
                 <p class ="font-[500] w-fit">1.</p> 
                 <p class = "w-full pl-[0.5rem] ">
@@ -210,35 +215,36 @@
             </div>
             
         `}
-    />
-</div>
-<div class="flex flex-col items-center mt-[2rem]">
-    <p class="text-center">We then finally get...</p>
-    <h3 class="text-center my-[1rem]">1976 preprocessed submissions!</h3>
-    <!-- <div class="flex sm:flex-row flex-col gap-[0.5rem] items-center justify-center">
-        {@html caution}
-        <p class="font-['JetBrains_Mono'] text-sm w-fit opacity-50 text-center">
-            We're still in the process of transcribing media content
-        </p>
-    </div> -->
+	/>
 </div>
 <div
-    class="lg:w-[80%] w-full border-t border-b border-white backdrop-blur-lg bg-[#ffffff29] rounded-lg py-5 px-10"
->
-    <BarChartStacked {data} {options} />
+		class="w-full hover:bg-[#ffe2e2] duration-300 transition-all ease-in-out bg-gradient-to-tr from-[#ffb29df6] shadow-[-5px_5px_10px_0px_#dbd1d15d] flex flex-col items-center p-[0.1rem] rounded-lg my-[1rem]"
+	>
+		<div
+			class="w-full flex flex-col font-[400] h-full bg-gradient-to-tr from-[#ffede7] px-[2rem] py-[3rem] rounded-md"
+		>
+	<p class="text-center">We then finally get...</p>
+	<h3 class="text-center my-[1rem]">1976 preprocessed submissions!</h3>
+	<p class="text-center">Considering the subreddit was just made in 2022, what's the distribution like?</p>
+</div>
 </div>
 <div
-    class="w-full flex sm:flex-row flex-col sm:gap-[1rem] gap-[0.3rem] items-center justify-center"
+	class="lg:w-[80%] w-full border-t border-b border-white backdrop-blur-lg bg-[#ffffff29] rounded-lg py-5 px-10"
 >
-    <Button2
-        label="View data processing on GitHub"
-        href="https://github.com/ark1tech/CS132-Preprocessing"
-        icon={up_right_arrow}
-    />
-    <Button
-        label="View dataset"
-        href="https://docs.google.com/spreadsheets/d/1lmhzWPGKuykna-nOAT6i9ry_-330GrGRh_M5wN73qEE/edit?usp=sharing"
-        icon={up_right_arrow}
-        target={'blank_'}
-    />
+	<BarChartStacked {data} {options} />
+</div>
+<div
+	class="w-full flex sm:flex-row flex-col sm:gap-[1rem] gap-[0.3rem] items-center justify-center"
+>
+	<Button2
+		label="View data processing on GitHub"
+		href="https://github.com/ark1tech/CS132-Preprocessing"
+		icon={up_right_arrow}
+	/>
+	<Button
+		label="View dataset"
+		href="https://docs.google.com/spreadsheets/d/1lmhzWPGKuykna-nOAT6i9ry_-330GrGRh_M5wN73qEE/edit?usp=sharing"
+		icon={up_right_arrow}
+		target={'blank_'}
+	/>
 </div>

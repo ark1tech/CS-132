@@ -1,5 +1,5 @@
 <script>
-    import Collect from '$lib/images/Archive.svg';
+	import Collect from '$lib/images/Archive.svg';
 	import Analyze from '$lib/images/Analyze.svg';
 	import Category from '$lib/images/Category.svg';
 </script>

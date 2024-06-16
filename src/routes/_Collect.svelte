@@ -107,7 +107,7 @@
             <div class ="flex flex-row gap-[0.2rem]">
                 <p class ="font-[500] w-fit">2.</p> 
                 <p class = "w-full pl-[0.5rem] ">
-                    To avoid duplicates, we want to use the <span class="code font-bold">Save</span> function and mark the submission we've already scraped.
+                    To avoid duplicates, we want to use the <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">Save</span> function and mark the submission we've already scraped.
                 </p>
             </div>
             <div class ="flex flex-row gap-[0.2rem]">
@@ -157,13 +157,13 @@
             <div class ="flex flex-row gap-[0.2rem]">
                 <p class ="font-[500] w-fit pl-[1rem]">•</p> 
                 <p class = "w-full pl-[0.5rem] ">
-                    Remove URLs, duplicates, emojis, and submissions with empty cells except <span class ="code">Content</span> (to be transcribed later on) and <span class ="code">Flair</span>.
+                    Remove URLs, duplicates, emojis, and submissions with empty cells except <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">Content</span>  (to be transcribed later on) and <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">Flair</span> .
                 </p>
             </div>
             <div class ="flex flex-row gap-[0.2rem]">
                 <p class ="font-[500] w-fit pl-[1rem]">•</p> 
                 <p class = "w-full pl-[0.5rem] ">
-                    Convert <span class ="code">Content</span> to plaintext as it is retrieved as markdown. This also includes replacing newlines and <span class ="code">NaN</span>s  with a single whitespace. 
+                    Convert <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">Content</span>  to plaintext as it is retrieved as markdown. This also includes replacing newlines and <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">NaN</span>s  with a single whitespace. 
                 </p>
             </div>
             <div class ="flex flex-row gap-[0.2rem]">
@@ -175,7 +175,7 @@
             <div class ="flex flex-row gap-[0.2rem]">
                 <p class ="font-[500] w-fit pl-[1rem]">•</p> 
                 <p class = "w-full pl-[0.5rem] ">
-                    Concatenate <span class ="code">Title</span> and <span class ="code">Content</span> of every submission into one cell under a new column <span class ="code">Title+Content</span>.
+                    Concatenate <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">Title</span>  and <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">Content</span>  of every submission into one cell under a new column <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">Title+Content</span> .
                 </p>
             </div>
             <div class ="flex flex-row gap-[0.2rem]">
@@ -200,7 +200,7 @@
             <div class ="flex flex-row gap-[0.2rem]">
                 <p class ="font-[500] w-fit">4.</p> 
                 <p class = "w-full pl-[0.5rem] ">
-                    Translate <span class ="code">Title+Content</span> to English using the
+                    Translate <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">Title+Content</span> to English using the
                     <a class = "inline_a" href="https://deep-translator.readthedocs.io/en/latest/usage.html" target="_blank"> 
                         Google Translator of deep_translator API</a>.
                 </p>
@@ -208,7 +208,7 @@
             <div class ="flex flex-row gap-[0.2rem]">
                 <p class ="font-[500] w-fit">5.</p> 
                 <p class = "w-full pl-[0.5rem] ">
-                    Lastly, remove punctuations, numbers, and stop words of <span class ="code">Title+Content</span> then convert it to lowercase using 
+                    Lastly, remove punctuations, numbers, and stop words of <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">Title+Content</span>  then convert it to lowercase using 
                     <a class = "inline_a" href="https://www.nltk.org" target="_blank"> 
                         Natural Language Toolkit (NLTK)</a> and Pandas. We chose not to lemmatize the words as we plan to identify topics through clouds of words (which we will see later on) where we want to keep the context as much as possible.  
                 </p>

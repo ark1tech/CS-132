@@ -25,7 +25,7 @@
 		title="LDA Topic Modeling"
 		desc={`
             <p>
-                To further the investigation, we used <span class ="font-[500]">Latent Dirichlet Allocation (LDA) topic modelling</span> that categorizes the submissions into n topics through Bayesian probability. LDA is an unsupervised machine learning algorithm and will be expounded more in the next section! We've only introduced it as early as now so we can digest how it expands our findings. 
+                To further the investigation, we used <span class ="font-[500]">Latent Dirichlet Allocation (LDA) topic modeling</span> that categorizes the submissions into <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">n</span> topics through Bayesian probability. LDA is an unsupervised machine learning algorithm and will be expounded more in the next section! We've only introduced it as early as now so we can appreciate how it expands our findings. 
             </p>
             <p>
                 To do that, we first tokenized the submissions to 1-gram tokens with at least length of 3 characters. Then, we used term frequency-inverse document frequency (TF-IDF) to vectorize (ie. turn them into meaningful numbers) the tokens. Using TF-IDF reveals the relevance of tokens via frequency which will be quite helpful in topic modeling. The code for this process is also included in the given GitHub repository above.
@@ -43,7 +43,7 @@
                 <div class="w-full flex flex-col gap-[1.5rem] items-center">
                     <img class="rounded-lg shadow-md w-3/4 h-auto" src="2.png" alt="" />   
                     <p>
-                        Notice that we can assemble the words into more meaningful ones such as business process outsourcing (BPO) and minimum wage. Other keywords include culture, Christmas, party and people. This topic can be labeled to be about BPO Work and Culture.
+                        Notice that we can assemble the words into more meaningful ones such as business process outsourcing (BPO) and minimum wage. Other keywords include culture, Christmas, party and people. This topic can be labeled to be about BPO work and culture.
                     </p>
                 </div>
                 <div class="w-full flex flex-col gap-[1.5rem] items-center">
@@ -191,7 +191,7 @@
                 </div>
                 <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Table 1.</span> Contingency table of manually-tagged topics on their frequency.<p>
                 <p>
-                    For a test of significance at α = 0.05 and df = 1, we get <span class='font-[500]'> X<sup>2</sup> = 1367.7814 and p-value of 2.1070e-299</span>. As such, since we have a p-value less than our significance level, we therefore <span class='font-[500] text-[#ff5e01]'> reject the null hypothesis</span>, believing that the prevalent topic in the subreddit is not centered around unfair contracts and job offers.
+                    For a test of significance at <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">α = 0.05</span> and <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">df = 0.05</span>, we get <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">X<sup>2</sup> = 1367.7814</span> and <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">p-value = 2.1070e-299</span>. As such, since we have a p-value less than our significance level, we therefore <span class='font-[500] text-[#ff5e01]'> reject the null hypothesis</span>, believing that the prevalent topic in the subreddit is not centered around unfair contracts and job offers.
                 </p>
             `}
 	/>
@@ -313,7 +313,7 @@
                 </div>
                 <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Table 2.</span> Contingency table of manually-tagged topics on their engagement.<p>
                 <p>
-                    For a test of significance at α = 0.05 and df = 1, we get <span class='font-[500]'>X<sup>2</sup> = 4.5693 and p-value of 0.0325</span>. The process for testing the distribution of engagements for both manually-labeled topics. was the same as with the first hypothesis test, this time answering the question “Did the posts under Unfair get the most engagements?”.
+                    For a test of significance at <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">α = 0.05</span> and <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">df = 1</span>, we get <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">X<sup>2</sup> = 4.5693</span> and <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">p-value = 0.0325</span>. The process for testing the distribution of engagements for both manually-labeled topics. was the same as with the first hypothesis test, this time answering the question “Did the posts under Unfair get the most engagements?”.
                 </p>
                 <p>
                     At first glance, this does not seem to answer the research question directly. However, considering that there are only two topics introduced (i.e. unfair contracts and not), the answer to this question will still effectively address the original research question, albeit in a roundabout way.

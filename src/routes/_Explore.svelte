@@ -279,7 +279,7 @@
                     Moving on to the testing of the hypothesis for the second research question, we used the same statistical tool. However, the topic of unfairness of job offers and contracts is now tested with the engagements of posts in the subreddit.
                 </p>
                 <p>
-                    The contingency table is seen in Table 2. The observed values were calculated on Python by taking the summed engagement of submissions under Unfair, and subtracting that value from the total number of posts for the Non-Unfair. These values were then divided by the total number of posts per category as recorded earlier (166 for Unfair, 1810 for Not Unfair) to get the final values. The total engagements were then taken by adding the engagements by all posts and dividing that value by the number of posts. This value was then halved to get the expected value. 
+                    The contingency table is seen in Table 2. The observed values were calculated on Python by taking the summed engagement of submissions under Unfair, and subtracting that value from the total number of posts for the Non-Unfair. These values were then divided by the total number of posts per category as recorded earlier (166 for Unfair, 1810 for Non-Unfair) to get the final values. The total engagements were then taken by adding the engagements by all posts and dividing that value by the number of posts. This value was then halved to get the expected value. 
 
                 </p>
                 <div class="relative overflow-hidden shadow-md rounded-lg">

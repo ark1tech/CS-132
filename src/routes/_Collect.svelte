@@ -181,7 +181,7 @@
             <div class ="flex flex-row gap-[0.2rem]">
                 <p class ="font-[500] w-fit pl-[1rem]">•</p> 
                 <p class = "w-full pl-[0.5rem] ">
-                    Add another column that converts Timestamp into a Unix timestamp (the number of seconds that have elapsed since January 1, 1970) for ease when we do a timeseries later on. Only the day, month, and year are converted for the plot.
+                    Add another column that converts <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">Timestamp</span> into a <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">Unix Timestamp</span> (the number of seconds that have elapsed since January 1, 1970) for ease when we do a timeseries later on. Only the day, month, and year are converted for the plot.
                 </p>
             </div>
             <div class ="flex flex-row gap-[0.2rem]">

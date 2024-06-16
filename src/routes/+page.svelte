@@ -253,11 +253,11 @@
 		</div>
 		<div class="w-full flex flex-col gap-[1rem]">
 			<p class="text-left w-full">
-				Our study was proposed to highlight the most negative aspects of the Philippine Job Market
-				and inform people what to expect and what should be changed from the current system. By
-				shedding light on the common Filipino’s experiences and grievances, we can create a better
-				working environment for future Filipino workers and advocate for better working regulations
-				from the government.
+				Our study proposed to highlight the most negative aspects of the Philippine Job Market and
+				inform people what to expect and what should be changed from the current system. By shedding
+				light on the common Filipino’s experiences and grievances, we can create a better working
+				environment for future Filipino workers and advocate for better working regulations from the
+				government.
 			</p>
 			<p class="text-left w-full">
 				Policymakers must lead the way by creating supportive and fair labor laws, streamlining the
@@ -267,18 +267,9 @@
 				cultures, and offering professional development and mental health support.
 			</p>
 			<p class="text-left w-full">
-				Employee advocacy groups play a crucial role in addressing issues related to employee
-				well-being and job applications. They should launch campaigns focused on mental health,
-				work-life balance, and fair workplace treatment, while also providing job seekers with
-				necessary resources and support. Educational institutions and career services can bridge the
-				gap between job seekers and employers by offering career counseling, partnering with
-				industries for hands-on experience opportunities, and promoting continuous learning to keep
-				individuals competitive in the job market.
-			</p>
-			<p class="text-left w-full">
 				By taking these informed, data-driven actions, stakeholders can collectively create a more
 				equitable and supportive work environment in the Philippines. Let us use these insights to
-				drive positive change and empower Filipino workers to achieve their fullest potential.
+				drive positive change and empower Filipino workers.
 			</p>
 		</div>
 	</div>
@@ -299,16 +290,14 @@
 	</div>
 	<img src={Line} alt="l" class="lg:w-[60%] w-full h-auto mb-[3rem]" />
 	<div
-		class="relative z-1 lg:w-[80%] p-[2rem] w-full border border-white backdrop-blur-lg rounded-lg shadow-[0px_10px_20px_-20px_#84848475] bg-[#ffffff75]"
+		class="lg:w-[80%] w-full z-10"
 	>
-		<p class="font-[500] text-center xl:mb-[0rem] mb-[2rem]">
-			Meet the Team
-		</p>
-		<div class="w-full flex xl:flex-row flex-col items-center justify-evenly gap-5">
-			<div class="lg:w-[30%] w-full flex flex-col gap-2 items-center z-2 px-[1.5rem]">
-				<div class="flex flex-col items-center justify-center">
-					<pre class="lg:max-w-[100%/3] max-w-full w-full flex items-center justify-center text-[#4A5464] min-h-[25dvh]">
-		      _ |\_
+		<p class="font-[500] text-center xl:mb-[0rem] mb-[2rem]">Meet the Team</p>
+		<div class="w-full h-full flex xl:flex-row flex-col items-start justify-evenly gap-5">
+			<div class="w-full h-full flex flex-col gap-2 items-center z-2">
+				<div class="flex flex-col items-center justify-start w-full h-full">
+					<pre class="text-xs w-full flex items-center justify-center text-[#4A5464] min-h-[25dvh]">
+			  _ |\_
 		      \` ..\
         __,.-" =__Y=
       ."        )
@@ -322,15 +311,15 @@ _    /   ,    \/\_
 						href="https://www.linkedin.com/in/seth-eliserio-655b28225/"
 						target="__blank">@setheliserio</a
 					>
-					<p class="text-sm text-justify mt-[1rem]">
+					<p class="text-sm text-justify mt-[1rem] w-full">
 						I am Eli, a BS Computer Science student, and my main field of interest is automata
 						theory. I also enjoy exploring finance and some Taylor Swift on the side.
 					</p>
 				</div>
 			</div>
-			<div class="lg:max-w-[100%/3] max-w-full w-full flex flex-col gap-2 items-center z-2 px-[1.5rem]">
-				<div class="flex flex-col items-center justify-center">
-					<pre class="w-full flex items-center justify-center text-[#4A5464] min-h-[25dvh]">
+			<div class="w-full h-full flex flex-col gap-2 items-center z-2">
+				<div class="flex flex-col items-center justify-start">
+					<pre class="text-xs w-full flex items-center justify-center text-[#4A5464] min-h-[25dvh]">
        |\      _,,,---,,_
 ZZZzz /,`.-'`'    -.  ;-;;,_
      |,4-  ) )-,_. ,\ (  `'-'
@@ -344,15 +333,14 @@ ZZZzz /,`.-'`'    -.  ;-;;,_
 					>
 					<p class="text-sm text-justify mt-[1rem] w-full">
 						Hi, I'm Arki. I love putting beauty to the things I build. My passion lies in fusing my
-						marketing and programming skills to craft projects that are both on-brand and on-target.
-						On the side, I love jogging and appreciating flowers around UPD ‧₊˚❀༉‧₊˚.
+						marketing and programming skills. I love jogging and the flowers around UPD!‧₊˚❀༉‧₊˚.
 					</p>
 				</div>
 			</div>
-			<div class="lg:max-w-[100%/3] max-w-full w-full flex flex-col gap-2 items-center z-2 px-[1.5rem]">
+			<div class="w-full h-full flex flex-col gap-2 items-center z-2">
 				<!-- <p class="text-sm w-full text-center"></p> -->
-				<div class="flex flex-col items-center justify-center">
-					<pre class="flex items-center justify-center text-[#4A5464] min-h-[25dvh]">
+				<div class="flex flex-col items-center justify-start">
+					<pre class="text-xs flex items-center justify-center text-[#4A5464] min-h-[25dvh]">
   	 _
  |\'/-..--.
  / _ _   ,  ;
@@ -367,7 +355,7 @@ ZZZzz /,`.-'`'    -.  ;-;;,_
 					>
 					<p class="text-sm text-justify mt-[1rem]">
 						Hello! I am Annika, a BS Computer Science student, currently interested in the marriages
-						of Computer Science to other subjects, mainly BioInformatics. I also enjoy writing and
+						of computer science to other subjects, mainly bioinformatics. I also enjoy writing and
 						discussing stories and literary concepts.
 					</p>
 				</div>

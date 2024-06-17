@@ -37,29 +37,29 @@
                 Here are the <span class="font-[500]"> 5 topics LDA has extracted </span> with their corresponding word cloud to visualize their most common words:
             </p>
                 <div class="w-full flex flex-col gap-[1.5rem] items-center">
-                    <img class="rounded-lg shadow-md w-3/4 h-auto" src="1.png" alt="" />   
+                    <img href="1.png" class="hover:scale-[101%] transition-all duration-500 rounded-lg shadow-md w-3/4 h-auto" src="1.png" alt="" />   
                     <p>The first topic's word cloud contain words relating to termination of employment, such as resignation, clearance, and contract. We can also see that the term 'coe' is here which most likely stands for Certificate of Employment that is usually given to leaving employees. As such, the topic can be labeled as relating to the employee exit process.</p>
                 </div>
                 <div class="w-full flex flex-col gap-[1.5rem] items-center">
-                    <img class="rounded-lg shadow-md w-3/4 h-auto" src="2.png" alt="" />   
+                    <img href="2.png" class="hover:scale-[101%] transition-all duration-500 rounded-lg shadow-md w-3/4 h-auto" src="2.png" alt="" />   
                     <p>
                         Notice that we can assemble the words into more meaningful ones such as business process outsourcing (BPO) and minimum wage. Other keywords include culture, Christmas, party and people. This topic can be labeled to be about BPO work and culture.
                     </p>
                 </div>
                 <div class="w-full flex flex-col gap-[1.5rem] items-center">
-                    <img class="rounded-lg shadow-md w-3/4 h-auto" src="3.png" alt="" />   
+                    <img href="3.png" class="hover:scale-[101%] transition-all duration-500 rounded-lg shadow-md w-3/4 h-auto" src="3.png" alt="" />   
                     <p>
                         In this topic, the keywords seem to reflect important terms used in job applications like interview, offer, applied, experience. As such, the topic represents can be concluded as job application.
                     </p>
                 </div>
                 <div class="w-full flex flex-col gap-[1.5rem] items-center">
-                    <img class="rounded-lg shadow-md w-3/4 h-auto" src="4.png" alt="" />   
+                    <img href="4.png" class="hover:scale-[101%] transition-all duration-500 rounded-lg shadow-md w-3/4 h-auto" src="4.png" alt="" />   
                     <p>
                         For this one, the words boss and coworker, task, report, and performance are explored. Moreover, adjectives such as angry, good, wrong, bad were mentioned. It can be gleaned that this topic represents posts regarding workplace management.
                     </p>
                 </div>
                 <div class="w-full flex flex-col gap-[1.5rem] items-center">
-                    <img class="rounded-lg shadow-md w-3/4 h-auto" src="5.png" alt="" />   
+                        <img class="hover:scale-[101%] transition-all duration-500 rounded-lg shadow-md w-3/4 h-auto" src="5.png" alt="" />   
                     <p>
                         Main keywords for this topic are related to time-off from work and employee benefits. Coupled with positive indicators like happy, good, health, this appears to represent posts related to employee well-being. 
                     </p>

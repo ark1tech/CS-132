@@ -34,7 +34,7 @@
                 Using <a class = "inline_a" href="https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE" target="_blank">scikit-learn's t-SNE</a>, we then generate the plot shown in Figure 9. Each color represents a topic cluster, which are made up of points that each correspond to a post; the larger the radius of the point, the greater the engagement a post has accumulated. 
 			</p>
 			<div class="flex flex-col gap-[1rem]">
-				<img class="rounded-lg shadow-lg w-full h-auto" src="nutshell.png" alt="" />
+				<a class="hover:scale-[101%] transition-all duration-500" href="nutshell.png" target="_blank" alt=""><img class="rounded-lg shadow-lg w-full h-auto" src="nutshell.png" alt="" /></a>
 				<p data-footnote class="text-xs w-full text-center">
 				<span class="font-[500]">Figure 9.</span> t-SNE Clustering of LDA topics in the subreddit r/AntiworkPH.
 				</p>

@@ -100,10 +100,17 @@
 		</p>
 		<Button1 label="Learn more" href="#overview" icon={down_arrow} target="_self" />
 	</div>
-	<div class="w-full h-full mt-[2rem]">
-		<div class="w-full h-full gradient-mask-b-50 drop-shadow-xl sm:block hidden">
-			<img alt="" src={Reddit} class="h-auto w-full relative z-1" />
+	<div class="w-full h-full mt-[2rem] relative" >
+		<div class="w-full h-full pinger absolute -z-10 t-0 m-auto saturate-200 blur-sm">
+			<div class="w-full h-full gradient-mask-b-50 drop-shadow-xl sm:block hidden">
+				<img alt="" src={Reddit} class="h-auto w-full relative z-1" />
+			</div>
 		</div>
+		<div class="w-full h-full">
+			<div class="w-full h-full gradient-mask-b-50 drop-shadow-xl sm:block hidden">
+				<img alt="" src={Reddit} class="h-auto w-full relative z-1" />
+			</div>
+		</div>	
 	</div>
 </section>
 
@@ -222,7 +229,6 @@
 				<h4 class="sub">PART V</h4>
 				<h2 class="text-[#0E0F11] text-center">Results & Conclusion</h2>
 			</div>
-			<p class="text-center">In a nutshell, here are our findings!</p>
 		</div>
 		<Conclude />
 	</div>
@@ -289,9 +295,7 @@
 		</div>
 	</div>
 	<img src={Line} alt="l" class="lg:w-[60%] w-full h-auto mb-[3rem]" />
-	<div
-		class="lg:w-[80%] w-full z-10"
-	>
+	<div class="lg:w-[80%] w-full z-10">
 		<p class="font-[500] text-center xl:mb-[0rem] mb-[2rem]">Meet the Team</p>
 		<div class="w-full h-full flex xl:flex-row flex-col items-start justify-evenly gap-5">
 			<div class="w-full h-full flex flex-col gap-2 items-center z-2">

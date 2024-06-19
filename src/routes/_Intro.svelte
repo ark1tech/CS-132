@@ -107,14 +107,14 @@
 		<div class="w-full p-[2rem] flex flex-col gap-3">
 			<p class="font-[500]">Null Hypothesis</p>
 			<p class="text-left">
-				The topic with the most engagements based on upvotes and comments is different from the most
+				The topic with the most engagements based on upvotes and comments is the same as the most
 				prevalent topic.
 			</p>
 		</div>
 		<div class="w-full p-[2rem] flex flex-col gap-3">
 			<p class="font-[500]">Alternative Hypothesis</p>
 			<p class="text-left">
-				The topic with the most engagements based on upvotes and comments is the same as the most
+				The topic with the most engagements based on upvotes and comments is different from the most
 				prevalent topic.
 			</p>
 		</div>

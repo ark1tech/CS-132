@@ -103,7 +103,7 @@
 	<div class="w-full h-full mt-[2rem] relative" >
 		<div class="w-full h-full pinger absolute -z-10 t-0 m-auto saturate-200  blur-sm">
 			<div class="w-full h-full gradient-mask-b-50 drop-shadow-xl sm:block hidden">
-				<img alt="" src={Reddit} class="h-auto w-full relative z-1" />
+				<img alt="" src={Reddit} class="h-auto w-full relative z-1 contrast-200 brightness-[0.73]" />
 			</div>
 		</div>
 		<div class="w-full h-full">

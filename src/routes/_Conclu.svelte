@@ -60,7 +60,7 @@
 					<div class="flex flex-row gap-[0.2rem]">
 						<p class="font-[500] w-fit">•</p>
 						<p class="w-full pl-[0.5rem]">
-							The prevalent topic in the subreddit (i.e. Non-Unfair) did not receive the most engagements.
+							The prevalent topic in the subreddit (i.e. Non-Unfair) received the most engagements.
 						</p>
 					</div>
 				</div>

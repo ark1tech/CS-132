@@ -101,7 +101,7 @@
 		<Button1 label="Learn more" href="#overview" icon={down_arrow} target="_self" />
 	</div>
 	<div class="w-full h-full mt-[2rem] relative" >
-		<div class="w-full h-full pinger absolute -z-10 t-0 m-auto saturate-200 blur-sm">
+		<div class="w-full h-full pinger absolute -z-10 t-0 m-auto saturate-200  blur-sm">
 			<div class="w-full h-full gradient-mask-b-50 drop-shadow-xl sm:block hidden">
 				<img alt="" src={Reddit} class="h-auto w-full relative z-1" />
 			</div>

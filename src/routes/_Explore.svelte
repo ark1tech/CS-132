@@ -311,18 +311,34 @@
                         </tbody>
                     </table>
                 </div>
-                <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Table 2.</span> Contingency table of manually-tagged topics on their engagement.<p>
+                <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Table 2.</span> Contingency table of manually-tagged topics on their engagement.</p>
                 <p>
-                    For a test of significance at <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">α = 0.05</span> and <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">df = 1</span>, we get <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">X<sup>2</sup> = 4.5693</span> and <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">p-value = 0.0325</span>. The process for testing the distribution of engagements for both manually-labeled topics. was the same as with the first hypothesis test, this time answering the question “Did the posts under Unfair get the most engagements?”.
+                    The process for testing the distribution of engagements for both manually-labeled topics followed the same process as with the first hypothesis test. However, instead of answering the hypothesis question directly, we concoct a secondary, intermediary research question: “Did the posts labeled Unfair receive the most engagements?” The intermediary null hypothesis is then: “Posts labeled Unfair received the most engagements,” with its negation as its corresponding alternative hypothesis. 
                 </p>
                 <p>
-                    At first glance, this does not seem to answer the research question directly. However, considering that there are only two topics introduced (i.e. unfair contracts and not), the answer to this question will still effectively address the original research question, albeit in a roundabout way.
+                    The need to introduce an intermediary hypothesis is due to frequency and engagements being different metrics, and thus, cannot be directly compared to each other. Additionally, testing for the latter with no interventions requires prior testing of the former. This strategy ensures that no dependencies exist between the hypotheses for each research question, and in turn, minimizes the errors that come from this dependency conflict.
                 </p>
                 <p>
-                    The test yields a p-value of 0.03, which is less than our significance level of 0.5. This tells us that posts under Unfair did not receive the most engagements. As such, we therefore <span class='font-[500] text-[#ff5e01]'>reject the null hypothesis</span> and say that the topic with the most engagements based on upvotes and comments is different from the most prevalent topic.
+                    For a test of significance at <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">α = 0.05</span> and <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">df = 1</span>, we get <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">X<sup>2</sup> = 4.5693</span> and <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">p-value = 0.0325</span>. This tells us that posts labeled Unfair did not receive the most engagements. Therefore, we <span class="font-[500]">reject the intermediary null hypothesis</span>.
                 </p>
-            `}
+                <p>
+                    Given this data, we compare the data of the first research hypothesis testing. Since there are only two manually labeled topics, there are only two options as to which topic can have the most engagement. Since the Unfair topic was found to not receive the most engagement, then the most engaged topic must be the Non-Unfair topic, which, as seen in the first hypothesis testing, was found to be the most prevalent. As such, the most prevalent topic also received the most engagement, which in turn means that we  <span class='font-[500] text-[#ff5e01]'>fail to reject the actual null hypothesis</span>.
+                </p>
+
+                `}
 	/>
 </div>
 
+<!-- <p>
+    For a test of significance at <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">α = 0.05</span> and <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">df = 1</span>, we get <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">X<sup>2</sup> = 4.5693</span> and <span class="code px-[0.4rem] text-[#ba5137] tracking-tight border rounded-md bg-[#ffffff90]">p-value = 0.0325</span>. The process for testing the distribution of engagements for both manually-labeled topics was the same as with the first hypothesis test, this time answering the question “Did the posts under Unfair get the most engagements?”.
+</p>
+<p>
+    This does not seem to answer the research question directly. However, considering that there are only two topics introduced (i.e. unfair contracts and not), the answer to this question will still effectively address the original research question, albeit in a roundabout way.
+</p>
+<p>
+    The test yields a p-value of 0.03, which is less than our significance level of 0.5. This tells us that posts under Unfair did not receive the most engagements, that is Non-Unfair was the prevalent topic and had the most engagements. 
+</p>
+<p>
+    As such, we therefore <span class='font-[500] text-[#ff5e01]'>fail to reject the null hypothesis</span> and say that the topic with the most engagements based on upvotes and comments is also the most prevalent topic.
+</p> -->
 <!-- <iframe title=" " class="rounded-lg" width="900" height="500" frameborder="0" scrolling="no" src="//chart-studio.plotly.com/~amihankatangkay/1.embed?autosize=true&link=false"></iframe> -->

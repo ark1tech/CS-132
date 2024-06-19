@@ -1,6 +1,6 @@
 <script>
 	import TextCard from './TextCard.svelte';
-	import Nutshell from '$lib/images/nutshell.png';
+	import Nutshell from '$lib/images/nutshell.svg';
 </script>
 
 <div class="flex flex-col w-full justify-between gap-[1.5rem] items-center">
@@ -40,7 +40,10 @@
 				</p>
 			</div>	
 			<p>
-				The 3rd topic, identified as Job Application and the focus of our hypothesis, lagged as third in both the number of posts and engagements. The 2nd topic, identified as BPO Work & Culture, placed first for the total number of engagements, while the 5th topic, identified as Employee Well-being, placed first for the total number of posts. The 1st topic, identified as Employee Exit Process, placed last for both categories.
+				Looking at the plot, we can see that the 3rd topic, identified as Job Application and the focus of our hypothesis, lagged as third in both the number of posts and engagements. The 2nd topic, identified as BPO Work & Culture, placed first for the total number of engagements, while the 5th topic, identified as Employee Well-being, placed first for the total number of posts. The 1st topic, identified as Employee Exit Process, placed last for both categories.
+			</p>
+			<p>
+				 Moreover, we can see how each topic is grouped and how close they are. For instance, Employee Well-being intersects with all the other topics while Workplace Management is relatively separate from Employee Exit Process. BPO Work & Culture is closely related to Workplace Management but relatively isolated from the others. Job Application dabbles with the others but ties closely with Employee Exit Process since an exit from a job usually means applying for another one. 
 			</p>
         `}
 	/>

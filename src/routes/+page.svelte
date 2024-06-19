@@ -255,39 +255,36 @@
 	</div>
 	<img src={Line} alt="l" class="lg:w-[60%] w-full h-auto" />
 	<div class="relative z-1 lg:w-[80%] w-full flex flex-col items-center gap-[2rem]">
-		<div class="flex flex-col w-full h-full items-center gap-[2rem] my-[2rem]">
+		<div class="flex flex-col w-full h-full items-center gap-[2rem] mt-[2rem] mb-[1.5rem]">
 			<div class="flex flex-col gap-[0.8rem] items-center w-full">
 				<h2 class="text-left flex-wrap text-pretty">
-					Now, it's <span class="magic-text">your turn</span>.
+					Now, it's <span class="magic-text">your turn</span>
 				</h2>
 			</div>
 		</div>
 		<div class="w-full flex flex-col gap-[1rem]">
-			<p class="text-left w-full">
+			<p class="text-justify text-pretty w-full">
 				Our study proposed to highlight the most negative aspects of the Philippine Job Market and
 				inform people what to expect and what should be changed from the current system. By shedding
 				light on the common Filipino’s experiences and grievances, we can create a better working
 				environment for future Filipino workers and advocate for better working regulations from the
 				government.
 			</p>
-			<p class="text-left w-full">
+			<p class="text-justify text-pretty w-full">
 				Policymakers must lead the way by creating supportive and fair labor laws, streamlining the
 				exit process, and implementing standards for effective management practices. Corporate
 				leaders, particularly in the BPO sector, should prioritize employee well-being by
 				introducing initiatives to mitigate night shift stress, fostering inclusive workplace
 				cultures, and offering professional development and mental health support.
 			</p>
-			<p class="text-left w-full">
+			<p class="text-justify text-pretty w-full">
 				By taking these informed, data-driven actions, stakeholders can collectively create a more
 				equitable and supportive work environment in the Philippines. Let us use these insights to
 				drive positive change and empower Filipino workers.
 			</p>
-			<p class="text-left w-full flex-wrap text-pretty italic">
-				There's so much data on the Internet&mdash;what will you do?
-			</p>
 			<div class="w-full flex flex-col items-center gap-[2rem] mt-[2rem]">
-				<p class="font-['JetBrains_Mono'] text-sm w-fit tracking-tight opacity-50">
-					Workers' and Employers' Organizations in the Philippines
+				<p class="text-center w-full  text-pretty italic">
+					There's so much data on the Internet&mdash;what will you do?
 				</p>
 				<Marq />
 			</div>

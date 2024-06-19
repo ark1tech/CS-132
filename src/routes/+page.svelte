@@ -343,7 +343,7 @@ ZZZzz /,`.-'`'    -.  ;-;;,_
 					<h5 class="w-full text-center">Arki Mañago</h5>
 					<a
 						class="w-full text-center font-normal text-[#acacac] hover:text-[#6a6868] transition-all ease-in-out"
-						href="https://www.linkedin.com/in/ark1tech"
+						href="https://arkimanago.com/"
 						target="__blank">@ark1tech</a
 					>
 					<p class="text-sm text-justify mt-[1rem] w-full">

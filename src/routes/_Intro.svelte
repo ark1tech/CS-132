@@ -53,7 +53,7 @@
 		</p>
 		<p class="text-left text-pretty w-full">
 			Under the 17 Sustainable Development Goals (SDG) established by the United Nations General
-			Assembly, specifically SDG 8, there is a need to <span class="font-[500]"
+			Assembly, specifically SDG 8, there; is a need to <span class="font-[500]"
 				>“protect labor rights and promote safe and secure working environments for all workers,
 				including migrant workers, in particular women migrants, and those in precarious
 				employment.”</span
@@ -68,7 +68,7 @@
 	</h4>
 	<div class="w-full flex flex-col gap-[1rem]">
 		<p class="text-left w-full">
-			The subreddit r/AntiworkPH provides workers a platform to vent their frustrations and,
+			The subreddit <a class = "inline_a" href="https://www.reddit.com/r/AntiworkPH/" target="_blank">r/AntiworkPH</a> provides workers a platform to vent their frustrations and,
 			consequently, shed light on the current situation of the Philippine labor market.
 		</p>
 		<p class="text-left w-full">

@@ -313,7 +313,7 @@
                 </div>
                 <p data-footnote class='text-xs w-full text-center'><span class='font-[500]'>Table 2.</span> Contingency table of manually-tagged topics on their engagement.</p>
                 <p>
-                    The process for testing the distribution of engagements for both manually-labeled topics followed the same process as with the first hypothesis test. However, instead of answering the hypothesis question directly, we concoct a secondary, intermediary research question: “Did the posts labeled Unfair receive the most engagements?” The intermediary null hypothesis is then: “Posts labeled Unfair received the most engagements,” with its negation as its corresponding alternative hypothesis. 
+                    The process for testing the distribution of engagements for both manually-labeled topics followed the same process as with the first hypothesis test. However, instead of answering the hypothesis question directly, we concoct a secondary, intermediary research question: “Did the posts labeled Unfair receive the most engagements?” <span class="font-[500]">The intermediary null hypothesis is then: “Posts labeled Unfair received the most engagements,”</span> with its negation as its corresponding alternative hypothesis. 
                 </p>
                 <p>
                     The need to introduce an intermediary hypothesis is due to frequency and engagements being different metrics, and thus, cannot be directly compared to each other. Additionally, testing for the latter with no interventions requires prior testing of the former. This strategy ensures that no dependencies exist between the hypotheses for each research question, and in turn, minimizes the errors that come from this dependency conflict.

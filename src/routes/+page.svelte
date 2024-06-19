@@ -4,10 +4,12 @@
 	import Collecting from './_Collect.svelte';
 	import Explore from './_Explore.svelte';
 	import Model from './_Model.svelte';
+	import Marq from './Marquee.svelte';
 	import Conclude from './_Conclu.svelte';
 	import Reddit from '$lib/images/reddit_bg.webp';
 	import Line from '$lib/images/line.svg';
 	import logo from '$lib/images/Logo.svg';
+	import Marquee from '$lib/images/Logo.svg';
 	import TextCard from './TextCard.svelte';
 	import '@carbon/charts-svelte/styles.css';
 
@@ -86,8 +88,7 @@
 	</div>
 	<div class="relative z-1 sm:pt-[10rem] w-full flex flex-col items-center gap-[1.5rem]">
 		<!-- <div class="flex flex-row gap-[0.5rem] items-center justify-center">
-			{@html caution}
-			<p class="font-['JetBrains_Mono'] text-sm w-fit opacity-50">Project still in progress</p>
+			<p class="font-['JetBrains_Mono'] text-sm w-fit opacity-50">CS 132 PROJECT</p>
 		</div> -->
 		<h1 class="text-[#0E0F11] lg:w-[60%] text-center">Through the lens of Filipino workers</h1>
 		<p class="text-center lg:w-[60%]">
@@ -100,17 +101,21 @@
 		</p>
 		<Button1 label="Learn more" href="#overview" icon={down_arrow} target="_self" />
 	</div>
-	<div class="w-full h-full mt-[2rem] relative" >
-		<div class="w-full h-full pinger absolute -z-10 t-0 m-auto saturate-200  blur-sm">
+	<div class="w-full h-full mt-[2rem] relative">
+		<div class="w-full h-full pinger absolute -z-10 t-0 m-auto saturate-200 blur-sm">
 			<div class="w-full h-full gradient-mask-b-50 drop-shadow-xl sm:block hidden">
-				<img alt="" src={Reddit} class="h-auto w-full relative z-1 contrast-200 brightness-[0.73]" />
+				<img
+					alt=""
+					src={Reddit}
+					class="h-auto w-full relative z-1 contrast-200 brightness-[0.73]"
+				/>
 			</div>
 		</div>
 		<div class="w-full h-full">
 			<div class="w-full h-full gradient-mask-b-50 drop-shadow-xl sm:block hidden">
 				<img alt="" src={Reddit} class="h-auto w-full relative z-1" />
 			</div>
-		</div>	
+		</div>
 	</div>
 </section>
 
@@ -253,7 +258,7 @@
 		<div class="flex flex-col w-full h-full items-center gap-[2rem] my-[2rem]">
 			<div class="flex flex-col gap-[0.8rem] items-center w-full">
 				<h2 class="text-left flex-wrap text-pretty">
-					Now, it's <span class="text-[#ff5e01]">your turn</span>.
+					Now, it's <span class="magic-text">your turn</span>.
 				</h2>
 			</div>
 		</div>
@@ -277,6 +282,15 @@
 				equitable and supportive work environment in the Philippines. Let us use these insights to
 				drive positive change and empower Filipino workers.
 			</p>
+			<p class="text-left w-full flex-wrap text-pretty italic">
+				There's so much data on the Internet&mdash;what will you do?
+			</p>
+			<div class="w-full flex flex-col items-center gap-[2rem] mt-[2rem]">
+				<p class="font-['JetBrains_Mono'] text-sm w-fit tracking-tight opacity-50">
+					Workers' and Employers' Organizations in the Philippines
+				</p>
+				<Marq />
+			</div>
 		</div>
 	</div>
 </section>
@@ -369,7 +383,7 @@ ZZZzz /,`.-'`'    -.  ;-;;,_
 </section>
 
 <section
-	id="aboutus"
+	id=""
 	class="w-full mt-[6rem] flex flex-col items-center relative gap-4 justify-start"
 >
 	<div class="relative w-screen h-full bg-[#ffffff]">

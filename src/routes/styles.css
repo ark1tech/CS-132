@@ -331,3 +331,99 @@ h5 {
     opacity: 0;
   }
 }
+
+@keyframes background-pan {
+	from {
+	  background-position: 0% center;
+	}
+  
+	to {
+	  background-position: -200% center;
+	}
+  }
+
+.magic-text {
+	animation: background-pan 4s linear infinite;
+	background: linear-gradient(
+		to right,
+		#ff5e01,
+	  #ffc0a0,
+	  #ff5e01,
+	  #ff5c4a,
+	  #ff5e01
+	);
+	background-size: 200%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	white-space: nowrap;
+  }
+
+
+/* Marquee styles */
+.marquee {
+	--gap: 20px;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	user-select: none;
+	gap: var(--gap);
+}
+
+.marquee__content {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-around;
+	gap: var(--gap);
+	min-width: 100%;
+}
+
+.marquee__content img {
+	height: auto;
+	width: 70px;
+}
+
+@keyframes scroll {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(calc(-100% - var(--gap)));
+	}
+}
+
+/* Pause animation when reduced-motion is set */
+@media (prefers-reduced-motion: reduce) {
+	.marquee__content {
+		animation-play-state: paused !important;
+	}
+}
+
+.marquee__content {
+	animation: scroll 20s linear infinite;
+}
+
+.marquee--fit-content {
+	max-width: fit-content;
+}
+
+.marquee--pos-absolute .marquee__content:last-child {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.marquee--pos-absolute .marquee__content:last-child {
+	animation-name: scroll-abs;
+}
+
+@keyframes scroll-abs {
+	from {
+		transform: translateX(calc(100% + var(--gap)));
+	}
+	to {
+		transform: translateX(0);
+	}
+}
